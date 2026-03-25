@@ -1,6 +1,11 @@
+.hero-section {
+    padding-bottom: 91px;
+}
+
 .blog-section {
     position: relative;
     overflow: hidden;
+    padding-top: 149px;
 }
 
 .blog-section .blog-title {
@@ -13,6 +18,10 @@
     width: 100%;
     position: relative;
     z-index: 1;
+}
+
+.blog-page.hero-section::after {
+    content: none;
 }
 
 .top-border {
@@ -118,6 +127,14 @@
     }
 }
 
+
+@media screen and (max-width: 991px) {
+    .blog-section {
+        padding-top: 130px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .blog-section .card-image {
         width: 100%;
@@ -156,8 +173,15 @@
     }
 }
 
+@media screen and (max-width: 520px) {
+    .blog-section {
+        padding-top: 44px;
+    }
+}
+
 @media screen and (max-width: 350px) {
     .blog-section .blog-title {
         font-size: 28px;
     }
+
 }

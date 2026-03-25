@@ -1,0 +1,459 @@
+/* Hero Section */
+.hero-section {
+    padding-bottom: 63px;
+}
+
+.hero-section .banner-content .top-content {
+    max-width: 910px;
+}
+
+.hero-section .banner-content .bottom-btn {
+    margin-top: 264px;
+}
+
+/* ConsultSync section */
+.ConsultSync-section {
+    position: relative;
+}
+
+.ConsultSync-section::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 93px;
+    width: 750px;
+    background: #7282F2;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+    filter: blur(120px);
+}
+
+.ConsultSync-section .consultSync-inner-padding {
+    padding: 20px;
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap {
+    --bs-gutter-x: 18px;
+    --bs-gutter-y: 16px;
+    position: relative;
+}
+
+.ConsultSync-section .container-fluid {
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid {
+    padding: 21px 21px 27px;
+    gap: 21px;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg,
+            transparent 50%,
+            #7282F2 50%,
+            #FFFFFF 100%);
+    background-size: 100% 210%;
+    background-position: top;
+    transition: background-position 0.6s ease, box-shadow 0.6s ease;
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid:hover {
+    background-position: bottom;
+    box-shadow: inset 0 -2px 0 0 rgba(114, 130, 242, 1);
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid img {
+    height: fit-content;
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-heading {
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 23px;
+    letter-spacing: -3%;
+    margin-bottom: 0px;
+    color: rgba(5, 19, 54, 1);
+}
+
+.ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-subheading {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -5%;
+    color: rgba(51, 73, 130, 1);
+}
+
+.ConsultSync-section .consultSync-card-row {
+    --bs-gutter-x: 30px;
+    margin: 0px;
+    padding: 35px 42px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.ConsultSync-section .consultSync-card-row .consultSync-right {
+    background:
+        url("../images/icons/ConsultSync-bg.svg"),
+        linear-gradient(180deg, #BFC5FB 0%, #FFFFFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0px 75px 93px;
+    height: 600px;
+    z-index: 1;
+    position: relative;
+}
+
+.ConsultSync-section .consultSync-card-row .consultSync-left {
+    max-width: 546px;
+}
+
+.ConsultSync-section .consultSync-card-row .consultSync-left .title {
+    color: rgba(5, 19, 54, 1);
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 40px;
+    letter-spacing: -3%;
+}
+
+/* e-commerce section */
+.e-commerce {
+    padding-top: 81px;
+    padding-bottom: 140px;
+}
+
+.e-commerce .e-commerce-custom-gap {
+    --bs-gutter-x: 61px;
+}
+
+.e-commerce .card-flex .badge {
+    align-self: flex-start;
+}
+
+.e-commerce .e-commerce-left img {
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.e-commerce .card-flex {
+    gap: 36px;
+}
+
+/* true partnership section */
+
+.true-partnership-section {
+    background:
+        linear-gradient(180deg, #7282F2 -65.86%, #FFFFFF 100%),
+        repeating-radial-gradient(circle,
+            rgba(255, 255, 255, 0.08) 0.5px,
+            transparent 1px);
+
+    background-size: cover, 2px 2px;
+    padding: 100px 200px;
+}
+
+.true-partnership-section .partnership-card {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(229, 169, 231, 0.3);
+    border-radius: 25px;
+    padding: 26px 24px 21px 32px;
+
+}
+
+.true-partnership-section .partnership-card .card-row {
+    --bs-gutter-x: 45px;
+
+    margin: 0;
+}
+
+.true-partnership-section .partnership-card .card-row .card-left {
+    gap: 29px;
+    max-width: 430px;
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .text-p {
+    max-width: 350px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -5%;
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .card-heading {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: -3%;
+    color: rgba(5, 19, 54, 1);
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .button-class {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .button-class .secondary-btn {
+    border: 2px solid #504571;
+    color: #334982;
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .button-class .secondary-btn .arrow-box {
+    background: linear-gradient(96.04deg, #051336 26.04%, #E5A9E7 139.46%);
+}
+
+.true-partnership-section .partnership-card .card-row .card-left .button-class button {
+    width: fit-content;
+}
+
+.true-partnership-section .partnership-card .card-row .card-right {
+    background: linear-gradient(180deg, #E0E4FF 0.23%, rgba(238, 240, 254, 0) 105.64%);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.true-partnership-section .partnership-card .card-row .card-right img {
+    width: 100%;
+}
+
+/* review section */
+
+/* .review-section .card-container .review-card .secondary-text {
+    margin-left: 0px;
+}
+
+.review-section .card-container .review-card .person-img {
+    margin-right: 30px;
+}
+
+.company-review-section .custom-container .owl-carousel .company-review-card {
+    padding-bottom: 0px;
+    background-color: var(--white);
+}
+
+.review-section .card-container .review-card {
+    padding: 155px 56px 0px 56px;
+}
+
+.review-section .card-container .review-card .company-logo {
+    margin-top: 0px;
+} */
+
+@media screen and (max-width: 1400px) {
+    .ConsultSync-section .consultSync-card-row .consultSync-right {
+        padding: 30px 0px 30px 100px;
+        height: auto;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-left {
+        max-width: 100%;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-right img {
+        width: 90%;
+    }
+
+    .ConsultSync-section .consultSync-card-row {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 20px;
+    }
+
+    .e-commerce .e-commerce-custom-gap {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 30px;
+    }
+
+    .ConsultSync-section .consultSync-card-row {
+        padding: 0px;
+    }
+
+    .true-partnership-section {
+        padding: 50px 50px;
+    }
+
+    .true-partnership-section .partnership-card .card-row {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .true-partnership-section .partnership-card .card-row .card-left {
+        max-width: 100%;
+        gap: 25px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-left .text-p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .e-commerce .e-commerce-left img {
+        width: 90%;
+    }
+
+    .e-commerce .e-commerce-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .e-commerce .card-flex {
+        gap: 30px;
+        text-align: center;
+    }
+
+    .e-commerce .card-flex .badge {
+        align-self: center;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 70px;
+
+    }
+
+    .hero-section::after {
+        height: 500px;
+        top: 408px;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-left .title {
+        margin-bottom: 20px;
+    }
+
+    .e-commerce .e-commerce-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .e-commerce .e-commerce-left img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .ConsultSync-section::before {
+        width: 90%;
+    }
+
+    .e-commerce {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .true-partnership-section {
+        padding: 34px 20px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-left {
+        gap: 14px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-left .text-p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+    .hero-section::after {
+        height: 400px;
+        bottom: 0px;
+        top: 285px;
+    }
+
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 70px;
+    }
+
+    .hero-section {
+        padding-bottom: 70px;
+
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-right {
+        padding: 22px 0px 30px 35px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-heading {
+        font-size: 20px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-subheading {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .ConsultSync-section .consultSync-card-row {
+        padding: 0px;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-left .title {
+        font-size: 25px;
+        margin-bottom: 57px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid {
+        padding: 20px 6px 6px 20px;
+    }
+
+    .e-commerce {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .e-commerce .e-commerce-custom-gap {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 25px;
+    }
+
+    .e-commerce .card-flex {
+        gap: 20px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-left .card-heading {
+        font-size: 25px;
+    }
+
+
+    .true-partnership-section .partnership-card .card-row .card-left .button-class {
+        gap: 6px;
+    }
+
+    .true-partnership-section {
+        padding: 34px 20px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-left .text-p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .true-partnership-section .partnership-card {
+        padding: 6px 18px 30px 19px;
+    }
+
+    .true-partnership-section .partnership-card .card-row .card-right {
+        padding: 12px;
+    }
+}

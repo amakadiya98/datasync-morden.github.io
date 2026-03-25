@@ -1,0 +1,152 @@
+/* Hero section */
+.performance-analayzer-banner h1 img {
+    background: linear-gradient(#DB97ED, #7984F1);
+    padding: 13px;
+    border-radius: 15px;
+    margin: 0 16px 16px 16px;
+}
+
+.performance-analayzer-banner .button-part .buttons {
+    gap: 20px;
+}
+
+.performance-analayzer-banner .button-part .performance-dot {
+    margin-top: 88px;
+    z-index: 2;
+}
+
+.performance-analayzer-banner .button-part .smart-pricing-dot {
+    margin-top: 117px;
+    z-index: 2;
+}
+
+.performance-analayzer-banner .button-part .marketing-dot {
+    margin-top: 112px;
+    z-index: 2;
+}
+
+.small-font {
+    font-size: 55px !important;
+}
+
+/* Core section */
+
+.core-solutions .top-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.core-solutions-padding {
+    padding: 81px 0 0 0;
+}
+
+.core-solutions .start-core-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    gap: 42px;
+    padding: 81px 0 0 70px;
+}
+
+.performance-core-solutions {
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+    padding: 0;
+}
+
+.img-accordion {
+    margin-top: -50px;
+}
+
+.accordion-heading {
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -3%;
+    text-transform: uppercase;
+    color: #7282F2;
+    margin-bottom: 55px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1440px) {
+    .core-solutions-padding {
+        padding: 35px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .small-font {
+        font-size: 32px !important;
+    }
+
+    .performance-analayzer-banner h1 img {
+        padding: 8px;
+        margin: 0 10px 8px 10px;
+        max-width: 34px;
+        min-height: 34px;
+    }
+
+    .core-solutions-padding {
+        padding: 58px 0 0 28px;
+    }
+
+    .core-solutions .start-core-header {
+        padding: 58px 0 0 28px;
+    }
+
+    .img-accordion {
+        min-height: auto;
+        margin: -50px auto 30px auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .core-solutions-padding {
+        padding: 94px 0 0 0;
+    }
+
+    .core-solutions .start-core-header {
+        padding: 94px 0 0 28px;
+    }
+
+    .core-solutions .top-part {
+        align-items: start;
+        gap: 38px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .core-solutions-padding {
+        padding: 108px 0 0 0;
+    }
+
+    .core-solutions .start-core-header {
+        padding: 108px 0 0 28px;
+    }
+
+    .review-section::before {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .performance-analayzer-banner .button-part .performance-dot,
+    .performance-analayzer-banner .button-part .smart-pricing-dot,
+    .performance-analayzer-banner .button-part .marketing-dot {
+        margin-top: 0px;
+    }
+
+    .hero-section::after {
+        top: 345px;
+    }
+}
