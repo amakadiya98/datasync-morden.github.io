@@ -199,6 +199,7 @@
   background-image: url(./../images/home/hero-bottom-design.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: 1;
 }
 
@@ -475,7 +476,7 @@ ul {
   transition: padding 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-.header-part.active{
+.header-part.active {
   backdrop-filter: blur(10px);
   padding: 20px 0;
 }
@@ -710,6 +711,7 @@ ul {
   background-image: url(./../images/home/hero-bottom-design.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
@@ -2050,6 +2052,11 @@ footer {
     border-radius: 6px;
   }
 
+
+  .header-part .navbar-brand:focus {
+    outline: none;
+  }
+
   .header-part .navbar-brand img {
     max-width: 160px;
     height: auto;
@@ -2235,6 +2242,7 @@ footer {
     padding-top: 204px;
   }
 
+
   .header-part .navbar-collapse {
     margin-top: 20px;
     position: absolute;
@@ -2322,6 +2330,7 @@ footer {
     display: block;
     height: 16px;
     width: 16px;
+    background-size: cover;
   }
 
   .footer-section .footer-main-part .flex-small-grid.address-min-width {
@@ -2415,6 +2424,10 @@ footer {
 
   .primary-button {
     font-size: 16px;
+  }
+
+  .primary-text {
+    font-size: 20px;
   }
 
   .page-title {
@@ -2595,11 +2608,11 @@ footer {
     margin: 60px auto 50px auto;
   }
 
-  .header-part .navbar-collapse{
+  .header-part .navbar-collapse {
     margin-top: 0;
   }
 
-  .header-part.active{
+  .header-part.active {
     background-color: var(--white);
   }
 }
@@ -2830,6 +2843,10 @@ footer {
 
   .review-section .card-container .review-card .card-bottom {
     margin-top: 0px;
+  }
+
+  .review-section .card-container .review-card .review-text {
+    font-size: 20px;
   }
 }
 
@@ -3068,6 +3085,14 @@ footer {
 
   .fair-pricing-section .main-heading {
     width: 70%;
+  }
+
+  .review-section::before {
+    filter: blur(240px);
+  }
+
+  .review-section .card-container .review-card .name-text {
+    font-size: 18px;
   }
 }
 

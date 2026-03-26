@@ -166,6 +166,96 @@
     height: 100%;
 }
 
+/* business outcome section */
+.business-outcome .outcome-inner-padding {
+    padding-top: 81px;
+    padding-bottom: 101px;
+}
+
+.business-outcome .outcome-inner-padding .section-center-top {
+    gap: 42px;
+}
+
+.business-outcome .accordion-padding {
+    padding: 20px;
+}
+
+.business-outcome .accordion-padding .accordion-background {
+    background: linear-gradient(to bottom, #BFC5FB 0%, var(--white) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-outcome .accordion-padding .accordion-background .accordion-row {
+    background-color: var(--white);
+    border: 1px solid #E5A9E74D;
+    border-radius: 25px;
+    padding-top: 27px;
+    margin: 38px 47px;
+    --bs-gutter-x: 80px;
+    display: flex;
+    align-items: stretch;
+}
+
+.business-outcome .accordion-padding .accordion-background .accordion-row .accordion-right {
+    background: linear-gradient(to bottom, #BFC5FB 0%, var(--white) 100%);
+    padding: 0px 0px 80px 0px;
+    padding-left: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.business-outcome .accordion-padding .accordion-background .accordion-row .accordion-right img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    transform: translate(0px, 80px);
+    display: block;
+}
+
+/* profit-section  */
+
+.profit-section .profit-slider .profit-card {
+    padding: 16px;
+    background-color: #F0F1FE;
+    border-radius: 100px;
+    width: 100%;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    transition: background 0.5s ease;
+}
+
+.profit-section .profit-slider .owl-stage {
+    padding: 89px 0;
+}
+
+.profit-section .profit-slider .owl-item.center .profit-card {
+    background: linear-gradient(98.23deg, #7282F2 58.6%, #FFFFFF 128.92%);
+    box-shadow: 30px 24px 44px 0px #7282F24D;
+}
+
+.profit-section .profit-slider .owl-item.center .profit-card p {
+    color: var(--white);
+}
+
+.profit-section .profit-slider .profit-numbers {
+    padding: 12px 28px;
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+/* review section */
+.review-section {
+    padding: 60px 0px 67px 0px;
+}
 
 /* responsive design */
 
@@ -173,12 +263,40 @@
     .Profit-Optimizations .custom-container .Profit-Optimizations-content {
         padding: 100px 50px;
     }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row {
+        --bs-gutter-y: 40px;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .sync-ai {
         padding-top: 168px;
     }
+
+    .Expect-from-Sync-AI-Section::before {
+        top: 463px;
+        height: 420px;
+        filter: blur(383px);
+    }
+
+    .business-outcome .outcome-inner-padding {
+        padding-top: 58px;
+        padding-bottom: 63px;
+    }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row .accordion-right img {
+        transform: translate(0px, 40px);
+    }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row {
+        --bs-gutter-x: 50px;
+    }
+
+    .profit-section .profit-slider .profit-numbers {
+        font-size: 28px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -203,8 +321,34 @@
         gap: 14px;
     }
 
+    .business-outcome .outcome-inner-padding .section-center-top {
+        gap: 14px;
+    }
+
     .Expect-from-Sync-AI-Section::before {
         width: 90%;
+    }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row {
+        margin: 30px 30px;
+        padding-top: 0px;
+    }
+
+    .profit-section .profit-slider .profit-numbers {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+
+    .profit-section .profit-slider .profit-card {
+        gap: 16px;
+    }
+
+    .profit-section .profit-slider .owl-stage {
+        padding: 60px 0;
+    }
+
+    .Expect-from-Sync-AI-Section .intro-card .primary-text {
+        font-size: 20px;
     }
 }
 
@@ -240,5 +384,36 @@
 
     .Profit-Optimizations .custom-container .Profit-Optimizations-content {
         padding: 40px 20px;
+    }
+
+    .business-outcome .outcome-inner-padding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .Expect-from-Sync-AI-Section .intro-card {
+        padding: 26px 30px 20px 20px;
+        gap: 34px;
+    }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row {
+        --bs-gutter-y: 40px;
+    }
+
+    .business-outcome .accordion-padding .accordion-background .accordion-row {
+        margin: 16px 0px;
+        padding-left: 0px;
+    }
+
+    .profit-section .profit-slider .profit-numbers {
+        font-size: 18px;
+    }
+
+    .profit-section .profit-slider .profit-card {
+        padding: 10px;
+    }
+
+    .profit-section .profit-slider .owl-stage {
+        padding: 40px 0;
     }
 }

@@ -32,7 +32,7 @@ $(document).ready(function () {
       //   });
 
       $menu.css({
-        position: "fixed", 
+        position: "fixed",
         top: rect.bottom + "px",
         left: rect.left + "px",
         zIndex: 9999,
@@ -94,6 +94,38 @@ $(document).ready(function () {
       "<img src='assets/images/icons/arrow-left.svg'>",
       "<img src='assets/images/icons/arrow-right.svg'>",
     ],
+  });
+
+  $(".profit-slider").owlCarousel({
+    loop: true,
+    margin: 20,
+    center: true,
+    items: 4.2,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1.4,
+        center: true,
+      },
+      440: {
+        items: 1.7,
+        center: true,
+      },
+      620: {
+        items: 2,
+        center: true,
+      },
+      1000: {
+        items: 2.2,
+      },
+      1300: {
+        items: 3.2,
+      },
+      1700: {
+        items: 4.2,
+      },
+    },
   });
 });
 

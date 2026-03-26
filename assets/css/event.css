@@ -191,7 +191,7 @@
 
 @media screen and (max-width: 991px) {
     .event-section {
-        padding-top: 130px;
+        padding-top: 39px;
     }
 
 }
@@ -252,11 +252,12 @@
     }
 
     .event-section {
-        padding-top: 83px;
+        padding-top: 0px;
     }
 
     .latest-events-section .latest-events-title {
-        margin-top: 24px;
+        margin-top: 30px;
+        padding-top: 0px;
     }
 }
 
