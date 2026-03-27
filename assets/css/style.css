@@ -1333,7 +1333,7 @@ ul {
   font-family: 'Helvetica Now Display';
   font-weight: 500;
   font-size: 12px;
-  color: #334982;
+  color: var(--blue-text);
   margin-bottom: 0;
   letter-spacing: -3%;
 }
@@ -1355,7 +1355,7 @@ ul {
 }
 
 .analytics-card-bottom .analytics-card-bottom-row .analatics-card-bottom-right .analatics-card-bottom-right-card .card-second-feed .card-feed-p {
-  color: #051336;
+  color: var(--black);
   font-family: 'Helvetica Now Display';
   font-weight: 500;
   font-size: 12px;
@@ -1368,7 +1368,7 @@ ul {
   font-family: 'Helvetica Now Display';
   font-weight: 400;
   font-size: 12px;
-  color: #334982;
+  color: var(--blue-text);
   padding-bottom: 27px;
   margin-bottom: 0;
 }

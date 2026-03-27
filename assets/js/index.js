@@ -144,3 +144,23 @@ $(document).on("click", function (e) {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("compareBtn");
+  const section = document.getElementById("comparePlan");
+  const text = document.querySelector(".button-plan-text");
+
+  btn.addEventListener("click", function () {
+    const isActive = section.classList.contains("active");
+
+    if (isActive) {
+      section.classList.remove("active");
+      text.innerText = "Compare Plans";
+    } else {
+      section.classList.add("active");
+      text.innerText = "Hide Plans";
+
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});

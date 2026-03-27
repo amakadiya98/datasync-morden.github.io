@@ -1,0 +1,643 @@
+/* common css */
+.get-started-btn {
+    background: linear-gradient(96.55deg, #DB97ED -2.66%, #7984F1 61.74%);
+    border: 2px solid #FFFFFF80;
+    box-shadow: 0px 21px 46.1px 0px #7040C480;
+    padding: 15px 25px 15px 36px;
+    border-radius: 15px;
+    gap: 6px;
+    display: flex;
+}
+
+.get-started-btn:hover {
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(112, 64, 196, 0.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(112, 64, 196, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(112, 64, 196, 0);
+    }
+}
+
+.get-started-btn a {
+    padding: 0px 12px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* hero section */
+p {
+    margin-bottom: 0;
+}
+
+.header-part {
+    z-index: 20;
+}
+
+.hero-section::after {
+    top: 488px;
+}
+
+.hero-section {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.hero-section .banner-content .bottom-btn {
+    margin-top: 94px;
+}
+
+.hero-section .banner-content {
+    padding-top: 290px;
+}
+
+/* pricing section */
+
+.hero-section .banner-content .pricing-section {
+    padding-top: 100px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols {
+    position: relative;
+    z-index: 10;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card {
+    background-color: #F5F6FF;
+    width: 100%;
+    height: 100%;
+    padding: 10px 14px 64px 15px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .card-top {
+    background: linear-gradient(180deg, #BFC5FB 0%, var(--white) 249.15%);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card:hover .card-top {
+    background: #7583F2;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card:hover .card-top p {
+    color: #fff;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card,
+.card-top,
+.card-top p {
+    transition: all 0.3s ease;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -3%;
+    max-width: 161px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text.highlight {
+    max-width: 110px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner {
+    padding-left: 15px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+    color: var(--blue-text);
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -4%;
+    padding-top: 26px;
+    padding-bottom: 41px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+    font-family: 'Helvetica Now Display';
+    line-height: 20px;
+    letter-spacing: -3%;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(3) {
+    color: var(--blue-text);
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -3%;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner span {
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -3%;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+    margin-bottom: 38px;
+    margin-top: 39px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .text-card {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -3%;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 0px;
+    text-align: start;
+    flex: 1;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .max-card {
+    max-width: 194px;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .card-max img {
+    flex-shrink: 0;
+}
+
+.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .primary-button-highlight {
+    margin-top: 19px;
+}
+
+.hero-section .banner-content .plan-button {
+    margin-top: 46px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section .banner-content .plan-button .arrow-1 {
+    margin-bottom: -8px;
+}
+
+
+/* COMPARE PLAN */
+
+.compare-plan {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.compare-plan.active {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 28px 60px 0px 60px;
+}
+
+.compare-plan .table-wrapper {
+    background: #F5F6FF;
+    padding: 52px 154px 59px 30px;
+}
+
+.compare-plan .table-wrapper table {
+    height: 100%;
+}
+
+.compare-plan .table-wrapper tr {
+    height: 100%;
+}
+
+.compare-plan .table-wrapper td {
+    padding: 36px 0px;
+}
+
+.compare-plan .table-wrapper tr.center-row .white-bg {
+    background: var(--white);
+    box-shadow: 0px 15.77px 34.62px 0px #7040C480;
+    border: 1.5px solid #FFFFFF80;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.compare-plan .table-wrapper .center-gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.compare-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 36px 0;
+}
+
+.compare-table th,
+.compare-table td {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.compare-table th:first-child,
+.compare-table td:first-child {
+    text-align: left;
+    border: none;
+    color: #051336;
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -3%;
+    text-align: center;
+    padding: 0px;
+    width: 120px;
+    padding: 36px 0px;
+}
+
+.compare-table th {
+    padding: 0;
+    transition: 0.3s;
+}
+
+.compare-plan .cell-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.compare-table .card-top {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.card-top .th-bg {
+    background: linear-gradient(180deg, #BFC5FB 0%, #FFFFFF 249.15%);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-top .th-bg span {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -3%;
+    max-width: 161px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.card-top .th-bg span.p {
+    max-width: 110px;
+}
+
+.compare-table:has(td:nth-child(2):hover) th:nth-child(2) .th-bg,
+.compare-table:has(th:nth-child(2):hover) th:nth-child(2) .th-bg,
+.compare-table:has(td:nth-child(3):hover) th:nth-child(3) .th-bg,
+.compare-table:has(th:nth-child(3):hover) th:nth-child(3) .th-bg,
+.compare-table:has(td:nth-child(4):hover) th:nth-child(4) .th-bg,
+.compare-table:has(th:nth-child(4):hover) th:nth-child(4) .th-bg,
+.compare-table:has(td:nth-child(5):hover) th:nth-child(5) .th-bg,
+.compare-table:has(th:nth-child(5):hover) th:nth-child(5) .th-bg,
+.compare-table:has(td:nth-child(6):hover) th:nth-child(6) .th-bg,
+.compare-table:has(th:nth-child(6):hover) th:nth-child(6) .th-bg {
+    background: #7282F2;
+    color: #fff;
+}
+
+.compare-table td {
+    color: #334982;
+    font-family: 'Helvetica Now Display';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -3%;
+    text-align: center;
+}
+
+.compare-table td .highlight {
+    max-width: 194px;
+    margin: auto;
+}
+
+.compare-plan .compare-table td {
+    vertical-align: middle;
+    /* FIX vertical issue */
+    text-align: center;
+}
+
+.compare-plan .compare-table td .button-class {
+    background: linear-gradient(96.55deg, #DB97ED -2.66%, #7984F1 61.74%);
+    border: 2px solid #FFFFFF80;
+    box-shadow: 0px 21px 46.1px 0px #7040C480;
+    padding: 6px 30px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.compare-plan .compare-table td .button-class .button-plan-text {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -3%;
+    text-align: center;
+    color: var(--white);
+}
+
+/* responsive design */
+@media screen and (max-width: 1580px) {
+    .compare-plan .table-wrapper {
+        padding: 52px 21px 59px 30px;
+    }
+
+    .compare-plan .table-wrapper tr.center-row .white-bg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .compare-plan .table-wrapper .center-gap {
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .five-cols {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 20px;
+    }
+
+    .five-cols>.col {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    .five-cols>.col:nth-last-child(-n+2) {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+        letter-spacing: -3%;
+    }
+
+    .compare-plan .table-wrapper .center-gap {
+        gap: 4px;
+    }
+
+    .compare-table {
+        border-spacing: 12px 0;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .get-started-btn a {
+        padding: 0px 4px;
+        font-size: 16px;
+    }
+
+    .compare-table {
+        border-spacing: 12px 0;
+    }
+
+    .card-top .th-bg {
+        height: 100%;
+    }
+
+    .card-top .th-bg {
+        padding: 16px 20px;
+    }
+
+    .compare-plan .table-wrapper tr.center-row .white-bg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .compare-plan .table-wrapper {
+        padding: 25px 21px 30px 30px;
+    }
+
+    .compare-plan.active {
+        padding: 28px 20px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .five-cols>.col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .five-cols>.col:nth-last-child(-n+2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner .max-card {
+        max-width: 100%;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
+        max-width: 100%;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text.highlight {
+        max-width: 100%;
+    }
+
+    .hero-section .banner-content {
+        padding-top: 200px;
+    }
+
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 76px;
+    }
+
+    .hero-section .banner-content .pricing-section {
+        padding-top: 75px;
+    }
+
+    .hero-section::after {
+        top: 301px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+        padding-bottom: 27px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+        margin-bottom: 35px;
+        margin-top: 27px;
+    }
+
+    .compare-plan .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .compare-table {
+        min-width: 1300px;
+    }
+
+    .compare-plan .table-wrapper td {
+        padding: 16px 0px;
+    }
+
+    .card-top .th-bg {
+        padding: 15px 20px;
+    }
+
+    .compare-plan .table-wrapper .center-gap {
+        flex-wrap: nowrap;
+    }
+
+    .compare-table th:first-child,
+    .compare-table td:first-child {
+        padding: 25px 0px;
+    }
+
+    .compare-plan.active {
+        padding: 0px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .compare-plan .table-wrapper {
+        margin-top: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+    .hero-section .banner-content {
+        padding-top: 143px;
+    }
+
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 56px;
+    }
+
+    .hero-section .banner-content .pricing-section {
+        padding-top: 43px;
+    }
+
+    .hero-section::after {
+        top: 175px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+        font-size: 14px;
+        padding-bottom: 26px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
+        font-size: 18px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+        font-size: 18px;
+        font-size: 25px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner span {
+        font-size: 14px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+        margin-bottom: 21px;
+        margin-top: 19px;
+    }
+
+    .compare-table td {
+        font-size: 14px;
+    }
+
+    .compare-plan .table-wrapper {
+        overflow-x: auto;
+        padding: 20px;
+    }
+
+    .card-top .th-bg span {
+        font-size: 18px;
+    }
+
+    .compare-table th:first-child,
+    .compare-table td:first-child {
+        padding: 12px 0px;
+    }
+
+    .compare-plan .table-wrapper td {
+        padding: 12px 0px;
+    }
+
+    .compare-table th:first-child,
+    .compare-table td:first-child {
+        font-size: 14px;
+    }
+
+    .card-top .th-bg {
+        padding: 8px 12px;
+    }
+
+    .compare-plan .compare-table td .button-class {
+        padding: 4px 27px;
+    }
+
+    .compare-table {
+        border-spacing: 10px 0;
+    }
+
+    .compare-table {
+        min-width: 1200px;
+    }
+
+    .get-started-btn {
+        padding: 12px 22px 12px 27px;
+    }
+
+    .get-started-btn a {
+        font-size: 14px;
+    }
+
+    .compare-plan .compare-table td .button-class .button-plan-text {
+        font-size: 14px;
+    }
+
+    .hero-section .banner-content .plan-button {
+        margin-top: 26px;
+    }
+
+    .compare-plan .table-wrapper {
+        margin-top: 20px;
+    }
+}
