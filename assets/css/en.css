@@ -3,10 +3,6 @@
     padding-bottom: 63px;
 }
 
-.hero-section .banner-content .top-content {
-    max-width: 910px;
-}
-
 .hero-section .banner-content .bottom-btn {
     margin-top: 264px;
 }
@@ -173,7 +169,6 @@
 
 .true-partnership-section .partnership-card .card-row {
     --bs-gutter-x: 45px;
-
     margin: 0;
 }
 
@@ -372,6 +367,26 @@
         line-height: 22px;
     }
 
+    .hero-section .banner-content .top-content h1 {
+        font-size: 45px;
+        line-height: 72px;
+    }
+
+    .hero-section .banner-content .top-content h1 span {
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section .banner-content .top-content h1 {
+        font-size: 31px;
+        line-height: 58px;
+    }
+
+    .hero-section .banner-content .top-content h1 span {
+        margin-left: 5px;
+    }
+
 
 }
 
@@ -384,6 +399,8 @@
 
     .hero-section .banner-content .bottom-btn {
         margin-top: 70px;
+        height: 50px;
+        width: 50px;
     }
 
     .hero-section {
@@ -455,5 +472,19 @@
 
     .true-partnership-section .partnership-card .card-row .card-right {
         padding: 12px;
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 25px;
+        line-height: 38px;
+        letter-spacing: -1%;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .hero-section .banner-content .top-content h1 {
+        font-size: 25px;
     }
 }

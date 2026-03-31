@@ -46,7 +46,7 @@ p {
 }
 
 .hero-section::after {
-    top: 488px;
+    top: 478px;
 }
 
 .hero-section {
@@ -129,7 +129,8 @@ p {
     line-height: 20px;
     letter-spacing: -4%;
     padding-top: 26px;
-    padding-bottom: 41px;
+    padding-bottom: 31px;
+    height: 127px;
 }
 
 .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
@@ -407,8 +408,10 @@ p {
     }
 
     .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
-        letter-spacing: -3%;
+        height: 107px;
     }
+
+
 
     .compare-plan .table-wrapper .center-gap {
         gap: 4px;
@@ -489,6 +492,10 @@ p {
 
     .hero-section::after {
         top: 301px;
+    }
+
+    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+        height: auto;
     }
 
     .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
