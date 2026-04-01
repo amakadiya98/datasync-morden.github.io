@@ -164,3 +164,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// team slider
+
+var slider = $(".team-slider"); // ✅ IMPORTANT
+
+$(".team-slider").owlCarousel({
+  loop: true,
+  margin: 0,
+  center: false,
+  autoplay: false,
+  autoplayTimeout: 3000,
+
+  responsive: {
+    0: {
+      items: 1.5,
+    },
+    440: {
+      items: 2.1,
+    },
+    620: {
+      items: 3.2,
+    },
+    1000: {
+      items: 3.8,
+    },
+    1300: {
+      items: 4.6,
+    },
+    1700: {
+      items: 5.5,
+    },
+  },
+});
+
+// buttons
+$(".next-btn").click(function () {
+  slider.trigger("next.owl.carousel");
+});
+
+$(".prev-btn").click(function () {
+  slider.trigger("prev.owl.carousel");
+});

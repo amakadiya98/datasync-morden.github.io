@@ -46,7 +46,11 @@ p {
 }
 
 .hero-section::after {
-    top: 478px;
+    top: 464px;
+}
+
+.hero-section::before {
+    z-index: 3;
 }
 
 .hero-section {
@@ -63,6 +67,18 @@ p {
 }
 
 /* pricing section */
+
+.card-main::after {
+    height: 629px;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 22.17%, rgba(255, 255, 255, 0) 60%);
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .hero-section .banner-content .pricing-section {
     padding-top: 100px;
