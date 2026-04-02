@@ -1,0 +1,19 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="59.6886" height="59.7092" rx="14.9221" fill="#051336"/>
+<mask id="mask0_416_909" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+<rect width="59.6886" height="59.7092" rx="14.9221" fill="#051336"/>
+</mask>
+<g mask="url(#mask0_416_909)">
+<path d="M38.4648 26.3046C37.4148 21.6846 33.3848 19.6046 29.8448 19.6046C29.8448 19.6046 29.8448 19.6046 29.8348 19.6046C26.3048 19.6046 22.2648 21.6746 21.2148 26.2946C20.0448 31.4546 23.2048 35.8246 26.0648 38.5746C27.1248 39.5946 28.4848 40.1046 29.8448 40.1046C31.2048 40.1046 32.5648 39.5946 33.6148 38.5746C36.4748 35.8246 39.6348 31.4646 38.4648 26.3046ZM29.8448 31.3146C28.1048 31.3146 26.6948 29.9046 26.6948 28.1646C26.6948 26.4246 28.1048 25.0146 29.8448 25.0146C31.5848 25.0146 32.9948 26.4246 32.9948 28.1646C32.9948 29.9046 31.5848 31.3146 29.8448 31.3146Z" fill="white"/>
+<g filter="url(#filter0_f_416_909)">
+<ellipse cx="51.7742" cy="51.1934" rx="17.2996" ry="17.2996" fill="#7583F2"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_416_909" x="9.10697" y="8.52616" width="85.3349" height="85.3345" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.6838" result="effect1_foregroundBlur_416_909"/>
+</filter>
+</defs>
+</svg>

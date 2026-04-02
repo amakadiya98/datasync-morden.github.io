@@ -60,7 +60,7 @@ $(document).ready(function () {
         loop: true,
         margin: 20,
         nav: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         smartSpeed: 800,
         navText: [
@@ -206,3 +206,33 @@ $(".next-btn").click(function () {
 $(".prev-btn").click(function () {
   slider.trigger("prev.owl.carousel");
 });
+
+$(document).ready(function () {
+  function initContactSlider() {
+    if ($(window).width() < 1200) {
+      if (!$(".contact-slider").hasClass("owl-loaded")) {
+        $(".contact-slider").owlCarousel({
+          loop: true,
+          margin: 16,
+          autoplay: true,
+          autoplayTimeout: 2500,
+          smartSpeed: 600,
+          responsive: {
+            0: { items: 1.2 },
+            520: { items: 1.5 },
+            920: { items: 2.2 },
+          },
+        });
+      }
+    } else {
+      if ($(".contact-slider").hasClass("owl-loaded")) {
+        $(".contact-slider").trigger("destroy.owl.carousel");
+        $(".contact-slider").removeClass("owl-loaded");
+      }
+    }
+  }
+
+  initContactSlider();
+  $(window).on("resize", initContactSlider);
+});
+

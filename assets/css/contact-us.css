@@ -1,0 +1,534 @@
+/* hero section css */
+.hero-section {
+    padding-bottom: 56px;
+}
+
+.hero-section .banner-content .top-content .title-top {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 63px;
+    letter-spacing: -3%;
+    text-align: center;
+    margin: 0 auto;
+    color: #7282F2;
+}
+
+.hero-section .banner-content {
+    padding-top: 280px;
+}
+
+.hero-section.home-hero-section .banner-content .bottom-btn {
+    margin-top: 98px;
+}
+
+.hero-section.home-hero-section::after {
+    bottom: unset;
+    z-index: 1;
+    top: 580px;
+}
+
+.hero-section.home-hero-section .banner-content .top-content {
+    max-width: 1073px;
+}
+
+.hero-section .banner-content .top-content h1 {
+    line-height: 73px;
+}
+
+/* Call Us section css */
+.contactUs-section {
+    position: relative;
+}
+
+.contactUs-section::before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 281px;
+    width: 600px;
+    background: #7282F2;
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    filter: blur(245px);
+}
+
+.contactUs-section .contactUs-inner-padding {
+    padding: 93px 20px 20px 20px;
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap {
+    --bs-gutter-x: 18px;
+    --bs-gutter-y: 16px;
+    position: relative;
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid {
+    padding: 21px 51px 26px 21px;
+    gap: 21px;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg,
+            transparent 50%,
+            #7282F2 50%,
+            #FFFFFF 100%);
+    background-size: 100% 210%;
+    background-position: top;
+    transition: background-position 0.6s ease, box-shadow 0.6s ease;
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid:hover {
+    background-position: bottom;
+    box-shadow: inset 0 -2px 0 0 rgba(114, 130, 242, 1);
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid img {
+    height: fit-content;
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-heading {
+    font-family: "Helvetica Now Display";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 23px;
+    letter-spacing: -3%;
+    margin-bottom: 0px;
+    color: var(--black);
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-subheading {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -5%;
+    color: var(--blue-text);
+    margin-bottom: 0px;
+}
+
+.contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-subheading.mail-bottom-border {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 0px;
+    text-decoration-thickness: 1px;
+    text-decoration-skip-ink: auto;
+}
+
+.contactUs-section .location-frame {
+    z-index: 3;
+    position: relative;
+}
+
+.contactUs-section .location-frame iframe {
+    width: 100%;
+    height: 530px;
+    display: block;
+    position: relative;
+}
+
+.contactUs-section .location-frame .location-frame-heading {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -3%;
+    text-align: center;
+    padding-top: 53px;
+    color: var(--black);
+    margin: 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.contactUs-form-section .contatus-heading {
+    font-family: 'Helvetica Now Display';
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -3%;
+    text-align: center;
+    padding-top: 53px;
+    color: var(--black);
+    margin: 0px;
+    padding: 54px 0px;
+}
+
+.owl-carousel .owl-item img {
+    height: auto;
+    width: auto;
+}
+
+.contactUs-form-section .contactUs-form {
+    background: linear-gradient(180deg, #7282f28f -65.86%, #FFFFFF 100%);
+    padding: 54px;
+}
+
+.contactUs-section .location-frame .iframe-inner-padding {
+    padding: 46px 20px 54px 20px;
+}
+
+.contactUs-form-section .contactUs-form .white-form {
+    background: #FFFFFF;
+    padding: 74px 100px 100px 100px;
+}
+
+.contactUs-form-section .contactUs-form .white-form .input-card {
+    width: 100%;
+    background: #FAF0FF;
+    padding: 18px 18px 18px 22px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contactUs-form-section .contactUs-form .white-form .input-card:focus {
+    outline: none;
+}
+
+.contactUs-form-section .contactUs-form .white-form .input-card::placeholder {
+    color: var(--black);
+    opacity: 1;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+
+
+.contactUs-form-section .contactUs-form .white-form .lable-text {
+    color: var(--black);
+    opacity: 1;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+.contactUs-form-section .contactUs-form .white-form .form-select.input-card {
+    width: 100%;
+    border: none;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+.contactUs-form-section .contactUs-form .white-form .form-select.input-card:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contactUs-form-section .contactUs-form .white-form .col-lg-6 {
+    position: relative;
+}
+
+.contactUs-form-section .contactUs-form .white-form .input-icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.contactUs-form-section .contactUs-form .white-form .card-row {
+    --bs-gutter-x: 22px;
+    --bs-gutter-y: 22px;
+}
+
+.contactUs-form-section .contactUs-form .white-form .col-12 {
+    position: relative;
+}
+
+.contactUs-form-section .contactUs-form .white-form .card-row .textarea-card {
+    resize: none;
+    height: 200px;
+}
+
+.contactUs-form-section .contactUs-form .white-form .custom-check input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contactUs-form-section .contactUs-form .white-form .custom-check input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #FAF0FF;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contactUs-form-section .contactUs-form .white-form .custom-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactUs-form-section .contactUs-form .white-form .custom-check input:checked {
+    background: #7282F2;
+}
+
+.contactUs-form-section .contactUs-form .white-form .custom-check input:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: translate(-50%, -60%) rotate(-45deg);
+}
+
+.contactUs-form-section .contactUs-form .white-form .button-part .primary-button {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contactUs-form-section .contactUs-form .white-form .button-part {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive design css */
+@media screen and (max-width: 1440px) {
+    .hero-section .banner-content .top-content .title-top {
+        font-size: 54px;
+        line-height: 72px;
+    }
+
+    .contactUs-form-section .contactUs-form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid {
+        flex-direction: column;
+    }
+
+    .contactUs-section .card-grid img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-subheading {
+        height: 44px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-slider {
+        display: flex !important;
+        gap: 18px;
+        overflow: visible !important;
+    }
+
+    .contact-slider .item {
+        flex: 1;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .hero-section .banner-content {
+        padding-top: 200px;
+    }
+
+    .hero-section.home-hero-section::after {
+        top: 470px;
+    }
+
+    .hero-section {
+        padding-bottom: 55px;
+    }
+
+    .hero-section.home-hero-section .banner-content .bottom-btn {
+        margin-top: 69px;
+    }
+
+    .contactUs-section::before {
+        width: 90%;
+    }
+
+    .contactUs-section .location-frame .location-frame-heading {
+        font-size: 34px;
+        padding-top: 20px;
+    }
+
+    .contactUs-form-section .contatus-heading {
+        font-size: 34px;
+        padding: 42px 0px;
+    }
+
+    .contactUs-section .location-frame iframe {
+        height: 430px;
+    }
+
+    .contactUs-section .location-frame .iframe-inner-padding {
+        padding: 24px 20px 54px 20px;
+    }
+
+    .contactUs-form-section .contactUs-form {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form {
+        padding: 74px 47px 100px 47px;
+    }
+
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-subheading {
+        height: 44px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section .banner-content .top-content .title-top {
+        font-size: 44px;
+        line-height: 64px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .input-card::placeholder {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .lable-text {
+        font-size: 18px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .form-select.input-card {
+        font-size: 18px
+    }
+
+
+}
+
+@media screen and (max-width: 520px) {
+    .hero-section .banner-content .top-content .title-top {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -1%;
+    }
+
+    .hero-section .banner-content {
+        padding-top: 143px;
+    }
+
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-heading {
+        font-size: 20px;
+    }
+
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid .card-grid-subheading {
+        font-size: 14px;
+        height: 44px;
+    }
+
+    .hero-section.home-hero-section::after {
+        top: 325px;
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        line-height: 35px;
+    }
+
+    .hero-section.home-hero-section .banner-content .bottom-btn {
+        margin-top: 46px;
+    }
+
+    .contactUs-section .location-frame .location-frame-heading {
+        font-size: 28px;
+        padding-top: 8px;
+    }
+
+    .contactUs-form-section .contatus-heading {
+        font-size: 28px;
+        padding: 25px 0px;
+    }
+
+    .contactUs-section .location-frame .iframe-inner-padding {
+        padding: 30px 20px 36px 20px;
+    }
+
+    .contactUs-section::before {
+        top: 268px;
+        height: 170px;
+        filter: blur(148px);
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .input-card::placeholder {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form {
+        padding: 39px 24px 44px 24px;
+    }
+
+    .contactUs-form-section .contactUs-form {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form {
+        padding: 49px 30px 50px 30px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .card-row {
+        --bs-gutter-x: 0px;
+        --bs-gutter-y: 16px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .card-row .textarea-card {
+        height: 150px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form {
+        padding: 44px 28px 51px 27px;
+    }
+
+    .contactUs-form-section .contactUs-form {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .lable-text {
+        font-size: 16px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .form-select.input-card {
+        font-size: 16px;
+    }
+
+    .contactUs-section .contactUs-inner-padding {
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero-section .banner-content .top-content .title-top {
+        font-size: 24px;
+    }
+
+    .contactUs-section .location-frame .location-frame-heading {
+        font-size: 25px;
+    }
+
+    .contactUs-form-section .contatus-heading {
+        font-size: 25px;
+    }
+}

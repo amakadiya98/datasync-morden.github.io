@@ -1,6 +1,6 @@
 .hero-section.home-hero-section::after {
     bottom: unset;
-    top: 544px;
+    top: 507px;
 }
 
 .hero-section.home-hero-section .banner-content .bottom-btn {
@@ -347,6 +347,11 @@
         padding-left: 19px;
         padding-bottom: 50px;
     }
+
+    .hero-section.home-hero-section::after {
+        bottom: unset;
+        top: 480px;
+    }
 }
 
 @media screen and (max-width: 1260px) {
@@ -481,7 +486,12 @@
     }
 
     .hero-section.home-hero-section .banner-content .bottom-btn {
-        top: 82px;
+        top: 38px;
+    }
+
+    .hero-section.home-hero-section::after {
+        bottom: unset;
+        top: 302px;
     }
 }
 
@@ -489,7 +499,4 @@
     .hero-section .banner-content .top-content .title-top {
         font-size: 24px;
     }
-
-
-
 }
