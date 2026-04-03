@@ -471,7 +471,6 @@ ul {
 .header-part {
   padding-top: 32px;
   padding-bottom: 48px;
-  /* position: relative;  */
   position: fixed;
   top: 0;
   left: 0;
@@ -554,6 +553,68 @@ ul {
 
 .header-part .get-started-btn:hover {
   animation: pulse 1.2s infinite;
+}
+
+.header-offcanvas {
+  background: linear-gradient(96.04deg, #051336 26.04%, #E5A9E7 139.46%);
+  padding: 20px 24px;
+}
+
+.header-offcanvas .offcanvas-header {
+  padding: 0;
+}
+
+.header-offcanvas .offcanvas-header .btn-close {
+  background-color: #FFFFFF1A;
+  border: 1px solid #3349820D;
+  border-radius: 12px;
+  background-image: url(./../images/icons/cross.svg);
+  background-size: 12px;
+}
+
+.header-offcanvas .offcanvas-body .navbar-nav .nav-link {
+  font-family: 'Inter';
+  font-size: 18px;
+  color: var(--white);
+  position: relative;
+  padding: 0;
+}
+
+.header-offcanvas .offcanvas-body .navbar-nav .nav-item{
+  border-bottom: 0.5px solid #FFFFFF45;
+  padding: 18px 0;
+}
+
+.header-offcanvas .offcanvas-body .navbar-nav .nav-link::after{
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  border: 0;
+  height: 16px;
+  width: 16px;
+  background-image: url(./../images/icons/arrow-down-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-offcanvas .offcanvas-body .navbar-nav .nav-item ul li a {
+  font-family: 'Inter';
+  font-size: 16px;
+  color: var(--white);
+}
+
+.header-offcanvas .offcanvas-body .navbar-nav .nav-item ul {
+  position: relative !important;
+  transform: none !important;
+  background-color: transparent;
+  border: 0;
+}
+
+.header-offcanvas .offcanvas-body .get-started-btn{
+  background: linear-gradient(96.55deg, #DB97ED -2.66%, #7984F1 61.74%);
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 70px;
 }
 
 @keyframes pulse {
@@ -1563,8 +1624,11 @@ ul {
 
 /* company-review-section  */
 .company-review-section {
-  margin-bottom: 100px;
   position: relative;
+}
+
+.company-review-section .custom-container {
+  padding-bottom: 100px;
 }
 
 .company-review-section .custom-container {
@@ -2011,16 +2075,6 @@ footer {
 
   .core-solutions {
     padding: 0;
-  }
-
-  .core-solutions .core-solutions-content {
-    margin: 0 5%;
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    background:
-      linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-      var(--border-gradient) border-box;
-    padding-top: 80px;
   }
 
   .solution-section .solution-content .step-content .step {
@@ -2516,8 +2570,8 @@ footer {
     margin-top: 24px;
   }
 
-  .company-review-section {
-    margin-bottom: 50px;
+  .company-review-section .custom-container {
+    padding-bottom: 50px;
   }
 
   .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h5 {
@@ -2708,8 +2762,6 @@ footer {
     width: 30px;
     height: 30px;
   }
-
-
 }
 
 @media screen and (max-width: 991px) {
@@ -2719,7 +2771,7 @@ footer {
   }
 
 
-  .header-part .navbar-collapse {
+  /* .header-part .navbar-collapse {
     margin-top: 20px;
     position: absolute;
     top: 94px;
@@ -2727,7 +2779,7 @@ footer {
     backdrop-filter: blur(10px);
     left: 5%;
     z-index: 100;
-  }
+  } */
 
   .desktop-hidden {
     display: block;
@@ -2848,10 +2900,6 @@ footer {
     right: -7.5%;
   }
 
-  .company-review-section {
-    margin-bottom: 50px;
-  }
-
   .review-section .card-container .review-card .review-text {
     font-size: 24px;
     margin-bottom: 16px;
@@ -2906,6 +2954,15 @@ footer {
     flex-direction: column-reverse;
     margin-right: 5%;
     padding: 30px;
+  }
+
+  .core-solutions .core-solutions-content {
+    margin: 0 5%;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background:
+      linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+      var(--border-gradient) border-box;
   }
 }
 
@@ -3102,9 +3159,9 @@ footer {
     margin: 60px auto 50px auto;
   }
 
-  .header-part .navbar-collapse {
+  /* .header-part .navbar-collapse {
     margin-top: 0;
-  }
+  } */
 
   .header-part.active {
     background-color: var(--white);
@@ -3335,8 +3392,8 @@ footer {
     padding: 0px 20px;
   }
 
-  .company-review-section {
-    margin-bottom: 40px;
+  .company-review-section .custom-container {
+    padding-bottom: 40px;
   }
 
   .review-section .card-container .review-card .card-bottom {
@@ -3353,6 +3410,10 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
+
+  .header-part .navbar-brand img {
+		max-width: 108px;
+	}
 
   .primary-button,
   .secondary-btn {
@@ -3384,9 +3445,9 @@ footer {
     padding-bottom: 16px;
   }
 
-  .header-part .navbar-collapse {
+  /* .header-part .navbar-collapse {
     top: 82px;
-  }
+  } */
 
   .header-dropdown {
     top: 140px !important;
@@ -3591,6 +3652,25 @@ footer {
 
   .review-section .card-container .review-card .name-text {
     font-size: 18px;
+  }
+
+  .analytics-card-bottom .analytics-card-bottom-row .analatics-card-bottom-left .analatics-Card-bottom-text {
+    font-size: 12px;
+  }
+
+  .analytics-card-bottom .analytics-card-bottom-row .analatics-card-bottom-left .analatics-Card-bottom-text h1 {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .analytics-card-bottom .analytics-card-bottom-row {
+    --bs-gutter-x: 40px
+  }
+
+  .analytics-card-bottom .analytics-card-bottom-row .analatics-card-bottom-left .logo-part::after {
+    height: 96px;
+    width: 90px;
+    top: -24px;
   }
 }
 

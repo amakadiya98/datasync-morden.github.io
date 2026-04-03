@@ -1,0 +1,710 @@
+.custom-container {
+    max-width: 1280px;
+}
+
+.primary-button,
+.secondary-btn {
+    padding: 8px 10px 8px 18px;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.primary-text {
+    font-size: 22px;
+}
+
+.secondary-text {
+    font-size: 18px;
+}
+
+.section-center-top {
+    max-width: 838px;
+}
+
+.hero-section .banner-content .top-content h1 {
+    line-height: 66px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.hero-section.home-hero-section .banner-content .top-content {
+    max-width: 686px;
+}
+
+.hero-section .banner-content .top-content h1 span {
+    padding: 8px 10px;
+    font-weight: 500;
+}
+
+.hero-section .left-float-part {
+    scale: 78%;
+    left: -3%;
+    top: 25%;
+}
+
+.hero-section .right-float-part {
+    scale: 72%;
+    top: 24%;
+    right: -4%
+}
+
+.hero-section .left-float-part::before {
+    background: transparent;
+}
+
+.hero-section.home-hero-section::after {
+    bottom: -70px;
+}
+
+.introduction-section .text-content {
+    max-width: 956px;
+}
+
+.solution-section .solution-content .index-content p {
+    font-size: 18px;
+}
+
+.solution-section .solution-content .index-content p:nth-child(1) {
+    top: 424px;
+}
+
+.solution-section .solution-content .index-content p:nth-child(2) {
+    top: 360px;
+    left: 357px;
+}
+
+.solution-section .solution-content .index-content p:nth-child(3) {
+    top: 274px;
+    right: 546px;
+}
+
+.solution-section .solution-content .index-content p:nth-child(4) {
+    right: 258px;
+}
+
+.solution-section .solution-content .step-content .step {
+    max-width: 270px;
+}
+
+.step-content .step:nth-child(2) {
+    left: 358px;
+}
+
+.step-content .step:nth-child(3) {
+    right: 290px;
+}
+
+.step-content .step:nth-child(4) {
+    bottom: 560px;
+}
+
+.Sync-Ai-top .main-heading {
+    padding-bottom: 14px;
+}
+
+.Sync-Ai-top .secondary-text {
+    padding-bottom: 8px;
+}
+
+.Sync-Ai-top {
+    margin-bottom: 75px;
+}
+
+.Sync-Ai-bottom .analytics-card {
+    padding: 8px 10px;
+}
+
+.designed-simplify {
+    padding: 70px 130px 96px 100px;
+}
+
+.designed-simplify .designed-simplify-card-left {
+    max-width: 374px;
+}
+
+.designed-simplify-card .main-heading {
+    width: 90%;
+    padding: 18px 0;
+}
+
+.transforming-section .Transforming-Workflows-Section-top .badge {
+    margin-bottom: 32px;
+}
+
+.transforming-section .Transforming-card {
+    margin: 16px 4px;
+    padding: 60px 40px 20px 40px;
+}
+
+.transforming-section .Transforming-card .Transforming-secondary-text {
+    font-size: 18px;
+}
+
+.datasync-plus-section .section-content {
+    margin-right: calc((100vw - min(90%, 1286px)) / 2);
+}
+
+.datasync-plus-section .section-content .right-part h6 {
+    font-size: 35px;
+}
+
+.review-section .card-container .review-card p {
+    font-size: 30px;
+    max-width: 840px;
+}
+
+.review-section .card-container .review-card .quotes {
+    box-shadow: 0px 33.87px 71.12px 0px #007FFF33;
+}
+
+.review-section .review-slider .owl-nav .owl-prev,
+.review-section .review-slider .owl-nav .owl-next {
+    height: 38px;
+    width: 38px;
+}
+
+.review-section .card-container .review-card {
+    padding: 138px 48px 48px 48px;
+}
+
+.review-section .card-container {
+    max-width: 1062px;
+}
+
+.company-review-section.border-top,
+.company-review-section .border-x {
+    background: transparent;
+}
+
+.company-review-section .border-x {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h6 {
+    font-size: 18px;
+}
+
+.company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h5 {
+    font-size: 22px;
+}
+
+.company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card {
+    margin-bottom: 30px;
+}
+
+.company-review-section .custom-container .owl-carousel .company-review-card .secondary-text {
+    padding: 0 30px 30px 30px;
+}
+
+.company-review-section .custom-container .owl-carousel .owl-nav button {
+    height: 38px;
+    width: 38px;
+    padding: 5px !important;
+}
+
+.fair-pricing-section .img-gradient-bg {
+    height: 100%;
+    width: 100%;
+}
+
+.fair-pricing-section .img-gradient-bg img {
+    height: 100%;
+}
+
+.footer-section .footer-main-part .footer-link-title {
+    font-size: 22px;
+}
+
+.footer-section .footer-main-part .footer-links-part .footer-links,
+.footer-section .footer-main-part .footer-contact-part .social-media-icon a,
+.footer-section .footer-main-part .footer-contact-part .social-media-icon p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.footer-copyright {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .primary-button,
+    .secondary-btn {
+        padding: 6px 8px 6px 16px;
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .primary-text {
+        font-size: 23px;
+    }
+
+    .secondary-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .hero-section .banner-content .top-content h1 span {
+        padding: 6px 8px;
+        border-radius: 12px;
+        margin-left: 8px;
+    }
+
+    .hero-section .left-float-part {
+        scale: 60%;
+        top: 22%;
+    }
+
+    .hero-section .right-float-part {
+        scale: 60%;
+    }
+
+    .introduction-section .text-content {
+        gap: 16px;
+        width: 80%;
+    }
+
+    .solution-section .solution-content .index-content p:nth-child(1) {
+        top: 389px;
+        left: 38px;
+    }
+
+    .solution-section .solution-content .index-content p:nth-child(2) {
+        left: 316px;
+        top: 344px;
+    }
+
+    .solution-section .solution-content .index-content p:nth-child(3) {
+        right: 484px;
+        top: 268px;
+    }
+
+    .solution-section .solution-content .index-content p:nth-child(4) {
+        right: 228px;
+    }
+
+    .solution-section .solution-content .step-content .step {
+        max-width: 226px;
+    }
+
+    .step-content .step:nth-child(2) {
+        left: 332px;
+    }
+
+    .step-content .step:nth-child(4) {
+        bottom: 535px;
+        right: 12px;
+    }
+
+    .Sync-Ai-top .main-heading {
+        padding-bottom: 14px;
+    }
+
+    .Sync-Ai-top {
+        padding: 50px 85px 8px;
+        margin-bottom: 40px;
+    }
+
+    .Sync-Ai-bottom .analytics-card {
+        padding: 6px 10px;
+        border-radius: 12px;
+        margin-bottom: 8px;
+    }
+
+    .designed-simplify {
+        padding: 42px 87px 60px 40px;
+    }
+
+    .transforming-section .Transforming-Workflows-Section-top .badge {
+        margin-bottom: 20px;
+    }
+
+    .transforming-section .Transforming-card {
+        margin: 15px 0px;
+        height: 92.5%;
+        padding: 40px 24px 32px 24px;
+    }
+
+    .transforming-section .Transforming-card .Transforming-secondary-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .datasync-plus-section .section-content {
+        margin-left: 5%;
+        border-left: 1px solid #eee;
+        padding: 40px 0;
+        gap: 0;
+    }
+
+    .datasync-plus-section .section-content .right-part h6 {
+        font-size: 32px;
+    }
+
+    .review-section .card-container .review-card p {
+        font-size: 20px;
+        max-width: 580px;
+    }
+
+    .review-section .card-container .review-card .quotes {
+        height: 80px;
+        width: 80px;
+        top: -40px;
+    }
+
+    .review-section .card-container .review-card {
+        padding: 70px 40px 40px 40px;
+    }
+
+    .review-section .review-slider .owl-nav .owl-prev,
+    .review-section .review-slider .owl-nav .owl-next {
+        height: 32px;
+        width: 32px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h6 {
+        font-size: 17px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h5 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card {
+        margin-bottom: 20px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-text {
+        padding: 0 19px 19px 19px;
+        font-size: 16px;
+    }
+
+    .footer-section .footer-main-part .footer-link-title {
+        font-size: 20px;
+    }
+
+    .footer-section .footer-main-part .footer-links-part .footer-links,
+    .footer-section .footer-main-part .footer-contact-part .social-media-icon a,
+    .footer-section .footer-main-part .footer-contact-part .social-media-icon p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .fair-pricing-section .section-content .left-part {
+        width: 40%;
+    }
+
+    .fair-pricing-section .section-content .right-part {
+        width: 60%;
+    }
+
+    .fair-pricing-section .section-content {
+        gap: 39px;
+    }
+
+    .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(1) {
+        padding-bottom: 29px;
+    }
+
+    .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(3) {
+        letter-spacing: -1%;
+    }
+
+    .fair-pricing-section .section-center-top .badge {
+        margin-bottom: 38px;
+    }
+
+    .fair-pricing-section .section-center-top .secondary-text {
+        letter-spacing: -5%;
+        margin-top: 29px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .designed-simplify {
+        padding: 67px 100px 96px 100px;
+    }
+
+    .review-section .card-container {
+        max-width: 780px;
+    }
+
+    .designed-simplify .designed-simplify-card-left {
+        max-width: 100%;
+        text-align: start;
+        align-items: self-start;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .footer-section .footer-main-part .footer-links-part .footer-links,
+    .footer-section .footer-main-part .footer-contact-part .social-media-icon a,
+    .footer-section .footer-main-part .footer-contact-part .social-media-icon p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .footer-section .footer-main-part .footer-link-title {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .fair-pricing-section .right-part .img-gradient-bg {
+        margin-top: 30px;
+    }
+
+    .fair-pricing-section .section-content .left-part {
+        width: 100%;
+    }
+
+    .fair-pricing-section .section-content .right-part {
+        width: 100%;
+    }
+
+    .fair-pricing-section .section-center-top {
+        gap: 0px;
+    }
+
+    .core-solutions .solutions-left {
+        margin: 0px 8px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .secondary-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .primary-text {
+        font-size: 20px;
+    }
+
+    .introduction-section .text-content {
+        gap: 14px;
+    }
+
+    .designed-simplify {
+        padding: 70px 50px 96px 50px;
+    }
+
+    .transforming-section .Transforming-Workflows-Section-top .badge {
+        margin-bottom: 25px;
+    }
+
+    .footer-section .footer-main-part .footer-link-title {
+        font-size: 24px;
+    }
+
+    .footer-copyright {
+        justify-content: center;
+    }
+
+    .review-section .card-container .review-card .company-logo {
+        max-width: 120px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-text {
+        padding: 0 30px 30px 30px;
+    }
+
+    .Sync-Ai-top{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+	.designed-simplify {
+		padding: 40px 24px 0px 24px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+
+    .primary-button,
+    .secondary-btn {
+        font-size: 12px;
+        padding: 7px 7px 7px 15px;
+        gap: 10px;
+        border-radius: 11px;
+    }
+
+    .designed-simplify .designed-simplify-card{
+        --bs-gutter-x : 0
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .hero-section .banner-content .top-content h1 span {
+        border-radius: 10px;
+    }
+
+    .secondary-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .transforming-section .Transforming-card {
+        margin: 10px 16px;
+    }
+
+    .transforming-section .Transforming-card .Transforming-secondary-text {
+        font-size: 14px;
+    }
+
+    .company-review-section .custom-container .owl-carousel .company-review-card .secondary-text {
+        padding: 0 18px 18px 18px;
+    }
+
+    .review-section .card-container .review-card .quotes {
+        position: relative;
+    }
+
+    .review-section .card-container {
+        padding-top: 20px;
+    }
+
+    .review-section {
+        padding: 20px 0px 120px 0px;
+    }
+
+    .datasync-plus-section .section-content .right-part h6 {
+        font-size: 30px;
+    }
+
+    .datasync-plus-section .section-content {
+        padding: 0;
+        gap: 0;
+    }
+
+    .datasync-plus-section .section-content .right-part {
+        padding: 0px 20px;
+    }
+
+    .hero-section.home-hero-section::after {
+		background-image: url(./../images/home/hero-bottom-design-mobile.svg);
+		bottom: -260px;
+	}
+
+    .Sync-Ai-top{
+        padding: 20px;
+    }
+
+    .custom-accordion {
+        padding-left: 0px;
+    }
+
+    .badge {
+        padding: 12px 17px;
+    }
+
+    .main-heading {
+        font-size: 23px;
+    }
+
+    .secondary-text {
+        font-size: 14px;
+    }
+
+    .core-solutions .top-part {
+        margin-bottom: 57px;
+    }
+
+    .core-solutions .top-part .main-heading {
+        margin-top: 21px;
+    }
+
+    .custom-accordion .accordion-body {
+        font-size: 14px;
+    }
+
+    .custom-accordion .accordion-button {
+        padding: 28px 20px 28px 20px;
+    }
+
+    .custom-accordion .accordion-body {
+        padding: 0px 64px 21px 20px;
+        margin-bottom: 0px;
+    }
+
+    .custom-accordion .title-accordion {
+        max-width: 250px;
+    }
+
+    .fair-pricing-section .section-content {
+        padding: 7px 0px 0px 0px;
+    }
+
+    .fair-pricing-section .section-center-top .badge {
+        margin-bottom: 42px;
+    }
+
+    .fair-pricing-section .section-center-top .secondary-text {
+        margin-top: 17px;
+    }
+
+    .fair-pricing-section .section-content .right-part {
+        padding: 0px 8px 0px 21px;
+    }
+
+    .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(1) {
+        padding-bottom: 15px;
+    }
+
+    .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(3) {
+        margin-top: 20px;
+        letter-spacing: -5%;
+    }
+
+    .fair-pricing-section .right-part .img-gradient-bg {
+        margin-top: 15px;
+    }
+
+    .datasync-plus-section .secondary-text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .review-section .card-container .review-card {
+		padding: 80px 30px 30px 30px;
+	}
+
+    .hero-section .banner-content .top-content .secondary-text{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fair-pricing-section .section-center-top .secondary-text {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero-section .banner-content .top-content h1 {
+        font-size: 24px;
+    }
+}

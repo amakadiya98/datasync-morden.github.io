@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 //end
 
 $(document).ready(function () {
-  $(".dropdown").each(function () {
+  $(".desktop-dropdown").each(function () {
     let $dropdown = $(this);
     let $menu = $dropdown.find(".dropdown-menu");
 
