@@ -1,752 +1,598 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Datasync</title>
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./assets/css/style.css" rel="stylesheet" />
-    <link href="./assets/css/event.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- HERO SECTION  -->
-    <section class="event-section">
-      <!-- HEADER  -->
-      <header>
-        <nav class="navbar navbar-expand-lg header-part">
-          <div class="container custom-container d-flex">
-            <!-- Logo -->
-            <a class="navbar-brand" href="./index.html">
-              <img src="./assets/images/header/brand-logo.svg" alt="brand" />
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datasync</title>
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <link href="./assets/css/event.css" rel="stylesheet" />
+</head>
 
-            <!-- Mobile Toggle -->
-            <button
-              class="navbar-toggler toggle-btn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-            >
-              <img src="./assets/images/icons/menu.svg" alt="menu" />
+<body>
+  <!-- HERO SECTION  -->
+  <section class="event-section">
+    <!-- HEADER  -->
+    <header>
+      <nav class="navbar navbar-expand-lg header-part">
+        <div class="container custom-container d-flex">
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html">
+            <img src="./assets/images/header/brand-logo.svg" alt="brand" />
+          </a>
+
+          <!-- Mobile Toggle -->
+          <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+            <img src="./assets/images/icons/menu.svg" alt="menu" />
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+            <!-- Center Menu -->
+            <ul class="navbar-nav mx-auto header-links">
+              <li class="nav-item dropdown desktop-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu header-dropdown">
+                  <li>
+                    <a class="dropdown-item solution-link" href="./performance-analayzer.html">
+                      <img src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
+                        alt="performance-analyzer-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Performance Analyzer</p>
+                          <p>Real-time commerce visibility.</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./smart-pricing.html">
+                      <img src="./assets/images/icons/nav-solutions-smart-pricing.svg" alt="smart-pricing-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Smart Pricing</p>
+                          <p>Accurate cross-channel price optimization.</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./inventory-intelligence.html">
+                      <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                        alt="inventory-inteligence-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Inventory Intelligence</p>
+                          <p>Inventory health, management and forecasting.</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./marketing-performance-intelligence.html">
+                      <img src="./assets/images/icons/nav-solutions-Marketing.svg" alt="Marketing-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Marketing Performance Intelligence</p>
+                          <p>
+                            Multi-channel marketing performance analytics.
+                          </p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./customer-insight-analytics.html">
+                      <img src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
+                        alt="Customer-Insights-Analytics-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Customer Insights Analytics</p>
+                          <p>Customer sentiment and voice insights.</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./sync-ai-customer-experience-agent.html">
+                      <img src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg" alt="Sync-AI-CX-Agent-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Sync AI CX Agent</p>
+                          <p>24/7 automated, AI customer support.</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./en.html">DataSync</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./pricing.html">Pricing</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+              </li>
+
+              <li class="nav-item dropdown desktop-dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                  Resources
+                </a>
+                <ul class="dropdown-menu header-dropdown resources-dropdown">
+                  <li>
+                    <a class="dropdown-item solution-link" href="./blog.html">
+                      <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                        alt="inventory-inteligence-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Blog</p>
+                          <p>Blog</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item solution-link" href="./event.html">
+                      <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                        alt="inventory-inteligence-icon" />
+                      <div class="d-flex justify-content-between align-content-center w-100">
+                        <div class="d-flex flex-column justify-content-center gap-1">
+                          <p>Events</p>
+                          <p>Events</p>
+                        </div>
+                        <img class="right-arrow ms-5" src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                          alt="right-arrow" />
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item desktop-hidden">
+                <a class="nav-link" href="#">Get Started </a>
+              </li>
+            </ul>
+
+            <!-- Right Button -->
+            <button class="get-started-btn align-items-center mobile-hidden">
+              <a href="#" class=""> Get Started </a>
+              <div class="arrow-box d-flex justify-content-center align-items-center">
+                <img src="./assets/images/icons/arrow-right.svg" />
+              </div>
             </button>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end header-offcanvas" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+        </div>
 
-            <!-- Menu -->
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarContent"
-            >
-              <!-- Center Menu -->
-              <ul class="navbar-nav mx-auto header-links">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                  >
-                    Solutions
-                  </a>
-                  <ul class="dropdown-menu header-dropdown">
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./performance-analayzer.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
-                          alt="performance-analyzer-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Performance Analyzer</p>
-                            <p>Real-time commerce visibility.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./smart-pricing.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-smart-pricing.svg"
-                          alt="smart-pricing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Smart Pricing</p>
-                            <p>Accurate cross-channel price optimization.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./inventory-intelligence.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Inventory Intelligence</p>
-                            <p>Inventory health, management and forecasting.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./marketing-performance-intelligence.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Marketing.svg"
-                          alt="Marketing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Marketing Performance Intelligence</p>
-                            <p>
-                              Multi-channel marketing performance analytics.
-                            </p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./customer-insight-analytics.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
-                          alt="Customer-Insights-Analytics-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Customer Insights Analytics</p>
-                            <p>Customer sentiment and voice insights.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./sync-ai-customer-experience-agent.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
-                          alt="Sync-AI-CX-Agent-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Sync AI CX Agent</p>
-                            <p>24/7 automated, AI customer support.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav header-links">
 
-                <li class="nav-item">
-                  <a class="nav-link" href="./en.html">DataSync</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./pricing.html">Pricing</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                  >
-                    Resources
-                  </a>
-                  <ul class="dropdown-menu header-dropdown resources-dropdown">
-                    <li>
-                      <a class="dropdown-item solution-link" href="./blog.html">
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Blog</p>
-                            <p>Blog</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./event.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Events</p>
-                            <p>Events</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="nav-item desktop-hidden">
-                  <a class="nav-link" href="#">Get Started </a>
-                </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./performance-analayzer.html">Performance
+                    Analyzer</a></li>
+                <li><a class="dropdown-item" href="./smart-pricing.html">Smart Pricing</a></li>
+                <li><a class="dropdown-item" href="./inventory-intelligence.html">Inventory
+                    Intelligence</a></li>
+                <li><a class="dropdown-item" href="./marketing-performance-intelligence.html">Marketing
+                    Performance Intelligence</a></li>
+                <li><a class="dropdown-item" href="./customer-insight-analytics.html">Customer Insights
+                    Analytics</a></li>
               </ul>
+            </li>
 
-              <!-- Right Button -->
-              <button class="get-started-btn align-items-center mobile-hidden">
-                <a href="#" class=""> Get Started </a>
-                <div
-                  class="arrow-box d-flex justify-content-center align-items-center"
-                >
-                  <img src="./assets/images/icons/arrow-right.svg" />
-                </div>
-              </button>
+            <li class="nav-item">
+              <a class="nav-link" href="./en.html">DataSync+</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./event.html">Events</a></li>
+                <li><a class="dropdown-item" href="./blog.html">Blogs </a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <!-- Button -->
+          <button class="primary-button get-started-btn">
+            Get Started
+            <div class="arrow-box d-flex justify-content-center align-items-center">
+              <img src="./assets/images/icons/arrow-right.svg" alt="" />
+            </div>
+          </button>
+
+          <div class="d-flex align-items-center gap-2">
+            <div class="social"><img src="./assets/images/icons/facebook-white.svg" alt="facebook" /></div>
+            <div class="social"><img src="./assets/images/icons/youtube-white.svg" alt="youtube" /></div>
+            <div class="social"><img src="./assets/images/icons/instagram-white.svg" alt="instagram" /></div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- LATEST EVENTS SECTION  -->
+  <section class="latest-events-section">
+    <div>
+      <h1 class="page-title latest-events-title text-center">
+        Latest Events
+      </h1>
+    </div>
+
+    <div class="custom-container">
+      <div class="latest-events-bottom">
+        <div class="event-card row align-items-stretch">
+          <div class="latest-events-bottom-left col-lg-6 col-12">
+            <div class="event-content">
+              <div class="event-meta d-flex gap-4">
+                <p class="event-date primary-text">2/20/206</p>
+                <p class="event-ai primary-text">Ecommerce AI</p>
+              </div>
+              <div class="event-title main-heading">A True Partnership</div>
+              <div class="event-desc d-flex flex-column gap-3 gap-lg-4">
+                <p class="secondary-text">
+                  DataSync+ is not an outsourced service.
+                </p>
+                <p class="secondary-text">
+                  It is a long-term growth partnership — we manage your
+                  e-commerce execution, so you can concentrate on brand
+                  strategy and expansion.
+                </p>
+                <p class="secondary-text event-desc-bold">
+                  One team. One platform. One clear growth direction.
+                </p>
+              </div>
+              <div class="event-button mt-5">
+                <button class="primary-button">
+                  Join Now
+                  <div class="arrow-box d-flex justify-content-center align-items-center">
+                    <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-        </nav>
-      </header>
-    </section>
-
-    <!-- LATEST EVENTS SECTION  -->
-    <section class="latest-events-section">
-      <div>
-        <h1 class="page-title latest-events-title text-center">
-          Latest Events
-        </h1>
+          <div class="latest-events-bottom-right col-lg-6 col-12">
+            <div class="latest-events-bottom-right-linear">
+              <img src="./assets/images/events/image.png" alt="" class="latest-events-bottom-right-image" />
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
+  <!-- PREVIOUS EVENTS SECTION  -->
+  <section class="previous-events-section pb-5">
+    <div>
+      <h1 class="page-title previous-events-title text-center">
+        Previous Events
+      </h1>
+    </div>
+
+    <div class="top-border bottom-border">
       <div class="custom-container">
-        <div class="latest-events-bottom">
-          <div class="event-card row align-items-stretch">
-            <div class="latest-events-bottom-left col-lg-6 col-12">
-              <div class="event-content">
-                <div class="event-meta d-flex gap-4">
-                  <p class="event-date primary-text">2/20/206</p>
-                  <p class="event-ai primary-text">Ecommerce AI</p>
-                </div>
-                <div class="event-title main-heading">A True Partnership</div>
-                <div class="event-desc d-flex flex-column gap-3 gap-lg-4">
-                  <p class="secondary-text">
-                    DataSync+ is not an outsourced service.
+        <div class="previous-event-row">
+          <div class="background-effect"></div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 border-start bottom-border p-3">
+              <div class="event-card-item event-card-gradient p-3">
+                <img src="./assets/images/blog/blog-image-1.jpg" alt="blog-image" class="event-card-image img-fluid" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
                   </p>
-                  <p class="secondary-text">
-                    It is a long-term growth partnership — we manage your
-                    e-commerce execution, so you can concentrate on brand
-                    strategy and expansion.
-                  </p>
-                  <p class="secondary-text event-desc-bold">
-                    One team. One platform. One clear growth direction.
-                  </p>
-                </div>
-                <div class="event-button mt-5">
-                  <button class="primary-button">
-                    Join Now
-                    <div
-                      class="arrow-box d-flex justify-content-center align-items-center"
-                    >
-                      <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
                     </div>
                   </button>
                 </div>
               </div>
             </div>
-            <div class="latest-events-bottom-right col-lg-6 col-12">
-              <div class="latest-events-bottom-right-linear">
-                <img
-                  src="./assets/images/events/image.png"
-                  alt=""
-                  class="latest-events-bottom-right-image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PREVIOUS EVENTS SECTION  -->
-    <section class="previous-events-section pb-5">
-      <div>
-        <h1 class="page-title previous-events-title text-center">
-          Previous Events
-        </h1>
-      </div>
-
-      <div class="top-border bottom-border">
-        <div class="custom-container">
-          <div class="previous-event-row">
-            <div class="background-effect"></div>
-            <div class="row">
-              <div
-                class="col-lg-6 col-md-6 col-12 border-start bottom-border p-3"
-              >
-                <div class="event-card-item event-card-gradient p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-1.jpg"
-                    alt="blog-image"
-                    class="event-card-image img-fluid"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-lg-6 col-md-6 col-12 border-start bottom-border border-end p-3"
-              >
-                <div class="event-card-item event-card-normal p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-2.jpg"
-                    alt="blog-image"
-                    class="event-card-image"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="previous-event-row">
-            <div class="background-effect"></div>
-            <div class="row g-4">
-              <div class="col-lg-6 col-md-6 col-12 border-start p-3">
-                <div class="event-card-item event-card-normal p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-3.jpg"
-                    alt="blog-image"
-                    class="event-card-image"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12 border-start border-end p-3">
-                <div class="event-card-item event-card-normal p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-4.jpg"
-                    alt="blog-image"
-                    class="event-card-image"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bottom-border">
-        <div class="custom-container">
-          <div class="previous-event-row">
-            <div class="background-effect"></div>
-            <div class="row g-4">
-              <div class="col-lg-6 col-md-6 col-12 border-start p-3">
-                <div class="event-card-item event-card-normal p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-5.jpg"
-                    alt="blog-image"
-                    class="event-card-image"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 col-12 border-start border-end p-3">
-                <div class="event-card-item event-card-normal p-3">
-                  <img
-                    src="./assets/images/blog/blog-image-6.jpg"
-                    alt="blog-image"
-                    class="event-card-image"
-                  />
-                  <div class="event-card-content">
-                    <h5>Minimal Reporting Effort</h5>
-                    <p>
-                      All data already lives in DataSync. SYNC AI generates,
-                      customizes, and automatically delivers reports when
-                      needed.
-                    </p>
-                    <button class="secondary-btn">
-                      Watch Now
-                      <div>
-                        <img
-                          src="./assets/images/icons/watch-now-icon.svg"
-                          alt=""
-                          class="arrow-box"
-                        />
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="load-more">
-        <button class="primary-button">
-          Load More
-          <div
-            class="arrow-box d-flex justify-content-center align-items-center"
-          >
-            <img src="./assets/images/icons/arrow-right.svg" alt="" />
-          </div>
-        </button>
-      </div>
-    </section>
-
-    <!-- FOOTER  -->
-    <footer class="footer-section">
-      <div class="custom-container">
-        <div class="footer-main-part">
-          <div class="footer-logo-part flex-small-grid">
-            <div class="footer-logo-data">
-              <a href="/" class="footer-logo">
-                <img src="./assets/images/footer/footer-logo.svg" alt="Logo" />
-              </a>
-              <p class="footer-powered-by">
-                Powered by
-                <img
-                  src="./assets/images/footer/kumsaati.svg"
-                  alt="Powered by"
-                />
-              </p>
-            </div>
-            <div class="footer-social-media d-flex gap-2">
-              <a
-                href="#facebook"
-                class="social-media-round d-flex align-items-center justify-content-center"
-              >
-                <img src="./assets/images/footer/facebook.svg" alt="facebook" />
-              </a>
-              <a
-                href="#youtube"
-                class="social-media-round d-flex align-items-center justify-content-center"
-              >
-                <img src="./assets/images/footer/youtube.svg" alt="youtube" />
-              </a>
-              <a
-                href="#instagram"
-                class="social-media-round d-flex align-items-center justify-content-center"
-              >
-                <img
-                  src="./assets/images/footer/instagram.svg"
-                  alt="instagram"
-                />
-              </a>
-            </div>
-          </div>
-
-          <div class="footer-links-part flex-small-grid">
-            <h5 class="footer-link-title">Solutions</h5>
-            <ul>
-              <li>
-                <a href="#modules" title="modules" class="footer-links"
-                  >Modules
-                </a>
-              </li>
-              <li>
-                <a href="#sectors" title="sectors" class="footer-links"
-                  >Sectors & Areas of Work</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#integrations"
-                  title="integrations"
-                  class="footer-links"
-                  >Integrations</a
-                >
-              </li>
-              <li>
-                <a href="#consultant" title="consultant" class="footer-links"
-                  >SYNC AI Consultant</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-links-part flex-small-grid">
-            <h5 class="footer-link-title">Services</h5>
-            <ul>
-              <li>
-                <a href="#market" title="market" class="footer-links"
-                  >Market Sync
-                </a>
-              </li>
-              <li>
-                <a href="#consult" title="consult" class="footer-links"
-                  >Consult Sync</a
-                >
-              </li>
-              <li>
-                <a href="#partner" title="partner" class="footer-links"
-                  >Partner Sync</a
-                >
-              </li>
-              <li>
-                <a href="#logisync" title="logisync" class="footer-links"
-                  >Logi Sync</a
-                >
-              </li>
-              <li>
-                <a href="#customize" title="customize" class="footer-links"
-                  >Customize & Develop</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-links-part flex-small-grid">
-            <h5 class="footer-link-title">Quick links</h5>
-            <ul>
-              <li>
-                <a href="#about-us" title="consult" class="footer-links"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="#blog" title="partner" class="footer-links">Blog</a>
-              </li>
-              <li>
-                <a href="#contact-us" title="logisync" class="footer-links"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-contact-part flex-small-grid address-min-width">
-            <h5 class="footer-link-title">Contact Us</h5>
-            <ul>
-              <li>
-                <div class="social-media-icon">
-                  <div class="footer-contact-icon">
-                    <img src="./assets/images/footer/sms.svg" alt="email" />
-                  </div>
-                  <a
-                    href="mailto: info@data-sync.com.tr"
-                    class="no-text-transform"
-                    >info@data-sync.com.tr</a
-                  >
-                </div>
-              </li>
-
-              <li>
-                <div class="social-media-icon">
-                  <div class="footer-contact-icon">
-                    <img src="./assets/images/footer/call.svg" alt="call" />
-                  </div>
-                  <a href="tel: +902123370200" class="no-text-transform"
-                    >+90 212 337 02 00</a
-                  >
-                </div>
-              </li>
-
-              <li>
-                <div class="social-media-icon">
-                  <div class="footer-contact-icon">
-                    <img
-                      src="./assets/images/footer/location.svg"
-                      alt="location"
-                    />
-                  </div>
-                  <p class="address">
-                    Kore Şehitleri Cad. Mithat Ünlü Sok. No:1/3 34394
-                    Zincirlikuyu / İstanbul
+            <div class="col-lg-6 col-md-6 col-12 border-start bottom-border border-end p-3">
+              <div class="event-card-item event-card-normal p-3">
+                <img src="./assets/images/blog/blog-image-2.jpg" alt="blog-image" class="event-card-image" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
                   </p>
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
+                    </div>
+                  </button>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="previous-event-row">
+          <div class="background-effect"></div>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-12 border-start p-3">
+              <div class="event-card-item event-card-normal p-3">
+                <img src="./assets/images/blog/blog-image-3.jpg" alt="blog-image" class="event-card-image" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
+                  </p>
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 border-start border-end p-3">
+              <div class="event-card-item event-card-normal p-3">
+                <img src="./assets/images/blog/blog-image-4.jpg" alt="blog-image" class="event-card-image" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
+                  </p>
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-border">
+      <div class="custom-container">
+        <div class="previous-event-row">
+          <div class="background-effect"></div>
+          <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-12 border-start p-3">
+              <div class="event-card-item event-card-normal p-3">
+                <img src="./assets/images/blog/blog-image-5.jpg" alt="blog-image" class="event-card-image" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
+                  </p>
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 border-start border-end p-3">
+              <div class="event-card-item event-card-normal p-3">
+                <img src="./assets/images/blog/blog-image-6.jpg" alt="blog-image" class="event-card-image" />
+                <div class="event-card-content">
+                  <h5>Minimal Reporting Effort</h5>
+                  <p>
+                    All data already lives in DataSync. SYNC AI generates,
+                    customizes, and automatically delivers reports when
+                    needed.
+                  </p>
+                  <button class="secondary-btn">
+                    Watch Now
+                    <div>
+                      <img src="./assets/images/icons/watch-now-icon.svg" alt="" class="arrow-box" />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="load-more">
+      <button class="primary-button">
+        Load More
+        <div class="arrow-box d-flex justify-content-center align-items-center">
+          <img src="./assets/images/icons/arrow-right.svg" alt="" />
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER  -->
+  <footer class="footer-section">
+    <div class="custom-container">
+      <div class="footer-main-part">
+        <div class="footer-logo-part flex-small-grid">
+          <div class="footer-logo-data">
+            <a href="/" class="footer-logo">
+              <img src="./assets/images/footer/footer-logo.svg" alt="Logo" />
+            </a>
+            <p class="footer-powered-by">
+              Powered by
+              <img src="./assets/images/footer/kumsaati.svg" alt="Powered by" />
+            </p>
+          </div>
+          <div class="footer-social-media d-flex gap-2">
+            <a href="#facebook" class="social-media-round d-flex align-items-center justify-content-center">
+              <img src="./assets/images/footer/facebook.svg" alt="facebook" />
+            </a>
+            <a href="#youtube" class="social-media-round d-flex align-items-center justify-content-center">
+              <img src="./assets/images/footer/youtube.svg" alt="youtube" />
+            </a>
+            <a href="#instagram" class="social-media-round d-flex align-items-center justify-content-center">
+              <img src="./assets/images/footer/instagram.svg" alt="instagram" />
+            </a>
           </div>
         </div>
 
-        <div class="footer-hr"></div>
-        <div class="footer-copyright">
-          <p class="copyright-privacy text-center">
-            Copyright © 2026 <a href="#">Datasync </a>. All rights reserved
-          </p>
-          <p class="copyright-privacy text-center">
-            <a href="#" title="privacy-policy">Privacy Policy</a> <span>|</span>
-            <a href="#">Terms & conditions</a>
-          </p>
+        <div class="footer-links-part flex-small-grid">
+          <h5 class="footer-link-title">Solutions</h5>
+          <ul>
+            <li>
+              <a href="#modules" title="modules" class="footer-links">Modules
+              </a>
+            </li>
+            <li>
+              <a href="#sectors" title="sectors" class="footer-links">Sectors & Areas of Work</a>
+            </li>
+            <li>
+              <a href="#integrations" title="integrations" class="footer-links">Integrations</a>
+            </li>
+            <li>
+              <a href="#consultant" title="consultant" class="footer-links">SYNC AI Consultant</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-part flex-small-grid">
+          <h5 class="footer-link-title">Services</h5>
+          <ul>
+            <li>
+              <a href="#market" title="market" class="footer-links">Market Sync
+              </a>
+            </li>
+            <li>
+              <a href="#consult" title="consult" class="footer-links">Consult Sync</a>
+            </li>
+            <li>
+              <a href="#partner" title="partner" class="footer-links">Partner Sync</a>
+            </li>
+            <li>
+              <a href="#logisync" title="logisync" class="footer-links">Logi Sync</a>
+            </li>
+            <li>
+              <a href="#customize" title="customize" class="footer-links">Customize & Develop</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links-part flex-small-grid">
+          <h5 class="footer-link-title">Quick links</h5>
+          <ul>
+            <li>
+              <a href="#about-us" title="consult" class="footer-links">About Us</a>
+            </li>
+            <li>
+              <a href="#blog" title="partner" class="footer-links">Blog</a>
+            </li>
+            <li>
+              <a href="#contact-us" title="logisync" class="footer-links">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-part flex-small-grid address-min-width">
+          <h5 class="footer-link-title">Contact Us</h5>
+          <ul>
+            <li>
+              <div class="social-media-icon">
+                <div class="footer-contact-icon">
+                  <img src="./assets/images/footer/sms.svg" alt="email" />
+                </div>
+                <a href="mailto: info@data-sync.com.tr" class="no-text-transform">info@data-sync.com.tr</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="social-media-icon">
+                <div class="footer-contact-icon">
+                  <img src="./assets/images/footer/call.svg" alt="call" />
+                </div>
+                <a href="tel: +902123370200" class="no-text-transform">+90 212 337 02 00</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="social-media-icon">
+                <div class="footer-contact-icon">
+                  <img src="./assets/images/footer/location.svg" alt="location" />
+                </div>
+                <p class="address">
+                  Kore Şehitleri Cad. Mithat Ünlü Sok. No:1/3 34394
+                  Zincirlikuyu / İstanbul
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/index.js"></script>
+
+      <div class="footer-hr"></div>
+      <div class="footer-copyright">
+        <p class="copyright-privacy text-center">
+          Copyright © 2026 <a href="#">Datasync </a>. All rights reserved
+        </p>
+        <p class="copyright-privacy text-center">
+          <a href="#" title="privacy-policy">Privacy Policy</a> <span>|</span>
+          <a href="#">Terms & conditions</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/index.js"></script>
+
 </html>

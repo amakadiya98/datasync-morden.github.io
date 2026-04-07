@@ -2,16 +2,57 @@
     padding-bottom: 91px;
 }
 
+.hero-section::before {
+    top: -260px;
+}
+
 .blog-section {
     position: relative;
     overflow: hidden;
-    padding-top: 149px;
+    padding-top: 106px;
 }
 
 .blog-section .blog-title {
     position: relative;
     z-index: 1;
-    margin-bottom: 78px;
+    margin-bottom: 88px;
+}
+
+.blog-section .filter-part {
+    margin-bottom: 32px;
+}
+
+.blog-section .filter-part .search-bar {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: 678px;
+    padding: 15px 30px;
+    width: 100%;
+    gap: 16px;
+}
+
+.blog-section .filter-part .search-bar input {
+    border: 0;
+    width: 100%;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.blog-section .filter-part .search-bar input:focus {
+    border: 0;
+    outline: 0;
+}
+
+.blog-section .filter-part .filter-btn {
+    padding: 15px 30px;
+    background-color: var(--white);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    gap: 16px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .blog-section .first-blog {
@@ -150,32 +191,65 @@
 
 @media screen and (max-width: 600px) {
     .blog-section .blog-title {
-        margin-bottom: 28PX;
-        font-size: 36px;
+        margin-bottom: 44px;
     }
 
     .blog-section .blog-content {
-        padding: 14px;
+        padding: 30px 14px 14px;
     }
 
     .blog-section .blog-content h5 {
-        font-size: 18px;
-        font-weight: 500;
-        font-family: 'Helvetica Now Display';
-        color: var(--black);
+        font-size: 20px;
     }
 
     .blog-section .blog-content p {
         font-size: 14px;
-        font-weight: 500;
-        font-family: 'Helvetica Now Display';
-        color: var(--blue-text);
     }
 }
 
 @media screen and (max-width: 520px) {
     .blog-section {
         padding-top: 44px;
+    }
+
+    .hero-section::before {
+        top: -10px;
+    }
+
+    .blog-section .filter-part .search-bar {
+        padding: 12px 20px;
+        gap: 8px;
+    }
+
+    .blog-section .filter-part .filter-btn {
+        padding: 12px 20px;
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .blog-section .filter-part .search-bar input{
+        font-size: 14px;
+    }
+
+    .blog-section .blog-card {
+        position: relative;
+        z-index: 10;
+    }
+
+    .blog-section .mobile-shadow{
+        position: relative;
+    }
+
+    .blog-section .mobile-shadow::before{
+        width: 600px;
+        height: 160px;
+        content: "";
+        position: absolute;
+        filter: blur(200px);
+        background-color: #7282F2;
+        z-index: -3;
+        left: 0;
+        border-radius: 50%;
     }
 }
 

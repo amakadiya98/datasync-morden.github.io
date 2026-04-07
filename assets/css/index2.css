@@ -1,6 +1,6 @@
 .custom-container {
     max-width: 1280px;
-}
+} 
 
 .primary-button,
 .secondary-btn {
@@ -528,15 +528,15 @@
         padding: 0 30px 30px 30px;
     }
 
-    .Sync-Ai-top{
+    .Sync-Ai-top {
         padding: 40px 20px;
     }
 }
 
 @media (max-width: 576px) {
-	.designed-simplify {
-		padding: 40px 24px 0px 24px;
-	}
+    .designed-simplify {
+        padding: 40px 24px 0px 24px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -549,8 +549,8 @@
         border-radius: 11px;
     }
 
-    .designed-simplify .designed-simplify-card{
-        --bs-gutter-x : 0
+    .designed-simplify .designed-simplify-card {
+        --bs-gutter-x: 0
     }
 
     .hero-section .banner-content .top-content h1 {
@@ -605,11 +605,11 @@
     }
 
     .hero-section.home-hero-section::after {
-		background-image: url(./../images/home/hero-bottom-design-mobile.svg);
-		bottom: -260px;
-	}
+        background-image: url(./../images/home/hero-bottom-design-mobile.svg);
+        bottom: -260px;
+    }
 
-    .Sync-Ai-top{
+    .Sync-Ai-top {
         padding: 20px;
     }
 
@@ -657,6 +657,7 @@
     .fair-pricing-section .section-content {
         padding: 7px 0px 0px 0px;
     }
+    ===
 
     .fair-pricing-section .section-center-top .badge {
         margin-bottom: 42px;
@@ -683,16 +684,16 @@
         margin-top: 15px;
     }
 
-    .datasync-plus-section .secondary-text{
+    .datasync-plus-section .secondary-text {
         font-size: 14px;
         line-height: 18px;
     }
 
     .review-section .card-container .review-card {
-		padding: 80px 30px 30px 30px;
-	}
+        padding: 80px 30px 30px 30px;
+    }
 
-    .hero-section .banner-content .top-content .secondary-text{
+    .hero-section .banner-content .top-content .secondary-text {
         font-size: 14px;
     }
 }
