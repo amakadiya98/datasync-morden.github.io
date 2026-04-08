@@ -1,15 +1,30 @@
-.hero-section.home-hero-section::after {
-    bottom: unset;
-    top: 507px;
+.hero-section::after {
+    top: 472px;
 }
 
-.hero-section.home-hero-section .banner-content .bottom-btn {
-    top: 118px;
-    margin: auto;
-    margin-bottom: 15px;
+.hero-section {
+    padding-bottom: 15px;
 }
 
-.hero-section.home-hero-section .banner-content .top-content {
+.hero-section .banner-content .bottom-btn {
+    margin-top: 118px;
+}
+
+.secondary-text {
+    font-size: 20px;
+}
+
+.main-heading {
+    font-size: 45px;
+    letter-spacing: -4%;
+}
+
+.primary-button {
+    width: fit-content;
+
+}
+
+.hero-section .banner-content .top-content {
     max-width: 932px;
 }
 
@@ -29,6 +44,11 @@
 .story-wrapper {
     position: relative;
     padding-bottom: 15px;
+}
+
+.story-wrapper-padding {
+    padding: 0px 24px 0px 24px;
+    background: transparent;
 }
 
 .story-wrapper::after {
@@ -58,20 +78,16 @@
 }
 
 .story-section .story-card {
-    padding: 0px 21px 0px 21px;
+    padding: 0px 0px 0px 0px;
     background-color: var(--white);
     z-index: 10;
     position: relative;
-}
-
-.story-section .story-card .story-card-row {
-    --bs-gutter-x: 132px;
+    padding: 20px;
 }
 
 .story-section .story-card .story-card-row .card-left {
-    padding-top: 73px;
-    padding-left: 71px;
-    padding-bottom: 73px;
+    padding-left: 26px;
+    padding-right: 6px;
 }
 
 .story-section .story-card .story-card-row .card-left .card-heading {
@@ -80,7 +96,7 @@
     font-weight: 500;
     font-size: 25px;
     letter-spacing: -3%;
-    padding-bottom: 13px;
+    padding-bottom: 23px;
     margin-bottom: 0px;
 }
 
@@ -89,7 +105,7 @@
 }
 
 .story-section .story-card .story-card-row .card-left .main-heading {
-    padding-bottom: 30px;
+    padding-bottom: 36px;
 }
 
 .story-section .story-card .story-card-row .card-left p:nth-child(3) {
@@ -98,9 +114,7 @@
 
 .story-section .story-card .story-card-row .card-right {
     background: linear-gradient(180deg, #BFC5FB 0%, #FFFFFF 100%);
-    padding: 33px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 30px;
 }
 
 .story-section .story-card .story-card-row .card-right img {
@@ -139,7 +153,7 @@
 }
 
 .mission-vision-Section .intro-card {
-    padding: 73px 56px 110px 56px;
+    padding: 73px 44px 110px 44px;
     gap: 57px;
     height: 100%;
     background-image: linear-gradient(180deg,
@@ -155,8 +169,9 @@
     background-position: bottom;
 }
 
-.mission-vision-Section .col-lg-6 {
-    padding: 22px;
+.inner-padding-mission-vision {
+    padding: 0px 24px 0px 24px;
+    background-color: transparent;
 }
 
 .mission-vision-Section .intro-card .number {
@@ -207,53 +222,47 @@
     font-size: 16px;
 }
 
-.slider-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-left: 10%;
-}
-
-.team-slider-section .team-slider {
-    position: relative;
+.team-section {
     background: linear-gradient(180deg, #7282F2 -65.86%, #FFFFFF 100%);
-    padding: 54px 0px 67px 0px;
-    z-index: 1;
+    padding: 50px 0;
 }
 
-.team-slider-section {
-    width: 110%;
-    margin-left: -10%;
+.team-section .card-content {
+    gap: 18px;
 }
 
-.team-slider .owl-item {
-    position: relative;
-    z-index: 1;
-}
-
-.team-slider-section .team-slider .white-bg {
+.team-section .white-bg {
     background-color: white;
-    padding: 14px 20px 17px 20px
+    padding: 14px 20px 17px 20px;
+    width: calc((100% - 40px) / 3);
 }
 
-.team-slider-section .team-slider .white-bg img {
-    padding-bottom: 22px;
+.team-section .white-bg img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
 }
 
-.team-slider-section .team-slider .white-bg .card-item {
+.team-section .white-bg img {
+    margin-bottom: 22px;
+}
+
+.team-section .white-bg .card-item {
     display: flex;
     justify-content: space-between;
     align-items: left;
     text-align: left;
 }
 
-.team-slider-section .team-slider .white-bg .card-item .card-right {
+.team-section .white-bg .card-item .card-right {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.team-slider-section .team-slider .white-bg .card-item .card-right h2 {
+.team-section .white-bg .card-item .card-right h2 {
     color: #051336;
     font-family: 'Helvetica Now Display';
     font-weight: 500;
@@ -262,7 +271,7 @@
     margin: 0px;
 }
 
-.team-slider-section .team-slider .white-bg .card-item .card-right p {
+.team-section .white-bg .card-item .card-right p {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 14px;
@@ -271,65 +280,10 @@
     margin: 0px;
 }
 
-.team-slider-section .team-slider .white-bg .card-item .img-linkdin {
+.team-section .white-bg .card-item .img-linkdin {
     height: 47px;
     width: 47px;
     padding-bottom: 0px;
-}
-
-.prev-btn,
-.next-btn {
-    background: #D3D3D3;
-    height: 42px;
-    width: 42px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--white);
-}
-
-.next-btn {
-    background: linear-gradient(96.04deg, #051336 26.04%, #E5A9E7 139.46%);
-}
-
-.next-btn.active,
-.prev-btn.active {
-    background: linear-gradient(96.04deg, #051336 26.04%, #E5A9E7 139.46%);
-}
-
-.team-slider::before,
-.team-slider::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    z-index: 2;
-}
-
-.team-slider::before {
-    left: 9%;
-    background: linear-gradient(to right,
-            #ffffff 0%,
-            rgba(255, 255, 255, 0) 70%);
-    width: 205px;
-}
-
-.team-slider::after {
-    right: 0;
-    background: linear-gradient(to left,
-            #ffffff 0%,
-            rgba(255, 255, 255, 0) 70%);
-    width: 205px;
-}
-
-.team-slider::before,
-.team-slider::after {
-    z-index: 5;
-}
-
-.team-slider .owl-item {
-    padding: 0 13px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -338,29 +292,81 @@
         line-height: 72px;
     }
 
-    .story-section .story-card .story-card-row {
-        --bs-gutter-x: 21px;
-    }
-
-    .story-section .story-card .story-card-row .card-left {
-        padding-top: 50px;
-        padding-left: 19px;
-        padding-bottom: 50px;
-    }
-
-    .hero-section.home-hero-section::after {
+    .hero-section::after {
         bottom: unset;
         top: 480px;
     }
 }
 
-@media screen and (max-width: 1260px) {
+
+
+@media screen and (max-width: 1280px) {
     .mission-vision-Section .intro-card {
         padding: 50px 20px 50px 20px;
     }
+
+    .hero-section::after {
+        top: 410px;
+    }
+
+    .story-section .story-card .story-card-row .card-left .main-heading {
+        padding-bottom: 12px;
+    }
+
+    .story-section .story-card .story-card-row .card-left .card-heading {
+        padding-bottom: 13px;
+    }
+
+    .story-section .story-card .story-card-row .card-left p:nth-child(3) {
+        padding-bottom: 10px;
+    }
+
+    .story-section .story-card .story-card-row .card-left {
+        padding-left: 14px;
+    }
+
+    .story-wrapper-padding {
+        padding: 0;
+    }
+
+    .main-heading {
+        font-size: 35px;
+    }
+
+    .team-section .white-bg img {
+        max-height: 320px;
+    }
 }
 
+@media screen and (max-width: 1200px) {
+    .story-section .story-card .story-card-row .card-right {
+        border-radius: 15px;
+    }
 
+    .story-section .story-card .story-card-row .card-right img {
+        border-radius: 15px;
+    }
+
+    .story-section .story-card .story-card-row .card-left p:nth-child(3) {
+        padding-bottom: 20px;
+    }
+
+    .story-section .story-card .story-card-row .card-left .main-heading {
+        padding-bottom: 30px;
+    }
+
+    .story-section .story-card .story-card-row .card-left p:nth-child(4) {
+        padding-bottom: 22px;
+    }
+
+    .story-section .story-card {
+        padding-bottom: 33px
+    }
+
+    .story-section .story-card .story-card-row .card-left .card-heading {
+        padding-top: 30px;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .mission-vision-Section::before {
@@ -377,15 +383,31 @@
     }
 
     .datasync-team .section-center-top {
-        gap: 20px;
+        gap: 24px;
     }
 
     .datasync-team .section-center-top .main-heading {
-        font-size: 54px;
+        font-size: 30px;
     }
 
-    .team-slider-section .team-slider .white-bg .card-item .card-right p {
-        height: 56px;
+    .story-section .story-card .story-card-row .card-left p:nth-child(4) {
+        margin-bottom: 30px
+    }
+
+    .inner-padding-mission-vision {
+        padding: 45px 15px 46px 15px;
+    }
+
+    .story-section .story-card .story-card-row .card-left {
+        padding-bottom: 33px;
+    }
+
+    .story-wrapper {
+        padding-bottom: 0px;
+    }
+
+    .team-section .white-bg {
+        width: calc((100% - 20px) / 2);
     }
 }
 
@@ -393,6 +415,10 @@
     .hero-section .banner-content .top-content .title-top {
         font-size: 44px;
         line-height: 64px;
+    }
+
+    .main-heading {
+        font-size: 25px;
     }
 
     .story-section .story-card .story-card-row .card-left .main-heading {
@@ -411,10 +437,6 @@
         font-size: 25px;
     }
 
-    .datasync-team .section-center-top {
-        gap: 16px;
-    }
-
     .datasync-team {
         padding-top: 29px;
     }
@@ -423,8 +445,14 @@
         padding-bottom: 6px;
     }
 
-    .hero-section.home-hero-section .banner-content .bottom-btn {
-        top: 92px;
+    .team-section .white-bg img {
+        max-height: 220px;
+    }
+
+    .secondary-text {
+        font-size: 16px;
+        letter-spacing: -5%;
+        line-height: 20px;
     }
 }
 
@@ -436,26 +464,16 @@
         letter-spacing: -1%;
     }
 
-    .team-slider-section {
-        width: unset;
-        margin-left: unset;
-    }
-
-    .team-slider::before {
-        left: 0%;
-        width: 100px;
-    }
-
-    .slider-controls {
-        padding-left: unset;
+    .story-section .story-card .story-card-row .card-left .card-heading {
+        padding-top: unset;
     }
 
     .story-section .story-card .story-card-row .card-left p:nth-child(3) {
-        padding-bottom: 9px;
+        padding-bottom: 18px;
     }
 
     .story-section .story-card .story-card-row .card-left .main-heading {
-        padding-bottom: 13px;
+        padding-bottom: 26px;
     }
 
     .story-section .story-card .story-card-row .card-left .card-heading {
@@ -463,40 +481,130 @@
     }
 
     .story-section .story-card .story-card-row .card-left {
-        padding-top: 35px;
-        padding-left: 19px;
-        padding-bottom: 28px;
+        padding: 17px 20px 0px 2px
     }
 
     .mission-vision-Section .intro-card {
-        gap: 20px;
+        gap: 47px;
     }
 
     .mission-vision-Section .intro-card h6 {
-        padding-bottom: 6px;
+        padding-bottom: 18px;
     }
 
-    .team-slider::after {
-        width: 100px;
+    .mission-vision-Section .intro-card img {
+        height: 60px;
+        width: 60px;
     }
 
-    .team-slider-section .team-slider .white-bg .card-item .card-right h2 {
-        font-size: 18px;
-        height: 43px;
+    .mission-vision-Section .intro-card {
+        padding: 42px 32px 50px 27px;
     }
 
-    .hero-section.home-hero-section .banner-content .bottom-btn {
-        top: 38px;
+    .story-section .story-card .story-card-row .card-left {
+        padding-bottom: 24px;
     }
 
-    .hero-section.home-hero-section::after {
+    .team-section .white-bg {
+        width: 100%;
+    }
+
+    .team-section .white-bg img {
+        max-height: 320px;
+    }
+
+    .team-section .card-content {
+        gap: 0;
+    }
+
+    .team-section .white-bg .card-item .card-right {
+        gap: 4px;
+    }
+
+    .story-section .story-card .story-card-row .card-right {
+        padding: 8px;
+    }
+
+    .story-section .story-card {
+        padding-top: 13px;
+    }
+
+    .secondary-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .hero-section::after {
         bottom: unset;
         top: 302px;
     }
+
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .story-section {
+        margin-top: 58px;
+    }
+
+    .hero-section {
+        border-bottom: 1px solid #eee;
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -1%;
+    }
+
+    .inner-padding-mission-vision {
+        padding: 45px 15px 46px 15px;
+    }
+
+    .datasync-team {
+        padding-top: 37px;
+    }
+
+    .datasync-team .section-center-top .secondary-text {
+        font-size: 14px;
+        max-width: 324px;
+    }
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .hero-section .banner-content .top-content .title-top {
         font-size: 24px;
+    }
+
+    .hero-section {
+        border-bottom: 1px solid;
+    }
+
+    .hero-section::after {
+        top: 268px;
+        height: 557px;
+        background-image: url(./../images/performance-analyzer/performance-hero-bottom.svg);
+    }
+
+    .hero-section .banner-content .top-content .secondary-text {
+        max-width: 330px;
+        margin: auto;
+    }
+
+    .hero-section-wrapper::after {
+        height: 142px;
+        bottom: 0px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+        width: 100%;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .hero-section-wrapper {
+        position: relative;
     }
 }

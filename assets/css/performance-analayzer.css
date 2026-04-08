@@ -99,15 +99,16 @@
 .core-solutions .blur-effect::after {
     content: "";
     position: absolute;
-    width: 444px;
-    height: 400px;
-    right: 292px;
+    width: 384px;
+    height: 260px;
+    left: -57px;
     bottom: 50px;
     background: #7984F1;
     z-index: 0;
     opacity: 70%;
-    filter: blur(180px);
+    filter: blur(208px);
     border-radius: 100%;
+
 }
 
 .core-solutions .inventory-health-body {
@@ -117,6 +118,10 @@
 .core-solutions .dashboard-image.active {
     display: block;
     opacity: 1;
+}
+
+.core-solutions .performance-analayzer-content {
+    margin-top: 140px;
 }
 
 .core-solutions .top-part {
@@ -147,19 +152,21 @@
     text-align: start;
     gap: 42px;
     padding: 81px 0 100px 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.core-solutions .marketing-performance-header {
+    border-left: 1px solid #eee;
 }
 
 .performance-core-solutions {
     display: flex;
     flex-direction: column;
-
     padding: 0;
     margin-bottom: 70px;
 }
 
-.performance-core-solutions.core-solution-gap {
-    gap: 140px;
-}
 
 .img-accordion {
     margin-top: -50px;
@@ -180,6 +187,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.core-solution-bottom-border {
+    border-bottom: 0 !important;
+    background: transparent;
 }
 
 
@@ -207,6 +219,11 @@
 @media screen and (max-width: 991px) {
     .core-solutions .core-solutions-content {
         margin: 0 auto;
+        border: none;
+        background: none
+    }
+
+    .border-wrapper-hidden {
         border: none;
         background: none
     }
@@ -244,6 +261,8 @@
 
     .core-solution-bottom-border {
         padding-bottom: 72px;
+        border-bottom: 0;
+        background-color: transparent;
     }
 
     .core-solutions .solutions-left {
@@ -254,17 +273,30 @@
         align-items: center;
     }
 
-    .core-solutions .start-core-header{
+    .core-solutions .start-core-header {
         padding: 0px 0px 60px 0px;
+        align-items: center;
+        text-align: center;
+
     }
 
     .core-solutions .border-x {
         background: transparent;
     }
 
-    .core-solutions .top-part{
+    .core-solutions .top-part {
         border-left: 0;
         border-right: 0;
+    }
+
+    .core-solutions .marketing-performance-header {
+        border-left: 0
+    }
+
+    .custom-border {
+        border: 0;
+        background: transparent;
+
     }
 }
 
@@ -299,6 +331,10 @@
         gap: 30px;
     }
 
+    .core-solutions .start-core-header {
+        gap: 30px;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -326,8 +362,6 @@
     .hero-section::after {
         top: 264px;
     }
-
-
 }
 
 
@@ -384,6 +418,10 @@
         gap: 20px;
     }
 
+    .core-solutions .start-core-header {
+        gap: 20px;
+    }
+
     .core-solutions .top-part .main-heading {
         text-align: center;
         font-size: 25px;
@@ -401,7 +439,7 @@
         margin-top: 0;
     }
 
-    .core-solutions .start-core-header{
+    .core-solutions .start-core-header {
         padding-bottom: 40px;
     }
 }
@@ -425,5 +463,17 @@
 
     .performance-page-top.core-solutions .top-part {
         padding-bottom: 40px;
+    }
+
+    .hero-section .banner-content .top-content .secondary-text.small-font-sync-ai {
+        max-width: 333px;
+    }
+
+    .hero-section .banner-content .top-content .secondary-text.customer-insight {
+        max-width: 298px;
+    }
+
+    .hero-section .banner-content .top-content .secondary-text.smart-pricing-text {
+        max-width: 317px;
     }
 }

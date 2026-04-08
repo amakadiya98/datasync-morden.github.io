@@ -18,17 +18,17 @@
     padding-top: 280px;
 }
 
-.hero-section.home-hero-section .banner-content .bottom-btn {
+.hero-section .banner-content .bottom-btn {
     margin-top: 98px;
 }
 
-.hero-section.home-hero-section::after {
+.hero-section::after {
     bottom: unset;
     z-index: 1;
-    top: 580px;
+    top: 583px;
 }
 
-.hero-section.home-hero-section .banner-content .top-content {
+.hero-section .banner-content .top-content {
     max-width: 1073px;
 }
 
@@ -125,7 +125,7 @@
 
 .contactUs-section .location-frame iframe {
     width: 100%;
-    height: 530px;
+    height: 481px;
     display: block;
     position: relative;
 }
@@ -341,6 +341,20 @@
         height: 60px;
         object-fit: contain;
     }
+
+    .custom-container-width {
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    .contactUs-section .contactUs-inner-padding {
+        padding: 0;
+    }
+
+    /* 
+    .owl-carousel .owl-stage .owl-item:nth-child(1) {
+        margin-left: 80px;
+    } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -362,7 +376,7 @@
         padding-top: 200px;
     }
 
-    .hero-section.home-hero-section::after {
+    .hero-section::after {
         top: 470px;
     }
 
@@ -370,7 +384,7 @@
         padding-bottom: 55px;
     }
 
-    .hero-section.home-hero-section .banner-content .bottom-btn {
+    .hero-section .banner-content .bottom-btn {
         margin-top: 69px;
     }
 
@@ -380,7 +394,6 @@
 
     .contactUs-section .location-frame .location-frame-heading {
         font-size: 34px;
-        padding-top: 20px;
     }
 
     .contactUs-form-section .contatus-heading {
@@ -388,13 +401,6 @@
         padding: 42px 0px;
     }
 
-    .contactUs-section .location-frame iframe {
-        height: 430px;
-    }
-
-    .contactUs-section .location-frame .iframe-inner-padding {
-        padding: 24px 20px 54px 20px;
-    }
 
     .contactUs-form-section .contactUs-form {
         padding-left: 9px;
@@ -409,8 +415,13 @@
 
 @media screen and (max-width: 768px) {
     .hero-section .banner-content .top-content .title-top {
-        font-size: 44px;
-        line-height: 64px;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 34px;
+        line-height: 40px;
     }
 
     .contactUs-form-section .contactUs-form .white-form .input-card::placeholder {
@@ -431,7 +442,7 @@
 
 @media screen and (max-width: 520px) {
     .hero-section .banner-content .top-content .title-top {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 38px;
         letter-spacing: -1%;
     }
@@ -448,30 +459,41 @@
         font-size: 14px;
     }
 
-    .hero-section.home-hero-section::after {
+    .hero-section::after {
         top: 325px;
     }
 
     .hero-section .banner-content .top-content h1 {
-        line-height: 35px;
+        line-height: 38px;
+        font-size: 25px;
     }
 
-    .hero-section.home-hero-section .banner-content .bottom-btn {
-        margin-top: 46px;
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 109px;
     }
 
     .contactUs-section .location-frame .location-frame-heading {
-        font-size: 28px;
-        padding-top: 8px;
+        font-size: 25px;
+        padding-top: 45px;
     }
 
     .contactUs-form-section .contatus-heading {
-        font-size: 28px;
-        padding: 25px 0px;
+        font-size: 25px;
+        padding: 90px 0px 48px 0px;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
     }
 
     .contactUs-section .location-frame .iframe-inner-padding {
-        padding: 30px 20px 36px 20px;
+        padding: 39px 0px 0px 0px;
+    }
+
+    .contactUs-section .contactUs-inner-padding .custom-gap .card-grid {
+        padding: 21px 16px 23px 21px;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .custom-check {
+        padding: 0px 20px 0px 3px;
     }
 
     .contactUs-section::before {
@@ -492,10 +514,11 @@
     .contactUs-form-section .contactUs-form {
         padding-left: 0px;
         padding-right: 0px;
+        padding-top: 37px;
     }
 
     .contactUs-form-section .contactUs-form .white-form {
-        padding: 49px 30px 50px 30px;
+        padding: 37px 17px 110px 17px;
     }
 
     .contactUs-form-section .contactUs-form .white-form .card-row {
@@ -507,17 +530,9 @@
         height: 150px;
     }
 
-    .contactUs-form-section .contactUs-form .white-form {
-        padding: 44px 28px 51px 27px;
-    }
-
-    .contactUs-form-section .contactUs-form {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
     .contactUs-form-section .contactUs-form .white-form .lable-text {
         font-size: 16px;
+        max-width: 270px;
     }
 
     .contactUs-form-section .contactUs-form .white-form .form-select.input-card {
@@ -525,7 +540,40 @@
     }
 
     .contactUs-section .contactUs-inner-padding {
-        padding: 20px 20px 20px 20px;
+        padding: 0;
+    }
+
+    .contactUs-form-section .contactUs-form .white-form .button-part .primary-button {
+        margin: 0px 20px 0px 3px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .hero-section::after {
+        top: 247px;
+        height: 557px;
+        background-image: url(./../images/performance-analyzer/performance-hero-bottom.svg);
+    }
+
+    .hero-section-wrapper::after {
+        height: 142px;
+        bottom: 0px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%);
+        width: 100%;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .hero-section-wrapper {
+        position: relative;
+    }
+
+    .contactUs-section .location-frame iframe {
+        height: 530px;
     }
 }
 
