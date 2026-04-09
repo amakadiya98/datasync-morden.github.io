@@ -18,6 +18,56 @@
     background-size: cover;
 }
 
+.hero-section-sync .bottom-btn-container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section-sync .bottom-btn-container .bottom-btn {
+    height: 50px;
+    width: 50px;
+    margin: 75px 0 50px 0;
+    background-color: var(--light-pink);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section-sync .bottom-btn-container .bottom-btn .gredient-part {
+    height: 24px;
+    width: 15px;
+    border-radius: 15px;
+    background: linear-gradient(96.55deg, #DB97ED -2.66%, #7984F1 61.74%);
+    box-shadow: 0px 21px 46.1px 0px #7040C480;
+}
+
+.hero-section-sync .bottom-btn-container .bottom-btn .gredient-part .dot {
+    background: var(--white);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.hero-section-sync .bottom-btn-container::after {
+    height: 630px;
+    width: 100%;
+    top: -84px;
+    content: "";
+    position: absolute;
+    background-image: url(./../images/performance-analyzer/performance-hero-bottom.svg);
+    background-position: center;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.hero-section-sync .mobile-hero-img {
+    z-index: 10;
+}
+
 /* sync ai section */
 .sync-ai {
     padding-top: 206px;
@@ -27,11 +77,11 @@
 .sync-ai .custom-text {
     font-family: 'Inter';
     font-weight: 500;
-    font-style: Medium;
     font-size: 35px;
     line-height: 30px;
     color: var(--light-purple);
     text-align: center;
+    letter-spacing: -5%;
 }
 
 .sync-ai .page-title {
@@ -66,11 +116,10 @@
 
 .Profit-Optimizations .border-top {
     position: absolute;
-    top: 50%;
+    top: 32%;
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 30px;
     z-index: 0;
 }
 
@@ -114,7 +163,7 @@
     background: #7282F2;
     border-radius: 50%;
     z-index: 0;
-    filter: blur(404px);
+    filter: blur(260px);
 }
 
 .Expect-from-Sync-AI-Section .intro-card {
@@ -217,6 +266,33 @@
 
 /* profit-section  */
 
+.profit-section {
+    position: relative;
+    z-index: 2;
+}
+
+.profit-section::before {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    content: "";
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.profit-section::after {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    content: "";
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
 .profit-section .profit-slider .profit-card {
     padding: 16px;
     background-color: #F0F1FE;
@@ -259,6 +335,12 @@
 
 /* responsive design */
 
+@media screen and (max-width: 1280px) {
+    .hero-section-sync::before {
+        top: -30px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .Profit-Optimizations .custom-container .Profit-Optimizations-content {
         padding: 100px 50px;
@@ -270,8 +352,17 @@
 }
 
 @media screen and (max-width: 992px) {
-    .sync-ai {
-        padding-top: 168px;
+    .sync-ai .custom-text {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .sync-ai .page-title {
+        line-height: 58px;
+    }
+
+    .sync-ai .sync-ai-subtitle {
+        margin-top: 24px;
     }
 
     .Expect-from-Sync-AI-Section::before {
@@ -361,10 +452,6 @@
         line-height: 33px;
     }
 
-    .hero-section-sync::before {
-        background-image: url('./../images/home/background-lines-mobile.svg');
-    }
-
     .page-title {
         font-size: 30px;
     }
@@ -397,23 +484,83 @@
     }
 
     .business-outcome .accordion-padding .accordion-background .accordion-row {
+        margin: 0px;
+        padding-left: 0px;
         --bs-gutter-y: 40px;
+        border-radius: 0;
+        border: none;
+        background: transparent;
     }
 
-    .business-outcome .accordion-padding .accordion-background .accordion-row {
-        margin: 16px 0px;
-        padding-left: 0px;
+    .business-outcome .mobile-bg {
+        background: linear-gradient(180deg, #BFC5FB -70.56%, #FFFFFF 100%);
+    }
+
+    .business-outcome .mobile-bg .border-x {
+        background: transparent;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+    }
+
+    .business-outcome .accordion-padding .accordion-background {
+        background: transparent;
     }
 
     .profit-section .profit-slider .profit-numbers {
-        font-size: 18px;
-    }
-
-    .profit-section .profit-slider .profit-card {
-        padding: 10px;
+        font-size: 30px;
+        min-width: 150px;
     }
 
     .profit-section .profit-slider .owl-stage {
         padding: 40px 0;
+    }
+
+    .profit-section .profit-slider .secondary-text {
+        font-size: 16px;
+    }
+
+    .hero-section-sync::before {
+        top: -60px;
+    }
+
+    .Profit-Optimizations .border-top {
+        display: none;
+    }
+
+    .Profit-Optimizations .main-heading {
+        width: 90%;
+    }
+
+    .Expect-from-Sync-AI-Section .col-lg-6 {
+        padding: 10px;
+    }
+
+    .business-outcome .accordion-padding {
+        padding: 0;
+    }
+
+    .profit-section .profit-slider {
+        display: flex !important;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        gap: 22px;
+        margin-top: 30px;
+    }
+
+    .profit-section .profit-slider .profit-card {
+        background-color: #F0F1FE;
+    }
+
+    .profit-section::before,
+    .profit-section::after {
+        content: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero-section-sync::before {
+        background-image: url('./../images/home/background-lines-mobile.svg');
+        top: -6px;
     }
 }

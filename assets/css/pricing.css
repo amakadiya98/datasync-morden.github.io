@@ -89,14 +89,14 @@ p {
     z-index: 10;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card {
+.hero-section .banner-content .pricing-section .card {
     background-color: #F5F6FF;
     width: 100%;
     height: 100%;
     padding: 10px 14px 64px 15px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .card-top {
+.hero-section .banner-content .pricing-section .card .card-top {
     background: linear-gradient(180deg, #BFC5FB 0%, var(--white) 249.15%);
     height: 80px;
     width: 100%;
@@ -105,21 +105,21 @@ p {
     justify-content: center;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card:hover .card-top {
+.hero-section .banner-content .pricing-section .card:hover .card-top {
     background: #7583F2;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card:hover .card-top p {
+.hero-section .banner-content .pricing-section .card:hover .card-top p {
     color: #fff;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card,
+.hero-section .banner-content .pricing-section .card,
 .card-top,
 .card-top p {
     transition: all 0.3s ease;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
+.hero-section .banner-content .pricing-section .card .card-top .heading-text {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -129,15 +129,15 @@ p {
     margin-bottom: 0;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text.highlight {
+.hero-section .banner-content .pricing-section .card .card-top .heading-text.highlight {
     max-width: 110px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner {
+.hero-section .banner-content .pricing-section .card .padding-inner {
     padding-left: 15px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+.hero-section .banner-content .pricing-section .card .padding-inner p:nth-child(1) {
     color: var(--blue-text);
     font-family: "Helvetica Now Display";
     font-weight: 500;
@@ -149,7 +149,7 @@ p {
     height: 127px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+.hero-section .banner-content .pricing-section .card .padding-inner h2:nth-child(2) {
     font-family: 'Helvetica Now Display';
     line-height: 20px;
     letter-spacing: -3%;
@@ -158,7 +158,7 @@ p {
     padding-bottom: 50px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(3) {
+.hero-section .banner-content .pricing-section .card .padding-inner p:nth-child(3) {
     color: var(--blue-text);
     font-family: "Helvetica Now Display";
     font-weight: 500;
@@ -167,7 +167,7 @@ p {
     letter-spacing: -3%;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner span {
+.hero-section .banner-content .pricing-section .card .padding-inner span {
     font-family: 'Helvetica Now Display';
     font-weight: 500;
     font-size: 14px;
@@ -175,12 +175,12 @@ p {
     letter-spacing: -3%;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+.hero-section .banner-content .pricing-section .card .padding-inner button {
     margin-bottom: 38px;
     margin-top: 39px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .text-card {
+.hero-section .banner-content .pricing-section .card .padding-inner .text-card {
     font-family: 'Helvetica Now Display';
     font-weight: 400;
     font-size: 14px;
@@ -192,15 +192,15 @@ p {
     flex: 1;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .max-card {
+.hero-section .banner-content .pricing-section .card .padding-inner .max-card {
     max-width: 194px;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .card-max img {
+.hero-section .banner-content .pricing-section .card .padding-inner .card-max img {
     flex-shrink: 0;
 }
 
-.hero-section .banner-content .pricing-section .five-cols .card .padding-inner .primary-button-highlight {
+.hero-section .banner-content .pricing-section .card .padding-inner .primary-button-highlight {
     margin-top: 19px;
 }
 
@@ -406,28 +406,13 @@ p {
 
 @media screen and (max-width: 1440px) {
     .five-cols {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        --bs-gutter-x: 20px;
-        --bs-gutter-y: 20px;
+        --bs-gutter-x: 10px;
+        --bs-gutter-y: 10px;
     }
 
-    .five-cols>.col {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-
-    .five-cols>.col:nth-last-child(-n+2) {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+    .hero-section .banner-content .pricing-section .card .padding-inner p:nth-child(1) {
         height: 107px;
     }
-
-
 
     .compare-plan .table-wrapper .center-gap {
         gap: 4px;
@@ -471,59 +456,98 @@ p {
     }
 }
 
-@media screen and (max-width: 992px) {
-    .five-cols>.col {
-        flex: 0 0 100%;
+@media screen and (max-width: 1200px) {
+    .hero-section .banner-content .pricing-section .card {
+        padding: 0;
+    }
+
+    .hero-section .banner-content .pricing-section .card .card-top {
+        font-family: 'Helvetica Now Display';
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--black);
+
+        padding: 16px 22px;
+        height: 80px;
+    }
+
+    .hero-section .banner-content .pricing-section .card .card-top p {
+        width: 80%;
+    }
+
+    .hero-section .banner-content .pricing-section .card:hover .card-top {
+        background: linear-gradient(180deg, #BFC5FB 0%, var(--white) 249.15%);
+    }
+
+    .hero-section .banner-content .pricing-section .card .card-top .heading-text {
         max-width: 100%;
     }
 
-    .five-cols>.col:nth-last-child(-n+2) {
-        flex: 0 0 100%;
+    .hero-section .banner-content .pricing-section .card .card-top .heading-text.highlight {
         max-width: 100%;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner .max-card {
-        max-width: 100%;
+    .hero-section .banner-content .pricing-section .card .padding-inner {
+        padding: 0;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
-        max-width: 100%;
+    .hero-section .banner-content .pricing-section .accordion-button::after {
+        background-image: url(./../images/icons/accordion-arrow.svg);
+        height: 34px;
+        width: 34px;
+        background-size: 34px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text.highlight {
-        max-width: 100%;
+    .hero-section .banner-content .pricing-section .accordion-body {
+        padding: 36px 30px;
+    }
+
+    .hero-section .banner-content .pricing-section .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-section .banner-content .pricing-section .accordion .accordion-button:focus {
+        box-shadow: none;
     }
 
     .hero-section .banner-content {
         padding-top: 200px;
+        position: relative;
+        z-index: 10;
     }
 
-    .hero-section .banner-content .bottom-btn {
-        margin-top: 76px;
+    .hero-section::after {
+        content: none;
     }
+
+    .hero-section .banner-content .pricing-section .card:hover .card-top p{
+        color: var(--black);
+    }
+}
+
+@media screen and (max-width: 992px) {
 
     .hero-section .banner-content .pricing-section {
         padding-top: 75px;
     }
 
-    .hero-section::after {
-        top: 301px;
-    }
-
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+    .hero-section .banner-content .pricing-section .card .padding-inner p:nth-child(1) {
         height: auto;
+        padding-top: 0;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+    .hero-section .banner-content .pricing-section .card .padding-inner h2:nth-child(2) {
         padding-bottom: 27px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+    .hero-section .banner-content .pricing-section .card .padding-inner button {
         margin-bottom: 35px;
         margin-top: 27px;
     }
 
-    .compare-plan .table-wrapper {
+    .compare-plan .table-part {
         overflow-x: auto;
     }
 
@@ -550,12 +574,14 @@ p {
 
     .compare-plan.active {
         padding: 0px;
-        width: 90%;
+        /* width: 90%; */
         margin: auto;
     }
 
     .compare-plan .table-wrapper {
-        margin-top: 40px;
+        margin: 40px 5%;
+        width: fit-content;
+        
     }
 
 
@@ -578,25 +604,25 @@ p {
         top: 175px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner p:nth-child(1) {
+    .hero-section .banner-content .pricing-section .card .padding-inner p:nth-child(1) {
         font-size: 14px;
         padding-bottom: 26px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .card-top .heading-text {
+    .hero-section .banner-content .pricing-section .card .card-top .heading-text {
         font-size: 18px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner h2:nth-child(2) {
+    .hero-section .banner-content .pricing-section .card .padding-inner h2:nth-child(2) {
         font-size: 18px;
         font-size: 25px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner span {
+    .hero-section .banner-content .pricing-section .card .padding-inner span {
         font-size: 14px;
     }
 
-    .hero-section .banner-content .pricing-section .five-cols .card .padding-inner button {
+    .hero-section .banner-content .pricing-section .card .padding-inner button {
         margin-bottom: 21px;
         margin-top: 19px;
     }

@@ -13,33 +13,318 @@
 
   <body>
     <!-- HERO SECTION  -->
-    <section class="hero-section">
-      <!-- HEADER  -->
-      <header>
-        <nav class="navbar navbar-expand-lg header-part">
-          <div class="container custom-container d-flex">
-            <!-- Logo -->
-            <a class="navbar-brand" href="./index.html">
-              <img src="./assets/images/header/brand-logo.svg" alt="brand" />
-            </a>
+    <section class="hero-section-wrapper">
+      <div class="hero-section">
+        <!-- HEADER  -->
+        <header>
+          <nav class="navbar navbar-expand-lg header-part">
+            <div class="container custom-container d-flex">
+              <!-- Logo -->
+              <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/header/brand-logo.svg" alt="brand" />
+              </a>
 
-            <!-- Mobile Toggle -->
-            <button
-              class="navbar-toggler toggle-btn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-            >
-              <img src="./assets/images/icons/menu.svg" alt="menu" />
-            </button>
+              <!-- Mobile Toggle -->
+              <button
+                class="navbar-toggler toggle-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+              >
+                <img src="./assets/images/icons/menu.svg" alt="menu" />
+              </button>
 
-            <!-- Menu -->
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarContent"
-            >
-              <!-- Center Menu -->
-              <ul class="navbar-nav mx-auto header-links">
+              <!-- Menu -->
+              <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarContent"
+              >
+                <!-- Center Menu -->
+                <ul class="navbar-nav mx-auto header-links">
+                  <li class="nav-item dropdown desktop-dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Solutions
+                    </a>
+                    <ul class="dropdown-menu header-dropdown">
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./performance-analayzer.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
+                            alt="performance-analyzer-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Performance Analyzer</p>
+                              <p>Real-time commerce visibility.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./smart-pricing.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-smart-pricing.svg"
+                            alt="smart-pricing-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Smart Pricing</p>
+                              <p>Accurate cross-channel price optimization.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./inventory-intelligence.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Inventory Intelligence</p>
+                              <p>
+                                Inventory health, management and forecasting.
+                              </p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./marketing-performance-intelligence.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Marketing.svg"
+                            alt="Marketing-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Marketing Performance Intelligence</p>
+                              <p>
+                                Multi-channel marketing performance analytics.
+                              </p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./customer-insight-analytics.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
+                            alt="Customer-Insights-Analytics-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Customer Insights Analytics</p>
+                              <p>Customer sentiment and voice insights.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./sync-ai-customer-experience-agent.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
+                            alt="Sync-AI-CX-Agent-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Sync AI CX Agent</p>
+                              <p>24/7 automated, AI customer support.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./en.html">DataSync</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pricing.html">Pricing</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+                  </li>
+
+                  <li class="nav-item dropdown desktop-dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Resources
+                    </a>
+                    <ul
+                      class="dropdown-menu header-dropdown resources-dropdown"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./blog.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Blog</p>
+                              <p>Blog</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./event.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Events</p>
+                              <p>Events</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item desktop-hidden">
+                    <a class="nav-link" href="#">Get Started </a>
+                  </li>
+                </ul>
+
+                <!-- Right Button -->
+                <button
+                  class="get-started-btn align-items-center mobile-hidden"
+                >
+                  <a href="#" class=""> Get Started </a>
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src="./assets/images/icons/arrow-right.svg" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="offcanvas offcanvas-end header-offcanvas"
+            tabindex="-1"
+            id="mobileMenu"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav header-links">
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -48,170 +333,45 @@
                   >
                     Solutions
                   </a>
-                  <ul class="dropdown-menu header-dropdown">
+                  <ul class="dropdown-menu">
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./performance-analayzer.html"
+                        >Performance Analyzer</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
-                          alt="performance-analyzer-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Performance Analyzer</p>
-                            <p>Real-time commerce visibility.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./smart-pricing.html"
+                        >Smart Pricing</a
+                      >
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
-                        href="./smart-pricing.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-smart-pricing.svg"
-                          alt="smart-pricing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Smart Pricing</p>
-                            <p>Accurate cross-channel price optimization.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./inventory-intelligence.html"
+                        >Inventory Intelligence</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Inventory Intelligence</p>
-                            <p>Inventory health, management and forecasting.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./marketing-performance-intelligence.html"
+                        >Marketing Performance Intelligence</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Marketing.svg"
-                          alt="Marketing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Marketing Performance Intelligence</p>
-                            <p>
-                              Multi-channel marketing performance analytics.
-                            </p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./customer-insight-analytics.html"
+                        >Customer Insights Analytics</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
-                          alt="Customer-Insights-Analytics-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Customer Insights Analytics</p>
-                            <p>Customer sentiment and voice insights.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./sync-ai-customer-experience-agent.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
-                          alt="Sync-AI-CX-Agent-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Sync AI CX Agent</p>
-                            <p>24/7 automated, AI customer support.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="./en.html">DataSync</a>
+                  <a class="nav-link" href="./en.html">DataSync+</a>
                 </li>
 
                 <li class="nav-item">
@@ -230,124 +390,105 @@
                   >
                     Resources
                   </a>
-                  <ul class="dropdown-menu header-dropdown resources-dropdown">
+                  <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item solution-link" href="./blog.html">
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Blog</p>
-                            <p>Blog</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                      <a class="dropdown-item" href="./event.html">Events</a>
                     </li>
                     <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./event.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Events</p>
-                            <p>Events</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                      <a class="dropdown-item" href="./blog.html">Blogs </a>
                     </li>
                   </ul>
                 </li>
-
-                <li class="nav-item desktop-hidden">
-                  <a class="nav-link" href="#">Get Started </a>
-                </li>
               </ul>
 
-              <!-- Right Button -->
-              <button class="get-started-btn align-items-center mobile-hidden">
-                <a href="#" class=""> Get Started </a>
-                <div
-                  class="arrow-box d-flex justify-content-center align-items-center"
-                >
-                  <img src="./assets/images/icons/arrow-right.svg" />
-                </div>
-              </button>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="custom-container banner-content">
-        <div class="top-content performance-analayzer-banner">
-          <h1 class="small-font">
-            SYNC AI Customer<img
-              src="./assets/images/icons/sync-ai-icon.svg"
-              alt="sync-ai-icon"
-            />Experience Agent
-          </h1>
-          <p class="secondary-text text-center">
-            Provides instant, accurate, and consistent responses to customer
-            inquiries 24/7. It <br class="d-none d-lg-block" />
-            understands your products, past interactions, and support history.
-          </p>
-          <div
-            class="d-flex flex-column justify-content-center align-items-center button-part"
-          >
-            <div class="d-flex buttons">
-              <button class="primary-button">
-                Request a Demo
+              <!-- Button -->
+              <button class="primary-button get-started-btn">
+                Get Started
                 <div
                   class="arrow-box d-flex justify-content-center align-items-center"
                 >
                   <img src="./assets/images/icons/arrow-right.svg" alt="" />
                 </div>
               </button>
-              <button class="secondary-btn">
-                View Pricing
-                <div
-                  class="arrow-box d-flex justify-content-center align-items-center"
-                >
+
+              <div class="d-flex align-items-center gap-2">
+                <div class="social">
                   <img
-                    src="./assets/images/icons/arrow-white-right.svg"
-                    alt=""
+                    src="./assets/images/icons/facebook-white.svg"
+                    alt="facebook"
                   />
                 </div>
-              </button>
-            </div>
-            <div class="justify-content-center d-flex marketing-dot">
-              <button
-                class="bottom-btn d-flex justify-content-center align-items-center"
-              >
-                <div
-                  class="gredient-part d-flex justify-content-center align-items-end"
-                >
-                  <div class="dot"></div>
+                <div class="social">
+                  <img
+                    src="./assets/images/icons/youtube-white.svg"
+                    alt="youtube"
+                  />
                 </div>
-              </button>
+                <div class="social">
+                  <img
+                    src="./assets/images/icons/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="custom-container banner-content">
+          <div class="top-content performance-analayzer-banner">
+            <h1 class="small-font d-sm-block d-none">
+              SYNC AI Customer<img
+                src="./assets/images/icons/sync-ai-icon.svg"
+                alt="sync-ai-icon"
+              />Experience Agent
+            </h1>
+            <h1 class="small-font d-sm-none d-block">
+              SYNC AI<img
+                src="./assets/images/icons/sync-ai-icon.svg"
+                alt="sync-ai-icon"
+              />
+              Customer Experience Agent
+            </h1>
+            <p class="secondary-text text-center small-font-sync-ai">
+              Provides instant, accurate, and consistent responses to customer
+              inquiries 24/7. It <br class="d-none d-lg-block" />
+              understands your products, past interactions, and support history.
+            </p>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center button-part"
+            >
+              <div class="d-flex buttons">
+                <button class="primary-button">
+                  Request a Demo
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                  </div>
+                </button>
+                <button class="secondary-btn">
+                  View Pricing
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="./assets/images/icons/arrow-white-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </button>
+              </div>
+              <div class="justify-content-center d-flex marketing-dot">
+                <button
+                  class="bottom-btn d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="gredient-part d-flex justify-content-center align-items-end"
+                  >
+                    <div class="dot"></div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -357,28 +498,37 @@
     <section class="core-solutions performance-core-solutions border-top">
       <div class="core-solutions-content custom-container">
         <div
-          class="top-part start-core-header border-left core-solutions-padding"
+          class="start-core-header marketing-performance-header core-solutions-padding"
         >
           <div class="badge">Core Solutions</div>
           <div class="main-heading">
-            Everything You Need to Run <br />
-            Smarter Decisions
+            Everything You Need to Run Smarter Decisions
           </div>
         </div>
-        <div class="container-fluid img-accordion">
-          <div class="row">
-            <div class="col-xxl-7 col-12 solutions-left ms-0">
-              <img
-                src="./assets/images/home/dashboard-Meet-Beat Score.png"
-                alt=""
-                class="dashboard-image"
-              />
+      </div>
+      <div class="border-top">
+        <div class="custom-container">
+          <div class="row w-100 mx-auto border-left custom-border">
+            <div class="col-lg-7 col-12 ms-0 px-0">
+              <div
+                class="solutions-left solutions-left-gradient d-lg-block d-none"
+              >
+                <img
+                  src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                  alt=""
+                  class="dashboard-image active"
+                />
+              </div>
+              <div class="blur-effect d-lg-block d-none"></div>
             </div>
 
-            <div class="col-xxl-4 col-12 solutions-right">
+            <div class="col-lg-5 col-12 solutions-right">
               <h5 class="accordion-heading">Core Sub-modules</h5>
 
-              <div class="accordion custom-accordion" id="sync-ai-accordion">
+              <div
+                class="accordion custom-accordion w-100 mx-auto"
+                id="sync-ai-accordion"
+              >
                 <!-- ITEM 1 -->
                 <div class="accordion-item active">
                   <h2 class="accordion-header">
@@ -402,6 +552,15 @@
                       Instant responses can increase conversion rates by 10–15%
                       and reduce support costs by 30–60%.
                     </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -424,8 +583,17 @@
                     data-bs-parent="#sync-ai-accordion"
                   >
                     <div class="accordion-body">
-                      Understand business performance across channels with
-                      real-time insights and clear visual reporting.
+                      Instant responses can increase conversion rates by 10–15%
+                      and reduce support costs by 30–60%.
+                    </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
                     </div>
                   </div>
                 </div>
@@ -449,8 +617,17 @@
                     data-bs-parent="#sync-ai-accordion"
                   >
                     <div class="accordion-body">
-                      Understand business performance across channels with
-                      real-time insights and clear visual reporting.
+                      Instant responses can increase conversion rates by 10–15%
+                      and reduce support costs by 30–60%.
+                    </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
                     </div>
                   </div>
                 </div>
@@ -476,8 +653,17 @@
                     data-bs-parent="#sync-ai-accordion"
                   >
                     <div class="accordion-body">
-                      Understand business performance across channels with
-                      real-time insights and clear visual reporting.
+                      Instant responses can increase conversion rates by 10–15%
+                      and reduce support costs by 30–60%.
+                    </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
                     </div>
                   </div>
                 </div>
@@ -501,8 +687,17 @@
                     data-bs-parent="#sync-ai-accordion"
                   >
                     <div class="accordion-body">
-                      Understand business performance across channels with
-                      real-time insights and clear visual reporting.
+                      Instant responses can increase conversion rates by 10–15%
+                      and reduce support costs by 30–60%.
+                    </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
                     </div>
                   </div>
                 </div>
@@ -528,8 +723,17 @@
                     data-bs-parent="#sync-ai-accordion"
                   >
                     <div class="accordion-body">
-                      Understand business performance across channels with
-                      real-time insights and clear visual reporting.
+                      Instant responses can increase conversion rates by 10–15%
+                      and reduce support costs by 30–60%.
+                    </div>
+                    <div
+                      class="solutions-left solutions-left-gradient d-lg-none d-block"
+                    >
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                      />
                     </div>
                   </div>
                 </div>
@@ -538,6 +742,9 @@
           </div>
         </div>
       </div>
+      <div
+        class="d-lg-none d-block border-bottom core-solution-bottom-border"
+      ></div>
     </section>
     <!-- REVIEW SECTION  -->
     <section class="review-section">

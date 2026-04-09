@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
 //end
 
 $(document).ready(function () {
-  $(".dropdown").each(function () {
+  $(".desktop-dropdown").each(function () {
     let $dropdown = $(this);
     let $menu = $dropdown.find(".dropdown-menu");
 
@@ -96,37 +96,57 @@ $(document).ready(function () {
     ],
   });
 
-  $(".profit-slider").owlCarousel({
-    loop: true,
-    margin: 20,
-    center: true,
-    items: 4.2,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    responsive: {
-      0: {
-        items: 1.4,
-        center: true,
-      },
-      440: {
-        items: 1.7,
-        center: true,
-      },
-      620: {
-        items: 2,
-        center: true,
-      },
-      1000: {
-        items: 2.2,
-      },
-      1300: {
-        items: 3.2,
-      },
-      1700: {
-        items: 4.2,
-      },
-    },
+  function initProfitSlider() {
+    if ($(window).width() > 520) {
+      if (!$('.profit-slider').hasClass('owl-loaded')) {
+        $(".profit-slider").owlCarousel({
+          loop: true,
+          margin: 20,
+          center: true,
+          items: 4.2,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1.4,
+              center: true,
+            },
+            440: {
+              items: 1.7,
+              center: true,
+            },
+            620: {
+              items: 2,
+              center: true,
+            },
+            1000: {
+              items: 2.8,
+            },
+            1300: {
+              items: 3.2,
+            },
+            1700: {
+              items: 4.2,
+            },
+          },
+        });
+      }
+    } else {
+      // Destroy carousel on small screens
+      if ($('.profit-slider').hasClass('owl-loaded')) {
+        $('.profit-slider').trigger('destroy.owl.carousel');
+        $('.profit-slider').removeClass('owl-loaded');
+        $('.profit-slider').find('.owl-stage-outer').children().unwrap();
+      }
+    }
+  }
+
+  initProfitSlider();
+
+  $(window).resize(function () {
+    initProfitSlider();
   });
+
 });
 
 $(document).on("click", function (e) {
@@ -165,48 +185,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// team slider
-
-var slider = $(".team-slider"); // ✅ IMPORTANT
-
-$(".team-slider").owlCarousel({
-  loop: true,
-  margin: 0,
-  center: false,
-  autoplay: false,
-  autoplayTimeout: 3000,
-
-  responsive: {
-    0: {
-      items: 1.5,
-    },
-    440: {
-      items: 2.1,
-    },
-    620: {
-      items: 3.2,
-    },
-    1000: {
-      items: 3.8,
-    },
-    1300: {
-      items: 4.6,
-    },
-    1700: {
-      items: 5.5,
-    },
-  },
-});
-
-// buttons
-$(".next-btn").click(function () {
-  slider.trigger("next.owl.carousel");
-});
-
-$(".prev-btn").click(function () {
-  slider.trigger("prev.owl.carousel");
-});
-
 $(document).ready(function () {
   function initContactSlider() {
     if ($(window).width() < 1200) {
@@ -236,3 +214,57 @@ $(document).ready(function () {
   $(window).on("resize", initContactSlider);
 });
 
+$(document).ready(function () {
+  function initContactSlider() {
+    if ($(window).width() < 1200) {
+      if (!$(".consultSync-slider").hasClass("owl-loaded")) {
+        $(".consultSync-slider").owlCarousel({
+          loop: true,
+          margin: 16,
+          autoplay: true,
+          center: true,
+          autoplayTimeout: 2500,
+          smartSpeed: 600,
+          responsive: {
+            0: { items: 1.2 },
+            520: { items: 1.5 },
+            920: { items: 2.2 },
+          },
+        });
+      }
+    } else {
+      if ($(".consultSync-slider").hasClass("owl-loaded")) {
+        $(".consultSync-slider").trigger("destroy.owl.carousel");
+        $(".consultSync-slider").removeClass("owl-loaded");
+      }
+    }
+  }
+
+  initContactSlider();
+  $(window).on("resize", initContactSlider);
+});
+
+$(document).ready(function () {
+  function initContactSlider() {
+    if ($(window).width() < 1200) {
+      if (!$(".consultSync-slider").hasClass("owl-loaded")) {
+        $(".consultSync-slider").owlCarousel({
+          loop: true,
+          margin: 16,
+          autoplay: true,
+          center: true,
+          autoplayTimeout: 2500,
+          smartSpeed: 600,
+          responsive: {
+            0: { items: 1.2 },
+            520: { items: 1.5 },
+            920: { items: 2.2 },
+          }
+        });
+      }
+    }
+  }
+
+  initContactSlider();
+  $(window).on("resize", initContactSlider);
+});

@@ -3,8 +3,24 @@
     padding-bottom: 63px;
 }
 
+.hero-section .custom-banner.custom-container {
+    width: 100%;
+}
+
+.hero-section .banner-content {
+    padding-top: 243px;
+}
+
 .hero-section .banner-content .bottom-btn {
-    margin-top: 264px;
+    margin-top: 254px;
+}
+
+.hero-section .banner-content .top-content .button-part {
+    margin-top: 56px;
+}
+
+.hero-section::after {
+    top: 510px;
 }
 
 /* ConsultSync section */
@@ -44,7 +60,7 @@
 }
 
 .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid {
-    padding: 21px 21px 27px;
+    padding: 18px 18px 20px;
     gap: 21px;
     position: relative;
     z-index: 2;
@@ -63,6 +79,8 @@
     box-shadow: inset 0 -2px 0 0 rgba(114, 130, 242, 1);
 }
 
+
+
 .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid img {
     height: fit-content;
 }
@@ -73,23 +91,24 @@
     font-style: Medium;
     font-size: 23px;
     letter-spacing: -3%;
-    margin-bottom: 0px;
     color: rgba(5, 19, 54, 1);
+    margin-bottom: unset;
 }
 
 .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-subheading {
     font-family: "Inter";
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
-    letter-spacing: -5%;
+    letter-spacing: -6%;
     color: rgba(51, 73, 130, 1);
+    margin-bottom: unset;
 }
 
 .ConsultSync-section .consultSync-card-row {
     --bs-gutter-x: 30px;
     margin: 0px;
-    padding: 35px 42px;
+    padding: 35px 20px 35px 42px;
     background-color: #ffffff;
     position: relative;
     z-index: 1;
@@ -102,10 +121,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 60px 0px 75px 93px;
-    height: 600px;
+    padding: 50px 0;
     z-index: 1;
     position: relative;
+    margin-top: 50px;
 }
 
 .ConsultSync-section .consultSync-card-row .consultSync-left {
@@ -113,12 +132,30 @@
 }
 
 .ConsultSync-section .consultSync-card-row .consultSync-left .title {
-    color: rgba(5, 19, 54, 1);
-    font-family: 'Helvetica Now Display';
-    font-weight: 400;
-    font-size: 35px;
     margin-bottom: 40px;
-    letter-spacing: -3%;
+}
+
+.consultSync-slider .owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+.consultSync-slider .owl-item {
+    display: flex;
+}
+
+.consultSync-slider .owl-item .item {
+    display: flex;
+    width: 100%;
+}
+
+.consultSync-slider .owl-item .item .card-grid {
+    width: 100%;
+    height: 100%;
+}
+
+.ConsultSync-section .consultSync-card-row .consultSync-right img {
+    width: 85%;
 }
 
 /* e-commerce section */
@@ -137,9 +174,7 @@
 
 .e-commerce .e-commerce-left img {
     max-width: 600px;
-    max-height: 600px;
     width: 100%;
-    height: 100%;
 }
 
 .e-commerce .card-flex {
@@ -156,7 +191,7 @@
             transparent 1px);
 
     background-size: cover, 2px 2px;
-    padding: 100px 200px;
+    padding: 100px 0px;
 }
 
 .true-partnership-section .partnership-card {
@@ -164,7 +199,9 @@
     border: 1px solid rgba(229, 169, 231, 0.3);
     border-radius: 25px;
     padding: 26px 24px 21px 32px;
-
+    width: 90%;
+    max-width: 1008px;
+    margin: 0 auto;
 }
 
 .true-partnership-section .partnership-card .card-row {
@@ -247,40 +284,29 @@
 } */
 
 @media screen and (max-width: 1400px) {
-    .ConsultSync-section .consultSync-card-row .consultSync-right {
-        padding: 30px 0px 30px 100px;
-        height: auto;
-    }
-
-    .ConsultSync-section .consultSync-card-row .consultSync-left {
-        max-width: 100%;
-    }
-
-    .ConsultSync-section .consultSync-card-row .consultSync-right img {
-        width: 90%;
-    }
-
-    .ConsultSync-section .consultSync-card-row {
-        --bs-gutter-x: 0px;
-        --bs-gutter-y: 20px;
-    }
 
     .e-commerce .e-commerce-custom-gap {
         --bs-gutter-x: 0px;
         --bs-gutter-y: 30px;
     }
 
-    .ConsultSync-section .consultSync-card-row {
-        padding: 0px;
-    }
-
     .true-partnership-section {
-        padding: 50px 50px;
+        padding: 50px 0px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .ConsultSync-section .consultSync-card-row .consultSync-right img {
+        width: 90%;
     }
 
-    .true-partnership-section .partnership-card .card-row {
-        --bs-gutter-x: 0px;
-        --bs-gutter-y: 35px;
+    .ConsultSync-section .consultSync-card-row .consultSync-left {
+        max-width: unset;
+        width: 50%;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-right {
+        width: 50%;
     }
 }
 
@@ -293,11 +319,53 @@
     .true-partnership-section .partnership-card .card-row .card-left .text-p {
         max-width: 100%;
     }
+
+    .ConsultSync-section .card-grid img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+
+    .ConsultSync-section .custom-container-width.custom-container {
+        width: 100%;
+    }
+
+    .ConsultSync-section .custom-container-width.custom-container .consultSync-inner-padding {
+        padding: 0px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid {
+        margin-top: 13px;
+        flex-direction: column;
+        padding: 20px 30px 24px 20px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding {
+        padding: 0px;
+    }
+
+    .ConsultSync-section .consultSync-inner-padding .owl-item.center .card-grid {
+        background-position: bottom;
+        box-shadow: inset 0 -2px 0 0 rgba(114, 130, 242, 1);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .consultSync-slider {
+        display: flex !important;
+        gap: 18px;
+        overflow: visible !important;
+    }
+
+    .consultSync-slider .item {
+        flex: 1;
+    }
 }
 
 @media screen and (max-width: 1120px) {
     .e-commerce .e-commerce-left img {
         width: 90%;
+        height: auto;
     }
 
     .e-commerce .e-commerce-left {
@@ -305,24 +373,28 @@
         align-items: center;
         justify-content: center;
     }
+}
 
-    .e-commerce .card-flex {
-        gap: 30px;
-        text-align: center;
+@media screen and (max-width: 992px) {
+    .ConsultSync-section .consultSync-card-row .consultSync-left {
+        width: 100%;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-right {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .ConsultSync-section .consultSync-card-row {
+        padding: 30px 0;
+    }
+
+    .hero-section .banner-content .bottom-btn {
+        margin-top: 70px;
     }
 
     .e-commerce .card-flex .badge {
         align-self: center;
-    }
-
-
-}
-
-@media screen and (max-width: 992px) {
-
-    .hero-section .banner-content .bottom-btn {
-        margin-top: 70px;
-
     }
 
     .hero-section::after {
@@ -349,6 +421,11 @@
         width: 90%;
     }
 
+    .e-commerce .card-flex {
+        gap: 30px;
+        text-align: center;
+    }
+
     .e-commerce {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -367,49 +444,60 @@
         line-height: 22px;
     }
 
-    .hero-section .banner-content .top-content h1 {
-        font-size: 45px;
-        line-height: 72px;
+    .ConsultSync-section .container-fluid {
+        background-color: transparent;
+    }
+
+    .ConsultSync-section .consultSync-card-row {
+        background-color: transparent;
+    }
+
+    .ConsultSync-section .remove-border.border-bottom {
+        border: none !important;
+        background: unset;
+    }
+
+    .ConsultSync-section .remove-border.border-x {
+        border: none;
+        background: unset;
     }
 
     .hero-section .banner-content .top-content h1 span {
         margin-left: 12px;
     }
+
+    .true-partnership-section .partnership-card .card-row .card-left .card-heading {
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .hero-section .banner-content .top-content h1 {
-        font-size: 31px;
-        line-height: 58px;
+        font-size: 35px;
+        line-height: 48px;
     }
 
     .hero-section .banner-content .top-content h1 span {
         margin-left: 5px;
     }
-
-
 }
 
 @media screen and (max-width: 520px) {
     .hero-section::after {
-        height: 400px;
         bottom: 0px;
-        top: 285px;
+        top: 268px;
+        background-size: unset;
     }
 
     .hero-section .banner-content .bottom-btn {
-        margin-top: 70px;
+        margin-top: 192px;
         height: 50px;
         width: 50px;
     }
 
     .hero-section {
-        padding-bottom: 70px;
+        padding-bottom: 32px;
 
-    }
-
-    .ConsultSync-section .consultSync-card-row .consultSync-right {
-        padding: 22px 0px 30px 35px;
     }
 
     .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid .card-grid-heading {
@@ -421,17 +509,14 @@
         line-height: 20px;
     }
 
-    .ConsultSync-section .consultSync-card-row {
-        padding: 0px;
-    }
-
-    .ConsultSync-section .consultSync-card-row .consultSync-left .title {
-        font-size: 25px;
-        margin-bottom: 57px;
-    }
-
     .ConsultSync-section .consultSync-inner-padding .custom-gap .card-grid {
-        padding: 20px 6px 6px 20px;
+        padding: 21px 16px 24px 21px;
+        letter-spacing: -3%;
+    }
+
+    .ConsultSync-section .consultSync-card-row .consultSync-right {
+        width: 100%;
+        margin: 20px auto;
     }
 
     .e-commerce {
@@ -454,7 +539,7 @@
 
 
     .true-partnership-section .partnership-card .card-row .card-left .button-class {
-        gap: 6px;
+        flex-wrap: wrap;
     }
 
     .true-partnership-section {
@@ -467,7 +552,8 @@
     }
 
     .true-partnership-section .partnership-card {
-        padding: 6px 18px 30px 19px;
+        padding: 36px 28px;
+        width: 100%;
     }
 
     .true-partnership-section .partnership-card .card-row .card-right {
@@ -475,16 +561,70 @@
     }
 
     .hero-section .banner-content .top-content h1 {
-        font-size: 25px;
+        font-size: 28px;
         line-height: 38px;
         letter-spacing: -1%;
+        font-weight: 500;
     }
 
+    .hero-section .banner-content .top-content h1 span {
+        padding: 5px 7px;
+    }
 
+    .hero-section .banner-content .top-content h1 span {
+        margin-left: 3px;
+    }
+
+    .hero-section .banner-content .top-content .button-part::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        height: 149px;
+        width: 100%;
+        background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.9) 100%);
+        top: 168px;
+    }
+
+    .hero-section .banner-content {
+        padding-top: 150px;
+    }
+
+    .hero-section .banner-content .top-content .button-part {
+        margin-top: 24px;
+    }
+
+    .true-partnership-section .partnership-card .card-row{
+        --bs-gutter-x: 0px;
+    }
+
+    .true-partnership-section{
+        padding: 24px 16px;
+    }
+
+    .e-commerce .e-commerce-left img{
+        margin-right: -15%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero-section::after {
+        background-image: url("../images/performance-analyzer/performance-hero-bottom.svg");
+    }
+
+    .hero-section .banner-content .top-content h1 {
+        font-size: 23px;
+        line-height: 32px;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .hero-section .banner-content .top-content h1 {
-        font-size: 25px;
+    .hero-section .banner-content .top-content h1 span {
+        padding: 4px 3px;
+    }
+
+    .hero-section .banner-content .top-content h1 span {
+        margin-left: 1px;
     }
 }

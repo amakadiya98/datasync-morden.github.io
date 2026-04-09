@@ -13,33 +13,318 @@
 
   <body>
     <!-- HERO SECTION  -->
-    <section class="hero-section">
-      <!-- HEADER  -->
-      <header>
-        <nav class="navbar navbar-expand-lg header-part">
-          <div class="container custom-container d-flex">
-            <!-- Logo -->
-            <a class="navbar-brand" href="./index.html">
-              <img src="./assets/images/header/brand-logo.svg" alt="brand" />
-            </a>
+    <section class="hero-section-wrapper">
+      <div class="hero-section">
+        <!-- HEADER  -->
+        <header>
+          <nav class="navbar navbar-expand-lg header-part">
+            <div class="container custom-container d-flex">
+              <!-- Logo -->
+              <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/header/brand-logo.svg" alt="brand" />
+              </a>
 
-            <!-- Mobile Toggle -->
-            <button
-              class="navbar-toggler toggle-btn"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-            >
-              <img src="./assets/images/icons/menu.svg" alt="menu" />
-            </button>
+              <!-- Mobile Toggle -->
+              <button
+                class="navbar-toggler toggle-btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+              >
+                <img src="./assets/images/icons/menu.svg" alt="menu" />
+              </button>
 
-            <!-- Menu -->
-            <div
-              class="collapse navbar-collapse justify-content-between"
-              id="navbarContent"
-            >
-              <!-- Center Menu -->
-              <ul class="navbar-nav mx-auto header-links">
+              <!-- Menu -->
+              <div
+                class="collapse navbar-collapse justify-content-between"
+                id="navbarContent"
+              >
+                <!-- Center Menu -->
+                <ul class="navbar-nav mx-auto header-links">
+                  <li class="nav-item dropdown desktop-dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Solutions
+                    </a>
+                    <ul class="dropdown-menu header-dropdown">
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./performance-analayzer.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
+                            alt="performance-analyzer-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Performance Analyzer</p>
+                              <p>Real-time commerce visibility.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./smart-pricing.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-smart-pricing.svg"
+                            alt="smart-pricing-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Smart Pricing</p>
+                              <p>Accurate cross-channel price optimization.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./inventory-intelligence.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Inventory Intelligence</p>
+                              <p>
+                                Inventory health, management and forecasting.
+                              </p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./marketing-performance-intelligence.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Marketing.svg"
+                            alt="Marketing-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Marketing Performance Intelligence</p>
+                              <p>
+                                Multi-channel marketing performance analytics.
+                              </p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./customer-insight-analytics.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
+                            alt="Customer-Insights-Analytics-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Customer Insights Analytics</p>
+                              <p>Customer sentiment and voice insights.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./sync-ai-customer-experience-agent.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
+                            alt="Sync-AI-CX-Agent-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Sync AI CX Agent</p>
+                              <p>24/7 automated, AI customer support.</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./en.html">DataSync</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pricing.html">Pricing</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+                  </li>
+
+                  <li class="nav-item dropdown desktop-dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      Resources
+                    </a>
+                    <ul
+                      class="dropdown-menu header-dropdown resources-dropdown"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./blog.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Blog</p>
+                              <p>Blog</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item solution-link"
+                          href="./event.html"
+                        >
+                          <img
+                            src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                            alt="inventory-inteligence-icon"
+                          />
+                          <div
+                            class="d-flex justify-content-between align-content-center w-100"
+                          >
+                            <div
+                              class="d-flex flex-column justify-content-center gap-1"
+                            >
+                              <p>Events</p>
+                              <p>Events</p>
+                            </div>
+                            <img
+                              class="right-arrow ms-5"
+                              src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                              alt="right-arrow"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item desktop-hidden">
+                    <a class="nav-link" href="#">Get Started </a>
+                  </li>
+                </ul>
+
+                <!-- Right Button -->
+                <button
+                  class="get-started-btn align-items-center mobile-hidden"
+                >
+                  <a href="#" class=""> Get Started </a>
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src="./assets/images/icons/arrow-right.svg" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </nav>
+          <div
+            class="offcanvas offcanvas-end header-offcanvas"
+            tabindex="-1"
+            id="mobileMenu"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav header-links">
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -48,170 +333,45 @@
                   >
                     Solutions
                   </a>
-                  <ul class="dropdown-menu header-dropdown">
+                  <ul class="dropdown-menu">
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./performance-analayzer.html"
+                        >Performance Analyzer</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
-                          alt="performance-analyzer-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Performance Analyzer</p>
-                            <p>Real-time commerce visibility.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./smart-pricing.html"
+                        >Smart Pricing</a
+                      >
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
-                        href="./smart-pricing.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-smart-pricing.svg"
-                          alt="smart-pricing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Smart Pricing</p>
-                            <p>Accurate cross-channel price optimization.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./inventory-intelligence.html"
+                        >Inventory Intelligence</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Inventory Intelligence</p>
-                            <p>Inventory health, management and forecasting.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./marketing-performance-intelligence.html"
+                        >Marketing Performance Intelligence</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Marketing.svg"
-                          alt="Marketing-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Marketing Performance Intelligence</p>
-                            <p>
-                              Multi-channel marketing performance analytics.
-                            </p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                     <li>
                       <a
-                        class="dropdown-item solution-link"
+                        class="dropdown-item"
                         href="./customer-insight-analytics.html"
+                        >Customer Insights Analytics</a
                       >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
-                          alt="Customer-Insights-Analytics-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Customer Insights Analytics</p>
-                            <p>Customer sentiment and voice insights.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./sync-ai-customer-experience-agent.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
-                          alt="Sync-AI-CX-Agent-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Sync AI CX Agent</p>
-                            <p>24/7 automated, AI customer support.</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
                     </li>
                   </ul>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="./en.html">DataSync</a>
+                  <a class="nav-link" href="./en.html">DataSync+</a>
                 </li>
 
                 <li class="nav-item">
@@ -230,163 +390,170 @@
                   >
                     Resources
                   </a>
-                  <ul class="dropdown-menu header-dropdown resources-dropdown">
+                  <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item solution-link" href="./blog.html">
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Blog</p>
-                            <p>Blog</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                      <a class="dropdown-item" href="./event.html">Events</a>
                     </li>
                     <li>
-                      <a
-                        class="dropdown-item solution-link"
-                        href="./event.html"
-                      >
-                        <img
-                          src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
-                          alt="inventory-inteligence-icon"
-                        />
-                        <div
-                          class="d-flex justify-content-between align-content-center w-100"
-                        >
-                          <div
-                            class="d-flex flex-column justify-content-center gap-1"
-                          >
-                            <p>Events</p>
-                            <p>Events</p>
-                          </div>
-                          <img
-                            class="right-arrow ms-5"
-                            src="./assets/images/icons/nav-solutions-right-arrow.svg"
-                            alt="right-arrow"
-                          />
-                        </div>
-                      </a>
+                      <a class="dropdown-item" href="./blog.html">Blogs </a>
                     </li>
                   </ul>
                 </li>
-
-                <li class="nav-item desktop-hidden">
-                  <a class="nav-link" href="#">Get Started </a>
-                </li>
               </ul>
 
-              <!-- Right Button -->
-              <button class="get-started-btn align-items-center mobile-hidden">
-                <a href="#" class=""> Get Started </a>
-                <div
-                  class="arrow-box d-flex justify-content-center align-items-center"
-                >
-                  <img src="./assets/images/icons/arrow-right.svg" />
-                </div>
-              </button>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="custom-container banner-content">
-        <div class="top-content performance-analayzer-banner">
-          <h1>
-            Performance
-            <img
-              src="./assets/images/icons/performance-analayzer-icon.svg"
-              alt="performance-analyzer-icon"
-            />
-            Analyzer
-          </h1>
-          <p class="secondary-text text-center">
-            Performance Analyzer brings together performance metrics from all
-            online sales <br class="d-none d-lg-block" />
-            channels automatically and in real time. It eliminates manual
-            workload and
-            <br class="d-none d-lg-block" />
-            enables timely, data-driven actions.
-          </p>
-          <div
-            class="d-flex flex-column justify-content-center align-items-center button-part"
-          >
-            <div class="d-flex buttons">
-              <button class="primary-button">
-                Request a Demo
+              <!-- Button -->
+              <button class="primary-button get-started-btn">
+                Get Started
                 <div
                   class="arrow-box d-flex justify-content-center align-items-center"
                 >
                   <img src="./assets/images/icons/arrow-right.svg" alt="" />
                 </div>
               </button>
-              <button class="secondary-btn">
-                View Pricing
-                <div
-                  class="arrow-box d-flex justify-content-center align-items-center"
-                >
+
+              <div class="d-flex align-items-center gap-2">
+                <div class="social">
                   <img
-                    src="./assets/images/icons/arrow-white-right.svg"
-                    alt=""
+                    src="./assets/images/icons/facebook-white.svg"
+                    alt="facebook"
                   />
                 </div>
-              </button>
-            </div>
-            <div class="justify-content-center d-flex performance-dot">
-              <button
-                class="bottom-btn d-flex justify-content-center align-items-center"
-              >
-                <div
-                  class="gredient-part d-flex justify-content-center align-items-end"
-                >
-                  <div class="dot"></div>
+                <div class="social">
+                  <img
+                    src="./assets/images/icons/youtube-white.svg"
+                    alt="youtube"
+                  />
                 </div>
-              </button>
+                <div class="social">
+                  <img
+                    src="./assets/images/icons/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="custom-container banner-content">
+          <div class="top-content performance-analayzer-banner">
+            <h1>
+              Performance
+              <img
+                src="./assets/images/icons/performance-analayzer-icon.svg"
+                alt="performance-analyzer-icon"
+              />
+              Analyzer
+            </h1>
+            <p class="secondary-text text-center">
+              Performance Analyzer brings together performance metrics from all
+              online sales channels automatically and in real time. It
+              eliminates manual workload and enables timely, data-driven
+              actions.
+            </p>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center button-part"
+            >
+              <div class="d-flex buttons">
+                <button class="primary-button">
+                  Request a Demo
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                  </div>
+                </button>
+                <button class="secondary-btn">
+                  View Pricing
+                  <div
+                    class="arrow-box d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="./assets/images/icons/arrow-white-right.svg"
+                      alt=""
+                    />
+                  </div>
+                </button>
+              </div>
+              <div class="justify-content-center d-flex performance-dot">
+                <button
+                  class="bottom-btn d-flex justify-content-center align-items-center"
+                >
+                  <div
+                    class="gredient-part d-flex justify-content-center align-items-end"
+                  >
+                    <div class="dot"></div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- CORE SOLUTIONS  -->
-    <section class="core-solutions performance-core-solutions border-top">
-      <div class="core-solutions-content">
-        <div class="top-part core-solutions-padding">
-          <div class="badge">Core Solutions</div>
-          <div class="main-heading">
-            Everything You Need to Run Smarter Decisions
+    <div class="performance-wrapper">
+      <section
+        class="core-solutions performance-core-solutions core-solution-gap border-top performance-page-top"
+      >
+        <div class="core-solutions-content">
+          <div class="custom-container">
+            <div class="top-part core-solutions-padding">
+              <div class="badge">Core Solutions</div>
+              <div class="main-heading">
+                Everything You Need to Run Smarter Decisions
+              </div>
+            </div>
           </div>
         </div>
-        <div class="border-top">
+        <div class="border-top border-bottom core-solution-bottom-border">
           <div class="custom-container">
-            <div>
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xxl-7 col-12 solutions-left">
-                    <img
-                      src="./assets/images/home/dashbord-commerce-performance.png"
-                      alt=""
-                      class="dashboard-image"
-                    />
+            <div class="border-right border-wrapper-hidden">
+              <div class="border-left border-wrapper-hidden">
+                <div class="row w-100 mx-auto">
+                  <div class="col-lg-7 col-12 d-lg-block d-none px-0">
+                    <div class="solutions-left solutions-left-gradient">
+                      <img
+                        src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                        alt=""
+                        class="dashboard-image active"
+                        id="img1"
+                      />
+                      <img
+                        src="./assets/images/performance-analyzer/SKU-Performance.svg"
+                        alt=""
+                        class="dashboard-image"
+                        id="img2"
+                      />
+                      <img
+                        src="./assets/images/performance-analyzer/Buy-Box Score.svg"
+                        alt=""
+                        class="dashboard-image"
+                        id="img3"
+                      />
+                      <img
+                        src="./assets/images/performance-analyzer/MP-Traffic-Metrics.svg"
+                        alt=""
+                        class="dashboard-image"
+                        id="img4"
+                      />
+                      <img
+                        src="./assets/images/performance-analyzer/MP-Inventory-Management.png"
+                        alt=""
+                        class="dashboard-image"
+                        id="img5"
+                      />
+                    </div>
+                    <div class="blur-effect d-lg-block d-none"></div>
                   </div>
 
-                  <div class="col-xxl-4 col-12 solutions-right">
+                  <div class="col-lg-5 col-12 solutions-right">
+                    <h5 class="accordion-heading">Core Sub-modules</h5>
                     <div
-                      class="accordion custom-accordion"
+                      class="accordion custom-accordion w-100 mx-auto"
                       id="solutionsAccordion1"
                     >
                       <!-- ITEM 1 -->
-                      <div class="accordion-item active">
+                      <div class="accordion-item active" data-img="img1">
                         <h2 class="accordion-header">
                           <button
                             class="accordion-button"
@@ -412,11 +579,20 @@
                             website. Track sales, orders, units, revenue, and
                             profitability driver in one consolidated dashboard.
                           </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/Commerce-Performance.svg"
+                              alt=""
+                              class="dashboard-image active"
+                            />
+                          </div>
                         </div>
                       </div>
 
                       <!-- ITEM 2 -->
-                      <div class="accordion-item">
+                      <div class="accordion-item" data-img="img2">
                         <h2 class="accordion-header">
                           <button
                             class="accordion-button collapsed"
@@ -434,14 +610,25 @@
                           data-bs-parent="#solutionsAccordion1"
                         >
                           <div class="accordion-body">
-                            Understand business performance across channels with
-                            real-time insights and clear visual reporting.
+                            A unified snapshot of your total e-commerce
+                            performance across all marketplaces and your
+                            website. Track sales, orders, units, revenue, and
+                            profitability driver in one consolidated dashboard.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/SKU-Performance.svg"
+                              alt=""
+                              class="dashboard-image"
+                            />
                           </div>
                         </div>
                       </div>
 
                       <!-- ITEM 3 -->
-                      <div class="accordion-item">
+                      <div class="accordion-item" data-img="img3">
                         <h2 class="accordion-header">
                           <button
                             class="accordion-button collapsed"
@@ -459,14 +646,25 @@
                           data-bs-parent="#solutionsAccordion1"
                         >
                           <div class="accordion-body">
-                            Understand business performance across channels with
-                            real-time insights and clear visual reporting.
+                            A unified snapshot of your total e-commerce
+                            performance across all marketplaces and your
+                            website. Track sales, orders, units, revenue, and
+                            profitability driver in one consolidated dashboard.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/Buy-Box Score.svg"
+                              alt=""
+                              class="dashboard-image"
+                            />
                           </div>
                         </div>
                       </div>
 
                       <!-- ITEM 4 -->
-                      <div class="accordion-item">
+                      <div class="accordion-item" data-img="img4">
                         <h2 class="accordion-header">
                           <button
                             class="accordion-button collapsed"
@@ -486,14 +684,25 @@
                           data-bs-parent="#solutionsAccordion1"
                         >
                           <div class="accordion-body">
-                            Understand business performance across channels with
-                            real-time insights and clear visual reporting.
+                            A unified snapshot of your total e-commerce
+                            performance across all marketplaces and your
+                            website. Track sales, orders, units, revenue, and
+                            profitability driver in one consolidated dashboard.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/MP-Traffic-Metrics.svg"
+                              alt=""
+                              class="dashboard-image"
+                            />
                           </div>
                         </div>
                       </div>
 
                       <!-- ITEM 5 -->
-                      <div class="accordion-item">
+                      <div class="accordion-item" data-img="img5">
                         <h2 class="accordion-header">
                           <button
                             class="accordion-button collapsed"
@@ -513,8 +722,163 @@
                           data-bs-parent="#solutionsAccordion1"
                         >
                           <div class="accordion-body">
+                            A unified snapshot of your total e-commerce
+                            performance across all marketplaces and your
+                            website. Track sales, orders, units, revenue, and
+                            profitability driver in one consolidated dashboard.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/MP-Inventory-Management.png"
+                              alt=""
+                              class="dashboard-image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 6 -->
+                      <div class="accordion-item d-lg-none d-block">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item1-6"
+                          >
+                            <span class="step">01</span>
+                            <span class="title-accordion"
+                              >Trends (Attribute-Level)</span
+                            >
+                          </button>
+                        </h2>
+
+                        <div
+                          id="item1-6"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion1"
+                        >
+                          <div class="accordion-body">
+                            Analyzes sales performance by product attributes
+                            like size, gender, color, and material. Shows which
+                            attributes drive demand on each specific channel.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/trends.png"
+                              alt=""
+                              class="dashboard-image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 7 -->
+                      <div class="accordion-item d-lg-none d-block">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item1-7"
+                          >
+                            <span class="step">02</span>
+                            <span class="title-accordion"
+                              >Basket Analytics</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="item1-7"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion1"
+                        >
+                          <div class="accordion-body">
                             Understand business performance across channels with
                             real-time insights and clear visual reporting.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/Basket-Analytics.png"
+                              class="dashboard-image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 8 -->
+                      <div class="accordion-item d-lg-none d-block">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item1-8"
+                          >
+                            <span class="step">03</span>
+                            <span class="title-accordion"
+                              >Cancellations & Returns</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="item1-8"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion1"
+                        >
+                          <div class="accordion-body">
+                            Understand business performance across channels with
+                            real-time insights and clear visual reporting.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/Cancellations-Returns.png"
+                              class="dashboard-image"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 9 -->
+                      <div
+                        class="accordion-item d-lg-none d-block"
+                        data-img="img2-4"
+                      >
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item1-9"
+                          >
+                            <span class="step">04</span>
+                            <span class="title-accordion">Remittance</span>
+                          </button>
+                        </h2>
+                        <div
+                          id="item1-9"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion1"
+                        >
+                          <div class="accordion-body">
+                            Understand business performance across channels with
+                            real-time insights and clear visual reporting.
+                          </div>
+                          <div
+                            class="solutions-left solutions-left-gradient d-lg-none d-block"
+                          >
+                            <img
+                              src="./assets/images/performance-analyzer/Remittance.png"
+                              class="dashboard-image"
+                            />
                           </div>
                         </div>
                       </div>
@@ -522,214 +886,245 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="core-solutions-content custom-container">
-        <div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xxl-4 col-12 solutions-right">
-                <div
-                  class="accordion custom-accordion"
-                  id="solutionsAccordion2"
-                >
-                  <!-- ITEM 1 -->
-                  <div class="accordion-item active">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#item2-1"
-                      >
-                        <span class="step">01</span>
-                        <span class="title-accordion"
-                          >Trends (Attribute-Level)</span
-                        >
-                      </button>
-                    </h2>
-
-                    <div
-                      id="item2-1"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#solutionsAccordion2"
-                    >
-                      <div class="accordion-body">
-                        Analyzes sales performance by product attributes like
-                        size, gender, color, and material. Shows which
-                        attributes drive demand on each specific channel.
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ITEM 2 -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#item2-2"
-                      >
-                        <span class="step">02</span>
-                        <span class="title-accordion">Basket Analytics</span>
-                      </button>
-                    </h2>
-                    <div
-                      id="item2-2"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#solutionsAccordion2"
-                    >
-                      <div class="accordion-body">
-                        Understand business performance across channels with
-                        real-time insights and clear visual reporting.
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ITEM 3 -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#item2-3"
-                      >
-                        <span class="step">03</span>
-                        <span class="title-accordion"
-                          >Cancellations & Returns</span
-                        >
-                      </button>
-                    </h2>
-                    <div
-                      id="item2-3"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#solutionsAccordion2"
-                    >
-                      <div class="accordion-body">
-                        Understand business performance across channels with
-                        real-time insights and clear visual reporting.
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- ITEM 4 -->
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#item2-4"
-                      >
-                        <span class="step">04</span>
-                        <span class="title-accordion">Remittance</span>
-                      </button>
-                    </h2>
-                    <div
-                      id="item2-4"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#solutionsAccordion2"
-                    >
-                      <div class="accordion-body">
-                        Understand business performance across channels with
-                        real-time insights and clear visual reporting.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-7 col-12 solutions-left">
-                <img
-                  src="./assets/images/home/dashboard-Trends (Attribute-Level).png"
-                  alt=""
-                  class="dashboard-image"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- REVIEW SECTION  -->
-    <section class="review-section">
-      <div class="custom-container d-flex justify-content-center">
-        <div class="owl-carousel review-slider">
-          <div class="card-container">
-            <div class="review-card">
-              <div class="quotes">
-                <img src="./assets/images/icons/quotes.svg" alt="quotes" />
-              </div>
-              <p class="review-text">
-                "We needed a solution that was highly accurate, real-time and
-                flexible. HoxtonAi was the clear winner, and I'm delighted with
-                the difference it's made to the business."
-              </p>
-              <hr />
               <div
-                class="d-flex flex-column flex-xl-row justify-content-between card-bottom"
+                class="core-solutions-content performance-analayzer-content d-lg-block d-none"
               >
-                <img
-                  src="./assets/images/home/grapho-logo.svg"
-                  alt="grapho-logo"
-                  class="company-logo"
-                />
+                <div class="row w-100 mx-auto">
+                  <div
+                    class="col-lg-5 col-12 solutions-right justify-content-center"
+                  >
+                    <div
+                      class="accordion custom-accordion w-100 mx-auto"
+                      id="solutionsAccordion2"
+                    >
+                      <!-- ITEM 1 -->
+                      <div class="accordion-item active" data-img="img2-1">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item2-1"
+                          >
+                            <span class="step">01</span>
+                            <span class="title-accordion"
+                              >Trends (Attribute-Level)</span
+                            >
+                          </button>
+                        </h2>
 
-                <div class="d-flex gap-3 align-items-start">
-                  <img
-                    src="./assets/images/home/person.png"
-                    alt="person"
-                    class="person-img"
-                  />
-                  <div>
-                    <div class="name-text">Gavin Riley, Operations Manager</div>
-                    <p class="secondary-text mt-2 text-start">Center Parcs</p>
+                        <div
+                          id="item2-1"
+                          class="accordion-collapse collapse show"
+                          data-bs-parent="#solutionsAccordion2"
+                        >
+                          <div class="accordion-body">
+                            Analyzes sales performance by product attributes
+                            like size, gender, color, and material. Shows which
+                            attributes drive demand on each specific channel.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 2 -->
+                      <div class="accordion-item" data-img="img2-2">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item2-2"
+                          >
+                            <span class="step">02</span>
+                            <span class="title-accordion"
+                              >Basket Analytics</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="item2-2"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion2"
+                        >
+                          <div class="accordion-body">
+                            Understand business performance across channels with
+                            real-time insights and clear visual reporting.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 3 -->
+                      <div class="accordion-item" data-img="img2-3">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item2-3"
+                          >
+                            <span class="step">03</span>
+                            <span class="title-accordion"
+                              >Cancellations & Returns</span
+                            >
+                          </button>
+                        </h2>
+                        <div
+                          id="item2-3"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion2"
+                        >
+                          <div class="accordion-body">
+                            Understand business performance across channels with
+                            real-time insights and clear visual reporting.
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- ITEM 4 -->
+                      <div class="accordion-item" data-img="img2-4">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#item2-4"
+                          >
+                            <span class="step">04</span>
+                            <span class="title-accordion">Remittance</span>
+                          </button>
+                        </h2>
+                        <div
+                          id="item2-4"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#solutionsAccordion2"
+                        >
+                          <div class="accordion-body">
+                            Understand business performance across channels with
+                            real-time insights and clear visual reporting.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-container">
-            <div class="review-card">
-              <div class="quotes">
-                <img src="./assets/images/icons/quotes.svg" alt="quotes" />
-              </div>
-              <p class="review-text">
-                "We needed a solution that was highly accurate, real-time and
-                flexible. HoxtonAi was the clear winner, and I'm delighted with
-                the difference it's made to the business."
-              </p>
-              <hr />
-              <div
-                class="d-flex flex-column flex-xl-row align-items-center justify-content-between card-bottom"
-              >
-                <img
-                  src="./assets/images/home/grapho-logo.svg"
-                  alt="grapho-logo"
-                  class="company-logo"
-                />
-
-                <div class="d-flex gap-3 align-items-start">
-                  <img
-                    src="./assets/images/home/person.png"
-                    alt="person"
-                    class="person-img"
-                  />
-                  <div>
-                    <div class="name-text">Gavin Riley, Operations Manager</div>
-                    <p class="secondary-text mt-2 text-start">Center Parcs</p>
+                  <div class="col-lg-7 col-12 d-lg-block d-none px-0">
+                    <div class="solutions-left">
+                      <img
+                        src="./assets/images/performance-analyzer/trends.png"
+                        alt=""
+                        id="img2-1"
+                        class="dashboard-image active"
+                      />
+                      <img
+                        id="img2-2"
+                        src="./assets/images/performance-analyzer/Basket-Analytics.png"
+                        class="dashboard-image"
+                      />
+                      <img
+                        id="img2-3"
+                        src="./assets/images/performance-analyzer/Cancellations-Returns.png"
+                        class="dashboard-image"
+                      />
+                      <img
+                        id="img2-4"
+                        src="./assets/images/performance-analyzer/Remittance.png"
+                        class="dashboard-image"
+                      />
+                    </div>
+                    <div class="blur-effect d-lg-block d-none"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <!-- REVIEW SECTION  -->
+        <section class="review-section">
+          <div class="custom-container d-flex justify-content-center">
+            <div class="owl-carousel review-slider">
+              <div class="card-container">
+                <div class="review-card">
+                  <div class="quotes">
+                    <img src="./assets/images/icons/quotes.svg" alt="quotes" />
+                  </div>
+                  <p class="review-text">
+                    "We needed a solution that was highly accurate, real-time
+                    and flexible. HoxtonAi was the clear winner, and I'm
+                    delighted with the difference it's made to the business."
+                  </p>
+                  <hr />
+                  <div
+                    class="d-flex flex-column flex-xl-row justify-content-between card-bottom"
+                  >
+                    <img
+                      src="./assets/images/home/grapho-logo.svg"
+                      alt="grapho-logo"
+                      class="company-logo"
+                    />
+
+                    <div class="d-flex gap-3 align-items-start">
+                      <img
+                        src="./assets/images/home/person.png"
+                        alt="person"
+                        class="person-img"
+                      />
+                      <div>
+                        <div class="name-text">
+                          Gavin Riley, Operations Manager
+                        </div>
+                        <p class="secondary-text mt-2 text-start">
+                          Center Parcs
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-container">
+                <div class="review-card">
+                  <div class="quotes">
+                    <img src="./assets/images/icons/quotes.svg" alt="quotes" />
+                  </div>
+                  <p class="review-text">
+                    "We needed a solution that was highly accurate, real-time
+                    and flexible. HoxtonAi was the clear winner, and I'm
+                    delighted with the difference it's made to the business."
+                  </p>
+                  <hr />
+                  <div
+                    class="d-flex flex-column flex-xl-row align-items-center justify-content-between card-bottom"
+                  >
+                    <img
+                      src="./assets/images/home/grapho-logo.svg"
+                      alt="grapho-logo"
+                      class="company-logo"
+                    />
+
+                    <div class="d-flex gap-3 align-items-start">
+                      <img
+                        src="./assets/images/home/person.png"
+                        alt="person"
+                        class="person-img"
+                      />
+                      <div>
+                        <div class="name-text">
+                          Gavin Riley, Operations Manager
+                        </div>
+                        <p class="secondary-text mt-2 text-start">
+                          Center Parcs
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
     <!-- FOOTER  -->
     <footer class="footer-section">
       <div class="custom-container">
