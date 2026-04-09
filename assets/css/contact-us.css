@@ -547,17 +547,6 @@
         margin: 0px 20px 0px 3px;
     }
 
-    .contactUs-form-section .contactUs-form .white-form .custom-check input{
-        min-width: 20px;
-        width: 20px;
-        height: 20px;
-        border-radius: 6px;
-        margin-top: 3px;
-    }
-
-    .contactUs-form-section .contactUs-form .white-form .input-icon{
-        right: 20px;
-    }
 }
 
 @media screen and (max-width: 400px) {

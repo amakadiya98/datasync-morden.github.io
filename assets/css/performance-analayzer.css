@@ -214,6 +214,7 @@
     .core-solutions .solutions-left {
         padding: 100px 0px;
     }
+<<<<<<< HEAD
 
     .performance-wrapper .core-solutions .core-solutions-content{
         padding-top: 60px;
@@ -222,6 +223,8 @@
     .core-solutions .core-solutions-content{
         padding-top: 0px;
     }
+=======
+>>>>>>> 2353a0a574e08af8434fcfb973fdc1974194e1ed
 }
 
 @media screen and (max-width: 991px) {
@@ -343,10 +346,13 @@
         gap: 30px;
     }
 
+<<<<<<< HEAD
     .review-section{
         border: none;
     }
 
+=======
+>>>>>>> 2353a0a574e08af8434fcfb973fdc1974194e1ed
 }
 
 @media screen and (max-width:600px) {
@@ -452,7 +458,11 @@
     }
 
     .core-solutions .start-core-header {
+<<<<<<< HEAD
         padding: 40px 0;
+=======
+        padding-bottom: 40px;
+>>>>>>> 2353a0a574e08af8434fcfb973fdc1974194e1ed
     }
 }
 
