@@ -2861,11 +2861,8 @@ footer {
   }
   
   .custom-accordion .accordion-item {
-    border-bottom: 1.5px solid #0000001A
-  }
-
-  .custom-accordion .accordion-item {
-    padding: 30px 0;
+    border-bottom: 1.5px solid #0000001A;
+    padding: 28px 0;
   }
 
   .custom-accordion .accordion-body::before {
@@ -3491,8 +3488,9 @@ footer {
   }
 
   .hero-section .banner-content .top-content .secondary-text {
-    margin-top: 16px;
     font-size: 14px;
+    max-width: 304px;
+    margin: 16px auto 0;
   }
 
   .hero-section .banner-content .top-content h1 span {
@@ -3639,7 +3637,7 @@ footer {
   }
 
   .fair-pricing-section .section-content .right-part {
-    padding: 0px 8px 0px 21px;
+    padding: 0px ;
   }
 
   .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(1) {
@@ -3683,6 +3681,16 @@ footer {
     padding: 30px 0;
     width: 90%;
     gap: 10px;
+  }
+
+  .introduction-section.border-top{
+    background: transparent;
+  }
+
+  .introduction-section .border-x{
+    background: transparent;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
   }
 
   .fair-pricing-section .main-heading {
@@ -3740,6 +3748,7 @@ footer {
 
   .core-solutions .top-part .main-heading {
     margin-top: 16px;
+    width: 90%;
   }
 
   .custom-accordion .accordion-body {
