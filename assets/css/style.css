@@ -447,6 +447,16 @@ ul {
   right: 0;
 }
 
+.custom-accordion .accordion-item .accordion-collapse.show::after{
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: var(--light-purple);
+  position: absolute;
+  bottom: 0;
+  right: 38%;
+}
+
 .custom-accordion .accordion-button:not(.collapsed) .step {
   width: 38px;
   height: 38px;
@@ -1541,6 +1551,7 @@ ul {
   align-items: center;
   position: relative;
   z-index: 2;
+  height: 92.5%;
 }
 
 .transforming-section .Transforming-card .Transforming-heading {
@@ -1578,7 +1589,7 @@ ul {
 
 .designed-simplify .image-wrapper {
   position: relative;
-  background-image: url(../images/icons/Designed-Simplify.svg);
+  background-image: url(../images/home/designed-simplify.png);
   width: 100%;
   aspect-ratio: 1/ 1;
   background-size: contain;
@@ -1594,8 +1605,8 @@ ul {
 
 .designed-simplify .image-wrapper .clarity {
   position: absolute;
-  bottom: -33px;
-  right: -100px;
+	bottom: -16px;
+	right: -131px;
 }
 
 /* datasync-plus-section */
@@ -1695,16 +1706,16 @@ ul {
 }
 
 .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card {
-  height: 312px;
-  padding: 32px;
+  height: 268px;
+  padding: 25px;
   margin-bottom: 30px;
   background-color: var(--white);
 }
 
 .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card img {
-  max-width: 190px;
+  max-width: 160px;
   max-height: 75px;
-  margin-bottom: 47px;
+  margin-bottom: 30px;
 }
 
 .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h6 {
@@ -1715,7 +1726,7 @@ ul {
   line-height: 25px;
   letter-spacing: -3%;
   color: var(--light-purple);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h5 {
@@ -1723,13 +1734,14 @@ ul {
   font-weight: 500;
   font-style: normal;
   font-size: 22px;
-  line-height: 30px;
+  line-height: 26px;
   letter-spacing: -3%;
   color: var(--black);
 }
 
 .company-review-section .custom-container .owl-carousel .company-review-card .secondary-text {
   padding: 0 30px 30px 30px;
+  line-height: 24px;
 }
 
 .light-purple-gradiant-white {
@@ -1995,6 +2007,10 @@ footer {
   white-space: nowrap;
 }
 
+.footer-section .footer-main-part .footer-logo-part .footer-powered-by img {
+  max-width: 86px;
+}
+
 .footer-section .footer-main-part .footer-social-media {
   margin-top: 34px;
 }
@@ -2062,7 +2078,7 @@ footer {
 
   .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h6 {
     font-size: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card .review-card-heading h5 {
@@ -2220,7 +2236,6 @@ footer {
   .company-review-section .custom-container .owl-carousel .company-review-card .secondary-review-card img {
     max-width: 141px;
     max-height: 56px;
-    margin-bottom: 42px;
   }
 
   .company-review-section .custom-container .company-review-card .secondary-review-card .review-card-heading h6 {
@@ -2826,6 +2841,10 @@ footer {
     content: none;
   }
 
+  .custom-accordion .accordion-item .accordion-collapse.show::after{
+    content: none;
+  }
+
   .introduction-section .border-right,
   .introduction-section .border-bottom {
     border: none !important;
@@ -3427,6 +3446,10 @@ footer {
 
   .header-part .navbar-brand img {
     max-width: 108px;
+  }
+
+  .header-offcanvas{
+    width: 100%;
   }
 
   .primary-button,

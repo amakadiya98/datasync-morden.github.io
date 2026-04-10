@@ -53,6 +53,7 @@
     font-family: 'Inter';
     font-weight: 500;
     font-size: 18px;
+    color: #656565;
 }
 
 .blog-section .first-blog {
@@ -99,7 +100,19 @@
 }
 
 .blog-section .background-normal {
-    background-color: var(--card-bg);
+    background: linear-gradient(180deg,
+            #FFFFFF 50%,
+            #7282F2 50%,
+            #FFFFFF 100%);
+
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.6s ease;
+    cursor: pointer;
+}
+
+.blog-section .background-normal:hover {
+    background-position: bottom;
 }
 
 .blog-section .background-effect {

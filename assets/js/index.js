@@ -50,6 +50,10 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
+  $(".desktop-dropdown").on("hide.bs.dropdown", function () {
+    $(this).find(".nav-link").removeClass("active");
+  });
+
   function checkWidth() {
     if ($(window).width() <= 766) {
       $(".company-carousel").trigger("destroy.owl.carousel");

@@ -106,12 +106,12 @@
 }
 
 .ConsultSync-section .consultSync-card-row {
-    --bs-gutter-x: 30px;
     margin: 0px;
     padding: 35px 20px 35px 42px;
     background-color: #ffffff;
     position: relative;
     z-index: 1;
+    gap: 26px;
 }
 
 .ConsultSync-section .consultSync-card-row .consultSync-right {
@@ -124,11 +124,12 @@
     padding: 50px 0;
     z-index: 1;
     position: relative;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .ConsultSync-section .consultSync-card-row .consultSync-left {
     max-width: 546px;
+    width: 100%;
 }
 
 .ConsultSync-section .consultSync-card-row .consultSync-left .title {
