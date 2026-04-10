@@ -54,6 +54,20 @@ $(document).ready(function () {
     $(this).find(".nav-link").removeClass("active");
   });
 
+  $(".bottom-btn").on("click", function () {
+    const section = $(".second-section");
+    const offset = 80;
+
+    if (section.length) {
+      const top = section.offset().top - offset;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+    }
+  });
+
   function checkWidth() {
     if ($(window).width() <= 766) {
       $(".company-carousel").trigger("destroy.owl.carousel");
