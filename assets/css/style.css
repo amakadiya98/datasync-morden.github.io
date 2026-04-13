@@ -274,36 +274,30 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid transparent;
+  border-top: 1px solid transparent !important;
   background:
     linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
     var(--border-gradient) border-box;
 }
 
 .border-bottom {
-  border-bottom: 1px solid transparent;
-  background:
-    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-    var(--border-gradient) border-box;
+  border-bottom: 1px solid #6666661a !important;
 }
 
 .border-x {
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  background:
-    linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
-    var(--border-gradient) border-box;
+  border-left: 1px solid #6666661a !important;
+  border-right: 1px solid #6666661a !important;
 }
 
 .border-right {
-  border-right: 1px solid transparent;
+  border-right: 1px solid transparent !important;
   background:
     linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
     var(--border-gradient) border-box;
 }
 
 .border-left {
-  border-left: 1px solid transparent;
+  border-left: 1px solid transparent !important;
   background:
     linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
     var(--border-gradient) border-box;
@@ -450,7 +444,7 @@ ul {
   right: 0;
 }
 
-.custom-accordion .accordion-item .accordion-collapse.show::after{
+.custom-accordion .accordion-item .accordion-collapse.show::after {
   content: "";
   width: 50%;
   height: 1px;
@@ -499,8 +493,8 @@ ul {
 }
 
 .header-part .header-links {
-  gap: 52px;
-  padding: 20px 36px;
+  gap: 42px;
+  padding: 16px 32px;
   border: 1px solid #3349820D;
   position: relative;
   border-radius: 15px;
@@ -546,7 +540,7 @@ ul {
   padding: 0px !important;
   font-family: 'Inter';
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--gray-text);
 }
 
@@ -683,6 +677,10 @@ ul {
   background-color: var(--white);
 }
 
+.header-part .navbar-brand img{
+  max-width: 190px;
+}
+
 .header-part .toggle-btn {
   background: #FFFFFF1A;
   border: 1px solid #3349820D;
@@ -694,10 +692,6 @@ ul {
 .header-part .toggle-btn:focus {
   box-shadow: none;
   outline: none;
-}
-
-.dropdown-menu {
-  min-width: 160px;
 }
 
 .header-part .header-links .dropdown-toggle {
@@ -719,14 +713,10 @@ ul {
 /* Dropdowen solutions links */
 .header-dropdown {
   top: 120px !important;
-  left: 32.5% !important;
   border-radius: 20px;
   overflow: hidden;
   padding: 12px;
-}
-
-.resources-dropdown {
-  left: 60% !important;
+  min-width: 160px;
 }
 
 .header-dropdown .solution-link {
@@ -778,6 +768,40 @@ ul {
   margin: 0;
 }
 
+.header-part .language-switch {
+  padding: 0;
+  border: 0.96px solid #3349820D;
+  background-color: var(--white);
+  border-radius: 14px;
+  width: 85px;
+}
+
+.header-part .language-switch .lang-btn {
+  padding: 13px 20px;
+}
+
+.header-part .language-switch .lang-btn:focus {
+  box-shadow: none;
+}
+
+.header-part .language-switch .dropdown-menu {
+  min-width: 85px;
+  top: 70px;
+  border-radius: 14px;
+}
+
+.header-part .language-switch .dropdown-menu img {
+  width: 30px;
+  height: auto;
+}
+
+.header-part .language-switch .dropdown-menu .dropdown-item {
+  padding: 8px 16px;
+}
+
+.header-part .language-switch .dropdown-menu .dropdown-item:focus {
+  background-color: transparent;
+}
 
 /* hero-section  */
 
@@ -1608,8 +1632,8 @@ ul {
 
 .designed-simplify .image-wrapper .clarity {
   position: absolute;
-	bottom: -16px;
-	right: -131px;
+  bottom: -16px;
+  right: -131px;
 }
 
 /* datasync-plus-section */
@@ -2149,13 +2173,26 @@ footer {
 }
 
 @media screen and (max-width: 1280px) {
-  .page-title{
+  .page-title {
     font-size: 52px;
   }
 
   .header-part .header-links {
     padding: 12px 22px;
     border-radius: 12px;
+  }
+
+  .header-part .language-switch .lang-btn {
+    padding: 8px 20px;
+  }
+
+  .header-part .language-switch .dropdown-menu {
+    top: 49px;
+    border-radius: 6px;
+  }
+
+  .header-part .language-switch {
+    border-radius: 8px;
   }
 
   .header-part .get-started-btn a {
@@ -2185,13 +2222,8 @@ footer {
   .header-dropdown,
   .resources-dropdown {
     top: 86px !important;
-    left: 32% !important;
     padding: 10px;
     border-radius: 12px;
-  }
-
-  .resources-dropdown {
-    left: 62% !important;
   }
 
   .header-dropdown .solution-link {
@@ -2785,6 +2817,10 @@ footer {
   .fair-pricing-section .right-part .img-gradient-bg {
     padding: 0px 40px 40px 0px;
   }
+
+  .header-part .navbar-brand img {
+    max-width: 112px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2807,6 +2843,7 @@ footer {
     width: 30px;
     height: 30px;
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -2823,6 +2860,10 @@ footer {
     font-size: 42px;
   }
 
+  .header-part .navbar-brand img {
+    max-width: 160px;
+  }
+
   .header-part .get-started-btn {
     display: none;
   }
@@ -2833,7 +2874,6 @@ footer {
 
   .header-dropdown {
     top: 165px !important;
-    left: 7% !important;
   }
 
   .resources-dropdown {
@@ -2844,7 +2884,7 @@ footer {
     content: none;
   }
 
-  .custom-accordion .accordion-item .accordion-collapse.show::after{
+  .custom-accordion .accordion-item .accordion-collapse.show::after {
     content: none;
   }
 
@@ -2881,7 +2921,7 @@ footer {
   .custom-accordion .step {
     display: none;
   }
-  
+
   .custom-accordion .accordion-item {
     border-bottom: 1.5px solid #0000001A;
     padding: 28px 0;
@@ -3451,8 +3491,20 @@ footer {
     max-width: 108px;
   }
 
-  .header-offcanvas{
+  .header-offcanvas {
     width: 100%;
+  }
+
+  .header-part .language-switch {
+    width: 68px;
+  }
+
+  .header-part .language-switch .dropdown-menu {
+    min-width: 65px;
+  }
+
+  .header-part .language-switch .lang-btn {
+    padding: 8px 14px;
   }
 
   .primary-button,
@@ -3663,7 +3715,7 @@ footer {
   }
 
   .fair-pricing-section .section-content .right-part {
-    padding: 0px ;
+    padding: 0px;
   }
 
   .fair-pricing-section .accordion .accordion-item .accordion-body p:nth-child(1) {
@@ -3709,11 +3761,11 @@ footer {
     gap: 10px;
   }
 
-  .introduction-section.border-top{
+  .introduction-section.border-top {
     background: transparent;
   }
 
-  .introduction-section .border-x{
+  .introduction-section .border-x {
     background: transparent;
     border-left: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
@@ -3830,6 +3882,11 @@ footer {
   .hero-section::before {
     background-image: url('./../images/home/background-lines-mobile.svg');
     top: -10px;
+  }
+
+  .header-part .toggle-btn{
+    height: 44px;
+    border-radius: 8px;
   }
 }
 

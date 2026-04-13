@@ -68,6 +68,18 @@ $(document).ready(function () {
     }
   });
 
+  $('.language-switch .dropdown-item').on('click', function (e) {
+    e.preventDefault();
+
+    const lang = $(this).data('lang');
+    const img = $(this).find('img').attr('src');
+
+    const button = $(this).closest('.language-switch').find('.lang-btn');
+
+    button.find('span').text(lang);
+    button.find('img').attr('src', img);
+  });
+
   function checkWidth() {
     if ($(window).width() <= 766) {
       $(".company-carousel").trigger("destroy.owl.carousel");

@@ -18,17 +18,40 @@
         <!-- HEADER  -->
         <header>
             <nav class="navbar navbar-expand-lg header-part">
-                <div class="container custom-container d-flex">
+                <div class="container custom-container d-flex flex-nowrap">
                     <!-- Logo -->
                     <a class="navbar-brand" href="./index.html">
                         <img src="./assets/images/header/brand-logo.svg" alt="brand" />
                     </a>
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown language-switch mx-xl-3 mx-2 d-lg-none d-block">
+                            <button class="btn lang-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
 
-                    <!-- Mobile Toggle -->
-                    <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#mobileMenu">
-                        <img src="./assets/images/icons/menu.svg" alt="menu" />
-                    </button>
+                                <img src="./assets/images/header/uk-flag.png" alt="EN" class="flag-icon">
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="./assets/images/header/uk-flag.png" class="flag-icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="./assets/images/header/turkish-flag.png" class="flag-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile Toggle -->
+                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileMenu">
+                            <img src="./assets/images/icons/menu.svg" alt="menu" />
+                        </button>
+                    </div>
+
 
                     <!-- Menu -->
                     <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
@@ -190,6 +213,27 @@
                                 <a class="nav-link" href="#">Get Started </a>
                             </li>
                         </ul>
+
+                        <div class="dropdown language-switch mx-xl-3 mx-2">
+                            <button class="btn lang-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                <img src="./assets/images/header/uk-flag.png" alt="EN" class="flag-icon">
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="./assets/images/header/uk-flag.png" class="flag-icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-center" href="#">
+                                        <img src="./assets/images/header/turkish-flag.png" class="flag-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <!-- Right Button -->
                         <button class="get-started-btn align-items-center mobile-hidden">

@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datasync</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/css/blog.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <nav class="navbar navbar-expand-lg header-part">
+            <div class="container custom-container d-flex flex-nowrap">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/images/header/brand-logo.svg" alt="brand" />
+                </a>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown language-switch mx-xl-3 mx-2 d-lg-none d-block">
+                        <button class="btn lang-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <img src="./assets/images/header/uk-flag.png" alt="EN" class="flag-icon">
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="./assets/images/header/uk-flag.png" class="flag-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="./assets/images/header/turkish-flag.png" class="flag-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu">
+                        <img src="./assets/images/icons/menu.svg" alt="menu" />
+                    </button>
+                </div>
+
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <!-- Center Menu -->
+                    <ul class="navbar-nav mx-auto header-links">
+                        <li class="nav-item dropdown desktop-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Solutions
+                            </a>
+                            <ul class="dropdown-menu header-dropdown">
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./performance-analayzer.html">
+                                        <img src="./assets/images/icons/nav-solutions-performance-analyzer.svg"
+                                            alt="performance-analyzer-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Performance Analyzer</p>
+                                                <p>Real-time commerce visibility.</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./smart-pricing.html">
+                                        <img src="./assets/images/icons/nav-solutions-smart-pricing.svg"
+                                            alt="smart-pricing-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Smart Pricing</p>
+                                                <p>Accurate cross-channel price optimization.</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./inventory-intelligence.html">
+                                        <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                                            alt="inventory-inteligence-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Inventory Intelligence</p>
+                                                <p>Inventory health, management and forecasting.</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link"
+                                        href="./marketing-performance-intelligence.html">
+                                        <img src="./assets/images/icons/nav-solutions-Marketing.svg"
+                                            alt="Marketing-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Marketing Performance Intelligence</p>
+                                                <p>
+                                                    Multi-channel marketing performance analytics.
+                                                </p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./customer-insight-analytics.html">
+                                        <img src="./assets/images/icons/nav-solutions-Customer-Insights-Analytics.svg"
+                                            alt="Customer-Insights-Analytics-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Customer Insights Analytics</p>
+                                                <p>Customer sentiment and voice insights.</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link"
+                                        href="./sync-ai-customer-experience-agent.html">
+                                        <img src="./assets/images/icons/nav-solutions-Sync-AI-CX-Agent.svg"
+                                            alt="Sync-AI-CX-Agent-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Sync AI CX Agent</p>
+                                                <p>24/7 automated, AI customer support.</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./en.html">DataSync</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pricing.html">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+                        </li>
+
+                        <li class="nav-item dropdown desktop-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu header-dropdown resources-dropdown">
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./blog.html">
+                                        <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                                            alt="inventory-inteligence-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Blog</p>
+                                                <p>Blog</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item solution-link" href="./event.html">
+                                        <img src="./assets/images/icons/nav-solutions-inventory-inteligence.svg"
+                                            alt="inventory-inteligence-icon" />
+                                        <div class="d-flex justify-content-between align-content-center w-100">
+                                            <div class="d-flex flex-column justify-content-center gap-1">
+                                                <p>Events</p>
+                                                <p>Events</p>
+                                            </div>
+                                            <img class="right-arrow ms-5"
+                                                src="./assets/images/icons/nav-solutions-right-arrow.svg"
+                                                alt="right-arrow" />
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item desktop-hidden">
+                            <a class="nav-link" href="#">Get Started </a>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown language-switch mx-xl-3 mx-2">
+                        <button class="btn lang-btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <img src="./assets/images/header/uk-flag.png" alt="EN" class="flag-icon">
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="./assets/images/header/uk-flag.png" class="flag-icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-center" href="#">
+                                    <img src="./assets/images/header/turkish-flag.png" class="flag-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Right Button -->
+                    <button class="get-started-btn align-items-center mobile-hidden">
+                        <a href="#" class=""> Get Started </a>
+                        <div class="arrow-box d-flex justify-content-center align-items-center">
+                            <img src="./assets/images/icons/arrow-right.svg" />
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end header-offcanvas" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav header-links">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./performance-analayzer.html">Performance
+                                    Analyzer</a></li>
+                            <li><a class="dropdown-item" href="./smart-pricing.html">Smart Pricing</a></li>
+                            <li><a class="dropdown-item" href="./inventory-intelligence.html">Inventory
+                                    Intelligence</a></li>
+                            <li><a class="dropdown-item" href="./marketing-performance-intelligence.html">Marketing
+                                    Performance Intelligence</a></li>
+                            <li><a class="dropdown-item" href="./customer-insight-analytics.html">Customer Insights
+                                    Analytics</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./en.html">DataSync+</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pricing.html">Pricing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sync-ai.html">SYNC AI</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./event.html">Events</a></li>
+                            <li><a class="dropdown-item" href="./blog.html">Blogs </a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- Button -->
+                <button class="primary-button get-started-btn">
+                    Get Started
+                    <div class="arrow-box d-flex justify-content-center align-items-center">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                    </div>
+                </button>
+
+                <div class="d-flex align-items-center gap-2">
+                    <div class="social"><img src="./assets/images/icons/facebook-white.svg" alt="facebook" /></div>
+                    <div class="social"><img src="./assets/images/icons/youtube-white.svg" alt="youtube" /></div>
+                    <div class="social"><img src="./assets/images/icons/instagram-white.svg" alt="instagram" /></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOG DETAILS CONTENT  -->
+    <section class="blog-details border-top">
+        <div class="custom-container">
+            <div class="heading-part">
+                <h2 class="page-title">Minimal Reporting Effort</h2>
+            </div>
+        </div>
+        <div class="custom-container border-x">
+            <div class="blog-image">
+                <img src="./assets/images/blog/blog-detail.png" alt="blog-img" />
+            </div>
+            <div class="text-content">
+                <h6 class="main-heading">Minimal Reporting Effort with DataSync</h6>
+                <p class="secondary-text">In today’s fast-paced business world, data management and reporting should be
+                    as effortless as possible. With DataSync, that’s exactly what you get. All your essential data
+                    already lives within the platform, making it easily accessible and ready to be utilized for
+                    intelligent reporting.</p>
+                <p class="secondary-text">SYNC AI takes over by automatically generating, customizing, and delivering
+                    reports when needed. Say goodbye to manual data crunching and repetitive tasks. Let AI handle the
+                    heavy lifting, allowing you to focus on making informed decisions without the stress of creating
+                    reports from scratch.</p>
+            </div>
+        </div>
+        <div class="border-top ">
+            <div class="custom-container border-x">
+                <div class="second-text-content">
+                    <div class="primary-text">Key Feature:</div>
+                    <p class="secondary-text">SYNC AI takes over by automatically generating, customizing, and
+                        delivering reports when needed. Say goodbye to manual data crunching and repetitive tasks. Let
+                        AI handle the heavy lifting, allowing you to focus on making informed decisions without the
+                        stress of creating reports from scratch.</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-top">
+            <div class="border-bottom">
+                <div class="custom-container border-x">
+                    <div class="row grid-part">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="left-text-part">
+                                <div>
+                                    <div class="primary-text">Automated Report Generation:</div>
+                                    <p class="secondary-text">Reports are generated automatically, so you're always
+                                        ready
+                                        with up-to-date insights.</p>
+                                </div>
+                                <div class="mt-xl-4 mt-3">
+                                    <div class="primary-text">Customization</div>
+                                    <p class="secondary-text">Sync AI tailors each report to your needs, ensuring
+                                        relevance
+                                        and clarity.</p>
+                                </div>
+                                <div class="mt-xl-4 mt-3">
+                                    <div class="primary-text">Minimal Effort:</div>
+                                    <p class="secondary-text">With DataSync, you spend less time gathering data and more
+                                        time using it.</p>
+                                </div>
+                                <div class="mt-xl-4 mt-3 primary-text bottom-text">Embrace a smarter way to manage your
+                                    reports. With DataSync,
+                                    efficiency and innovation come together seamlessly.</div>
+                                <button class="primary-button mt-xl-5 mt-4">
+                                    Ready to learn more?
+                                    <div class="arrow-box d-flex justify-content-center align-items-center">
+                                        <img src="./assets/images/icons/arrow-right.svg" alt="" />
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-1">
+                            <div class="right-img-part">
+                                <div class="light-gredient">
+                                    <img src="./assets/images/blog/blog-details-grid.jpg" alt="blog" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer-section">
+        <div class="custom-container">
+            <div class="footer-main-part">
+                <div class="footer-logo-part flex-small-grid">
+                    <div class="footer-logo-data">
+                        <a href="/" class="footer-logo">
+                            <img src="./assets/images/footer/footer-logo.svg" alt="Logo" />
+                        </a>
+                        <p class="footer-powered-by">
+                            Powered by
+                            <img src="./assets/images/footer/kumsaati.svg" alt="Powered by" />
+                        </p>
+                    </div>
+                    <div class="footer-social-media d-flex gap-2">
+                        <a href="#facebook" class="social-media-round d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/footer/facebook.svg" alt="facebook" />
+                        </a>
+                        <a href="#youtube" class="social-media-round d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/footer/youtube.svg" alt="youtube" />
+                        </a>
+                        <a href="#instagram"
+                            class="social-media-round d-flex align-items-center justify-content-center">
+                            <img src="./assets/images/footer/instagram.svg" alt="instagram" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-part flex-small-grid">
+                    <h5 class="footer-link-title">Solutions</h5>
+                    <ul>
+                        <li>
+                            <a href="#modules" title="modules" class="footer-links">Modules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sectors" title="sectors" class="footer-links">Sectors & Areas of Work</a>
+                        </li>
+                        <li>
+                            <a href="#integrations" title="integrations" class="footer-links">Integrations</a>
+                        </li>
+                        <li>
+                            <a href="#consultant" title="consultant" class="footer-links">SYNC AI Consultant</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links-part flex-small-grid">
+                    <h5 class="footer-link-title">Services</h5>
+                    <ul>
+                        <li>
+                            <a href="#market" title="market" class="footer-links">Market Sync
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#consult" title="consult" class="footer-links">Consult Sync</a>
+                        </li>
+                        <li>
+                            <a href="#partner" title="partner" class="footer-links">Partner Sync</a>
+                        </li>
+                        <li>
+                            <a href="#logisync" title="logisync" class="footer-links">Logi Sync</a>
+                        </li>
+                        <li>
+                            <a href="#customize" title="customize" class="footer-links">Customize & Develop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links-part flex-small-grid">
+                    <h5 class="footer-link-title">Quick links</h5>
+                    <ul>
+                        <li>
+                            <a href="#about-us" title="consult" class="footer-links">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#blog" title="partner" class="footer-links">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact-us" title="logisync" class="footer-links">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-part flex-small-grid address-min-width">
+                    <h5 class="footer-link-title">Contact Us</h5>
+                    <ul>
+                        <li>
+                            <div class="social-media-icon">
+                                <div class="footer-contact-icon">
+                                    <img src="./assets/images/footer/sms.svg" alt="email" />
+                                </div>
+                                <a href="mailto: info@data-sync.com.tr"
+                                    class="no-text-transform">info@data-sync.com.tr</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="social-media-icon">
+                                <div class="footer-contact-icon">
+                                    <img src="./assets/images/footer/call.svg" alt="call" />
+                                </div>
+                                <a href="tel: +902123370200" class="no-text-transform">+90 212 337 02 00</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="social-media-icon">
+                                <div class="footer-contact-icon">
+                                    <img src="./assets/images/footer/location.svg" alt="location" />
+                                </div>
+                                <p class="address">
+                                    Kore Şehitleri Cad. Mithat Ünlü Sok. No:1/3 34394
+                                    Zincirlikuyu / İstanbul
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-hr"></div>
+            <div class="footer-copyright">
+                <p class="copyright-privacy text-center">
+                    Copyright © 2026 <a href="#">Datasync </a>. All rights reserved
+                </p>
+                <p class="copyright-privacy text-center">
+                    <a href="#" title="privacy-policy">Privacy Policy</a> <span>|</span>
+                    <a href="#">Terms & conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
