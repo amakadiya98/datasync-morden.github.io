@@ -48,3 +48,92 @@ $(document).ready(function () {
         }
     });
 });
+
+$('.intro-mobile-slider').owlCarousel({
+    loop: true,
+    margin: 20,
+    stagePadding: 24,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1200,
+    items: 1,
+
+    onInitialized: setActiveCard,
+    onTranslated: setActiveCard,
+
+    responsive: {
+        0: {
+            items: 1
+        },
+        768: {
+            items: 1
+        }
+    }
+});
+
+function setActiveCard(event) {
+
+    $('.intro-mobile-slider .intro-card').removeClass('active');
+
+    $(event.target)
+        .find('.owl-item.active .intro-card')
+        .addClass('active');
+}
+
+$('.transforming-mobile-slider').owlCarousel({
+
+    loop: true,
+    items: 1,
+    margin: 16,
+    stagePadding: 32,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1200,
+
+    onInitialized: setTransformCard,
+    onTranslated: setTransformCard
+
+});
+
+function setTransformCard(event){
+
+    $('.transforming-mobile-slider .Transforming-card')
+        .removeClass('active');
+
+    $(event.target)
+        .find('.owl-item.active .Transforming-card')
+        .addClass('active');
+
+}
+
+$('.fair-pricing-slider').owlCarousel({
+    center: true,
+    loop: true,
+    dots: true,
+    nav: false,
+    margin: 16,
+    stagePadding: 40,  
+    items: 1,
+    autoWidth: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1200,
+    responsive: {
+        0: {
+            stagePadding: 30,
+            margin: 12
+        },
+        480: {
+            stagePadding: 40,
+            margin: 16
+        },
+        768: {
+            stagePadding: 60,
+            margin: 20
+        }
+    }
+});

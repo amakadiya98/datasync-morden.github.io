@@ -5,8 +5,7 @@ body {
 /* BANNER SECTION */
 .banner-section {
     position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: hidden;
 }
 
 .banner-section::before {
@@ -28,7 +27,7 @@ body {
     max-width: 846px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 88px;
+    padding-bottom: 194px;
 }
 
 .banner-section .banner-content h1 {
@@ -504,7 +503,7 @@ body {
 }
 
 .banner-section .banner-content .bottom-btn {
-    margin-top: 179px;
+    margin-top: 220px;
     background-color: var(--light-pink);
     height: 70px;
     width: 70px;
@@ -528,6 +527,21 @@ body {
     width: 8px;
     border-radius: 50%;
     margin-bottom: 6px;
+}
+
+.banner-section::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 604px;
+    height: 600px;
+    background-image: url(./../images/home/hero-bottom-design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: center center;
 }
 
 /* AI BUSINESS SECTION  */
@@ -816,7 +830,7 @@ body {
     font-size: 22.41px;
     letter-spacing: -3%;
     color: #000000;
-     margin-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .testimonial-card p {
@@ -840,9 +854,12 @@ body {
     border-color: #ddd;
 }
 
-.testimonial-card span {
-    color: #666;
-    font-size: 15px;
+.testimonial-card .bottom-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -3%;
+    color: var(--blue-text);
 }
 
 .testimonial-carousel .owl-nav {
@@ -869,12 +886,28 @@ body {
 .testimonial-section .owl-nav .owl-prev {
     left: -6%;
     background: linear-gradient(var(--black), #E5A9E7) !important;
-}    
+}
 
 .testimonial-section .owl-nav {
     position: absolute;
     top: 50%;
-    width:100%
+    width: 100%
+}
+
+.testimonial-card .quotes {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-purple);
+    height: 70px;
+    width: 70px;
+    margin: 0px auto 20px auto;
+}
+
+.testimonial-card .quotes img {
+    height: 28px;
+    width: 28px;
 }
 
 
@@ -1084,7 +1117,7 @@ body {
         border-top: 1px solid #66666600
     }
 
-    .testimonial-section .owl-nav{
+    .testimonial-section .owl-nav {
         top: unset;
         bottom: -30px;
         justify-content: center;
@@ -1092,10 +1125,11 @@ body {
         gap: 2px;
         position: relative;
         width: 80px;
-        left: 45%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .testimonial-carousel{
+    .testimonial-carousel {
         padding-bottom: 80px;
     }
 
@@ -1232,5 +1266,83 @@ body {
         font-size: 12px;
     }
 
+    .banner-section .banner-content h1 .highlight::after,
+    .banner-section .banner-content h1 .highlight::before,
+    .banner-section .banner-content h1 span .gradient-text::after,
+    .banner-section .banner-content h1 span .gradient-text::before {
+        height: 4px;
+        width: 4px;
+    }
 
+    .banner-section .banner-content h1 .highlight::before {
+        bottom: -3px;
+        right: -3px;
+    }
+
+    .banner-section .banner-content h1 span .gradient-text::before {
+        left: -15px;
+        bottom: -6px;
+    }
+
+    .banner-section .banner-content h1 .highlight::after {
+        top: -3px;
+        left: -3px;
+    }
+
+    .banner-section .banner-content h1 span .gradient-text::after {
+        top: -4px;
+        right: -15px;
+    }
+
+    .banner-section::after {
+        top: 400px
+    }
+
+    .banner-section .banner-content .bottom-btn {
+        margin-top: 44px;
+    }
+
+    .banner-section .banner-content {
+        padding-bottom: 44px;
+    }
+
+    .testimonial-card p {
+        text-align: center;
+    }
+
+    .testimonial-card {
+        background-color: transparent;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .testimonial-carousel::before {
+        width: 300px;
+        left: 15%;
+    }
+
+    .testimonial-carousel .avatar {
+        position: static;
+        background: transparent;
+        transform: none;
+        height: 56px;
+        width: 56px;
+    }
+
+    .testimonial-carousel .owl-stage-outer {
+        padding-top: 0;
+    }
+
+    .testimonial-section {
+        padding: 50px 0;
+    }
+
+    .testimonial-card span {
+        text-align: center;
+    }
+
+    .feature-box ul li{
+        font-size: 12px;
+        margin-top: 10px;
+    }
 }
