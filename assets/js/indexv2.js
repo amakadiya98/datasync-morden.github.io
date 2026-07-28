@@ -51,11 +51,11 @@ $(document).ready(function () {
 
 $('.intro-mobile-slider').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 10,
     stagePadding: 24,
     nav: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     smartSpeed: 1200,
     items: 1,
@@ -90,7 +90,7 @@ $('.transforming-mobile-slider').owlCarousel({
     stagePadding: 32,
     nav: false,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     smartSpeed: 1200,
 
@@ -119,7 +119,7 @@ $('.fair-pricing-slider').owlCarousel({
     stagePadding: 40,  
     items: 1,
     autoWidth: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 3000,
     smartSpeed: 1200,
     responsive: {

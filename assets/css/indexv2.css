@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+.header-part .header-links {
+    gap: 64px
+}
+
 /* BANNER SECTION */
 .banner-section {
     position: relative;
@@ -134,7 +138,8 @@ body {
     max-width: 250px;
     position: absolute;
     top: 254px;
-    left: -27%
+    left: -27%;
+    width: 100%;
 }
 
 .banner-section .floating-box .title-line {
@@ -145,11 +150,11 @@ body {
 }
 
 .banner-section .floating-box .title h4 {
-    font-family: 'Inter';
     font-weight: 600;
     font-size: 12px;
     color: #6B7596;
     margin: 0;
+    line-height: 12px;
 }
 
 /* Pills */
@@ -409,7 +414,7 @@ body {
 }
 
 .banner-section .right-top-box .title h4 {
-    font-size: 18px;
+    font-size: 12px;
     color: #14204B;
     font-weight: 700;
 }
@@ -420,23 +425,24 @@ body {
     padding: 8px 18px;
     font-size: 12px;
     font-weight: 600;
+    line-height: 10px;
 }
 
 .banner-section .right-top-box .insight-text {
-    margin: 20px 0;
-    font-size: 20px;
+    margin: 12px 0;
+    font-size: 14px;
     line-height: 1.5;
     color: #69728E;
 }
 
 .banner-section .right-top-box .insight-value {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #10214C;
 }
 
 .banner-section .right-top-box .insight-value span {
-    font-size: 18px;
+    font-size: 12px;
     color: #22A96B;
     font-weight: 600;
     margin-left: 8px;
@@ -449,6 +455,11 @@ body {
     right: -32%;
 }
 
+.banner-section .right-bottom-box .badge-count {
+    background-color: #C3364C26;
+    color: #C3364C;
+}
+
 .banner-section .right-bottom-box .risk-item {
     padding: 10px 0;
     border-bottom: 1px solid #E5E5E5;
@@ -458,24 +469,27 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     color: #151515;
+    font-family: 'Inter';
 }
 
 .banner-section .right-bottom-box .risk-subtitle {
     margin-left: 18px;
     margin-top: 3px;
     color: #8B8B8B;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .banner-section .right-bottom-box .risk-status {
     border-radius: 20px;
     padding: 6px 16px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     height: fit-content;
+    line-height: 10px;
+    font-family: 'Inter';
 }
 
 .banner-section .danger-pill {
@@ -604,9 +618,9 @@ body {
 
 .ai-bussiness-section .custom-tab-content .gredient-bg {
     background: linear-gradient(180deg, #BFC5FB 0%, #FFFFFF 100%);
-    padding-top: 60px;
+    padding-top: 120px;
     padding-right: 55px;
-    padding-bottom: 66px;
+    padding-bottom: 100px;
     padding-left: calc(max(5vw, (100vw - 1280px) / 2) - 40px);
 }
 
@@ -614,7 +628,7 @@ body {
     margin-right: max(5vw, calc((100vw - 1280px) / 2));
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     align-items: flex-start;
 }
 
@@ -622,7 +636,8 @@ body {
     font-family: "Helvetica Now Display";
     font-weight: 500;
     font-size: 35px;
-    color: #051336
+    color: #051336;
+    margin: 0;
 }
 
 .ai-bussiness-section .custom-tab-content .tab-content-right ul {
@@ -651,7 +666,7 @@ body {
 }
 
 .ai-bussiness-section .custom-tab-content .tab-content-right .bottom-data-item {
-    padding: 20px 30px;
+    padding: 6px 30px;
 }
 
 .ai-bussiness-section .custom-tab-content .tab-content-right .bottom-data-item .bottom-data-value {
@@ -702,6 +717,10 @@ body {
 .sink-ai-section .image-part img {
     width: 90%;
     height: auto;
+}
+
+.sink-ai-section .image-part .primary-button img {
+    width: auto;
 }
 
 .sink-ai-section .image-part .image-wrapper .number-item {
@@ -876,6 +895,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.testimonial-section .owl-carousel .owl-nav.disabled {
+    display: block;
 }
 
 .testimonial-section .owl-nav .owl-next {
@@ -1087,12 +1110,32 @@ body {
 
     .ai-bussiness-section .custom-tab-content .tab-content-right .bottom-data-item {
         padding: 20px;
+        flex: 1;
     }
 
     .ai-bussiness-section .custom-tab-content .tab-content-right .bottom-data-item .bottom-data-value {
         font-size: 20px;
     }
 
+    .testimonial-section .owl-nav {
+        top: unset;
+        bottom: -30px;
+        justify-content: center;
+        display: flex !important;
+        gap: 2px;
+        position: relative;
+        width: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-carousel {
+        padding-bottom: 80px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
     .sink-ai-section .image-part .image-wrapper .number-item {
         position: static;
     }
@@ -1117,20 +1160,57 @@ body {
         border-top: 1px solid #66666600
     }
 
-    .testimonial-section .owl-nav {
-        top: unset;
-        bottom: -30px;
-        justify-content: center;
-        display: flex !important;
-        gap: 2px;
-        position: relative;
-        width: 80px;
-        left: 50%;
-        transform: translateX(-50%);
+    .testimonial-carousel .avatar {
+        position: static;
+        transform: none;
     }
 
-    .testimonial-carousel {
-        padding-bottom: 80px;
+    .ai-bussiness-section .custom-tab-content .tab-content-right .content {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        border-left: 1px solid #dee2e6;
+        border-right: 1px solid #dee2e6
+    }
+
+    .ai-bussiness-section .custom-tab-content .gredient-bg {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-left: 1px solid #dee2e6;
+        border-right: 1px solid #dee2e6
+    }
+
+    .ai-bussiness-section {
+        padding-bottom: 0;
+    }
+
+    .transforming-section .Transforming-card {
+        background-color: #ffffff;
+        margin: 20px 0px;
+    }
+
+    .transforming-section .Transforming-card {
+        background: linear-gradient(180deg, #7282F2 -65.86%, #F4F5FE 100%);
+        padding: 20px;
+    }
+
+    .transforming-section .Transforming-card .Transforming-heading {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ai-bussiness-section .custom-tabs .nav-link {
+        padding: 10px 16px;
+    }
+
+    .pricing-btn {
+        height: 42px;
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: -5%;
+        padding: 0 4px 0 22px;
     }
 
 }
@@ -1196,31 +1276,27 @@ body {
 
     .ai-bussiness-section .content-wrapper {
         padding: 30px 0px;
-    }
-
-    .ai-bussiness-section .custom-tabs {
-        margin-top: 0;
+        border-left: 1px solid #eee !important;
+        border-right: 1px solid #eee !important;
     }
 
     .ai-bussiness-section .custom-tabs .nav-link {
         padding: 7px 6px;
         border-radius: 8px;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .ai-bussiness-section .custom-tabs {
         border-radius: 8px;
         gap: 2px;
         justify-content: center;
-        margin-bottom: 20px;
-    }
-
-    .tab-content .tab-content-left,
-    .tab-content .tab-content-right {
-        margin: 0 20px;
-        border-left: 1px solid #66666600;
-        border-right: 1px solid #66666600;
-        padding: 20px !important;
+        margin-top: 0;
+        background-color: transparent;
+        padding: 0;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .ai-bussiness-section .custom-tab-content .tab-content-right .content {
@@ -1254,6 +1330,18 @@ body {
         padding-bottom: 0;
     }
 
+    .ai-bussiness-section .custom-tab-content .tab-content-right .content {
+        padding: 12px;
+    }
+
+    .ai-bussiness-section .custom-tab-content .tab-content-right .bottom-data-item .bottom-data-label {
+        font-size: 12px;
+    }
+
+    .sink-ai-section .top-content {
+        padding-top: 50px;
+    }
+
     .sink-ai-section .image-part .image-wrapper {
         padding: 34px 0;
     }
@@ -1264,6 +1352,10 @@ body {
 
     .sink-ai-section .image-part .image-wrapper .description-text {
         font-size: 12px;
+    }
+
+    .fair-pricing-top {
+        padding: 0;
     }
 
     .banner-section .banner-content h1 .highlight::after,
@@ -1322,9 +1414,7 @@ body {
     }
 
     .testimonial-carousel .avatar {
-        position: static;
         background: transparent;
-        transform: none;
         height: 56px;
         width: 56px;
     }
@@ -1341,8 +1431,23 @@ body {
         text-align: center;
     }
 
-    .feature-box ul li{
+    .feature-box ul li {
         font-size: 12px;
         margin-top: 10px;
     }
+
+    .pricing-description {
+        font-size: 12px;
+    }
+
+    .pricing-tag {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+
+    .banner-section::before{
+        background-image: url(./../images/home/background-lines-mobile.svg);
+        top: -10px
+    }
+
 }
